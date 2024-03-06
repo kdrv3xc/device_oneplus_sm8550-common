@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<exceptions>
+    <exception package="com.oplus.camera" >
+      <permission name="com.oplus.gallery3d.permission.PROVIDER"/>
+      <permission name="com.oplus.permission.OCLICK"/>
+      <permission name="oplus.permission.APP_SETTING"/>
+      <permission name="oplus.permission.OPLUS_COMPONENT_SAFE"/>
+      <permission name="com.oplus.permission.safe.SECURITY"/>
+      <permission name="com.oplus.permission.safe.SETTINGS"/>
+      <permission name="com.oplusos.videoeditor.camera.permission.TEMPLATE"/>
+      <permission name="com.oplus.permission.safe.SAU"/>
+      <permission name="com.oplus.permission.safe.PHONE"/>
+      <permission name="com.oplus.permission.safe.PERSISTENT"/>
+      <permission name="com.oplus.permission.safe.PRIVATE"/>
+      <permission name="com.oplus.permission.safe.LOG"/>
+      <permission name="com.oplus.permission.safe.CAMERA"/>
+      <permission name="com.oplus.permission.safe.WINDOW"/>
+      <permission name="com.oplus.permission.safe.AUTHENTICATE"/>
+      <permission name="com.oplus.permission.safe.PROTECT"/>
+        <permission name="android.permission.CAMERA"/>
+        <permission name="android.permission.SYSTEM_CAMERA"/>
+        <permission name="android.permission.RECORD_AUDIO"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.MANAGE_EXTERNAL_MEDIA"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </exception>
+</exceptions>
