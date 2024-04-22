@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="android_config_use_strict_phone_number_comparation">?unknown_ref: 1110236</bool>
+    <bool name="android_config_voice_capable">?unknown_ref: 111023c</bool>
+    <bool name="android_config_automatic_brightness_available">@android:bool/config_bluetooth_sco_off_call</bool>
+    <bool name="android_config_enableDreams">false</bool>
+    <bool name="android_config_wimaxEnabled">?unknown_ref: 1110246</bool>
+    <bool name="android_config_intrusiveNotificationLed">?unknown_ref: 1110187</bool>
+    <bool name="android_config_alwaysUseCdmaRssi">@android:bool/config_avoidGfxAccel</bool>
+    <bool name="android_config_dreamsEnabledByDefault">?unknown_ref: 1110137</bool>
+    <bool name="android_config_dreamsActivatedOnDockByDefault">?unknown_ref: 1110134</bool>
+    <bool name="android_config_dreamsActivatedOnSleepByDefault">?unknown_ref: 1110135</bool>
+    <bool name="oplus_texture_resize">true</bool>
+    <bool name="oplus_scene_preview_tap_scroll_fast_mode">false</bool>
+    <bool name="android_config_enable_puk_unlock_screen">?unknown_ref: 1110167</bool>
+    <bool name="android_config_enable_emergency_call_while_sim_locked">?unknown_ref: 1110165</bool>
+    <bool name="android_config_useMasterVolume">?unknown_ref: 111022d</bool>
+    <bool name="android_config_useVolumeKeySounds">?unknown_ref: 1110234</bool>
+    <bool name="android_config_safe_media_volume_enabled">?unknown_ref: 11101d8</bool>
+    <bool name="android_config_closeDialogWhenTouchOutside">@android:bool/config_windowOverscanByDefault</bool>
+    <bool name="config_enableNetworkLocationProviderOverlay">false</bool>
+    <bool name="config_bluetooth_hfp_inband_ringing_support_overlay">true</bool>
+    <bool name="android_action_bar_expanded_action_views_exclusive">@android:bool/config_allowAutoBrightnessWhileDozing</bool>
+    <bool name="config_lidControlsSleep">false</bool>
+    <bool name="oplus_config_actionMenuItemAllCaps">false</bool>
+    <bool name="oplus_new_ui_13">true</bool>
+</resources>

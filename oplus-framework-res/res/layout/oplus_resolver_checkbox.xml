@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oplus_resolver_TD03">
+    <CheckBox android:textSize="@dimen/TF05" android:textColor="?attr/C17" android:layout_gravity="start|center_vertical" android:id="@android:id/clip_children_set_tag" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/oplus_resolver_ask_no_more" android:maxLines="2" android:layout_weight="1" android:layout_marginStart="@dimen/oplus_resolver_TD16"/>
+    <LinearLayout android:layout_gravity="end|center_vertical" android:orientation="horizontal" android:id="@+id/oplus_resolver_market_jump" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/oplus_resolver_TD16">
+        <TextView android:textSize="@dimen/TF05" android:textColor="?attr/C05" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="@dimen/oplus_resolver_checkbox_maxWidth" android:text="@string/oplus_resolver_message" android:singleLine="true"/>
+        <ImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/oplus_resolver_jump_to_market_next" android:layout_marginStart="@dimen/oplus_resolver_TD01" android:layout_marginEnd="@dimen/oplus_resolver_TD16"/>
+    </LinearLayout>
+</LinearLayout>

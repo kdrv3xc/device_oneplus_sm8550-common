@@ -63,14 +63,14 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv9-a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT := kryo385
 TARGET_CPU_VARIANT_RUNTIME := cortex-a510
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := generic
+TARGET_2ND_CPU_VARIANT := kryo385
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
 
 # Audio
@@ -107,7 +107,7 @@ MALLOC_SVELTE := true
 MALLOC_SVELTE_FOR_LIBC32 := true
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 TARGET_CAMERA_PACKAGE_NAME := com.oplus.packageName
-
+	
 # DTB / DTBO
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
@@ -130,11 +130,14 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
+    
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/framework_manifest.xml
+	
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifest.xml \
     $(COMMON_PATH)/network_manifest.xml
+  
 ODM_MANIFEST_FILES := \
     $(COMMON_PATH)/manifest_odm.xml \
     $(COMMON_PATH)/network_manifest_odm.xml
@@ -150,7 +153,8 @@ BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
-    androidboot.usbcontroller=a600000.dwc3
+    androidboot.usbcontroller=a600000.dwc3 \
+    androidboot.selinux=permissive
 
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_KERNEL_BASE := 0x00000000
@@ -253,7 +257,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security
-BOOT_SECURITY_PATCH := 2024-03-05
+BOOT_SECURITY_PATCH := 2024-02-05
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SEPolicy

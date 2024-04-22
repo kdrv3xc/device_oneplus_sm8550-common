@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:id="@android:id/background">
+        <shape android:tint="@android:color/primary_text_disable_only_material_dark" android:shape="rectangle">
+            <corners android:radius="@dimen/notification_progress_bar_radius_material"/>
+            <size android:height="@android:dimen/text_size_title_material"/>
+            <solid android:color="0x1060330"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:id="@android:id/secondaryProgress">
+        <scale android:scaleWidth="100%">
+            <shape android:tint="#2ad181" android:shape="rectangle">
+                <corners android:radius="@dimen/notification_progress_bar_radius_material"/>
+                <size android:height="@android:dimen/text_size_title_material"/>
+                <solid android:color="0x1060330"/>
+            </shape>
+        </scale>
+    </item>
+    <item android:gravity="center" android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <shape android:tint="#2ad181" android:shape="rectangle">
+                <corners android:radius="@dimen/notification_progress_bar_radius_material"/>
+                <size android:height="@android:dimen/text_size_title_material"/>
+                <solid android:color="@android:color/white"/>
+            </shape>
+        </scale>
+    </item>
+</layer-list>

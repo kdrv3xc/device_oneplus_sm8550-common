@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="ifContentScrolls">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/M10" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/M10" android:paddingEnd="@dimen/M10">
+        <TextView android:textSize="@dimen/TD07" android:textColor="?attr/C20" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/oplus_application_full_screen_dialog_msg"/>
+        <TextView android:textSize="@dimen/TD07" android:textColor="?attr/C20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/M4" android:text="@string/oplus_application_full_screen_dialog_tips"/>
+    </LinearLayout>
+</ScrollView>

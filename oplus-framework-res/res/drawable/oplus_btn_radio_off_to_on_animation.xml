@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/oplus_btn_radio_off">
+    <target android:name="ring_default_group" android:animation="@drawable/res_0x0c080128_oplus_btn_radio_off_to_on_animation__0"/>
+    <target android:name="ring_focus_path" android:animation="@drawable/res_0x0c080129_oplus_btn_radio_off_to_on_animation__1"/>
+    <target android:name="ring_focus_group" android:animation="@drawable/res_0x0c08012a_oplus_btn_radio_off_to_on_animation__2"/>
+    <target android:name="dog_group" android:animation="@drawable/res_0x0c08012b_oplus_btn_radio_off_to_on_animation__3"/>
+</animated-vector>

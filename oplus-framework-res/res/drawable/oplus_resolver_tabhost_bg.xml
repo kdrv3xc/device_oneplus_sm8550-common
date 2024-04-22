@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="bottom|center_horizontal" android:height="1dp" android:width="41.67dp">
+        <shape>
+            <stroke android:width="0.5dp" android:color="?attr/oplusTintControlNormal"/>
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+</layer-list>

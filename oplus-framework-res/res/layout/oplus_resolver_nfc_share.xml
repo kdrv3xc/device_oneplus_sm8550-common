@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/oplus_resolver_nfc_oshare_minHeight">
+        <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/oplus_resolver_nfc_icon" android:layout_marginStart="@dimen/oplus_resolve_dialog_oshare_icon_margin_start" android:layout_marginEnd="@dimen/oplus_resolve_dialog_oshare_icon_margin_end"/>
+        <TextView android:textSize="@dimen/TD07" android:textColor="?attr/C21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oplus_resolver_nfc" android:layout_marginEnd="@dimen/oplus_resolve_dialog_oshare_icon_margin_end"/>
+    </LinearLayout>
+    <ImageView android:background="@color/oplus_resolver_oshare_divider" android:layout_width="match_parent" android:layout_height="2px" android:layout_marginStart="@dimen/oplus_resolver_TD24" android:layout_marginEnd="@dimen/oplus_resolver_TD24" android:forceDarkAllowed="false"/>
+</LinearLayout>

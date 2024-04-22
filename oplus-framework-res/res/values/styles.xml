@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialog.BootMessage" parent="@style/AlertDialog">
+        <item name="android:fullDark">?android:attr/windowBackground</item>
+        <item name="android:topDark">?android:attr/windowBackground</item>
+        <item name="android:centerDark">?android:attr/windowBackground</item>
+        <item name="android:bottomDark">?android:attr/windowBackground</item>
+        <item name="android:fullBright">?android:attr/windowBackground</item>
+        <item name="android:topBright">?android:attr/windowBackground</item>
+        <item name="android:centerBright">?android:attr/windowBackground</item>
+        <item name="android:bottomBright">?android:attr/windowBackground</item>
+        <item name="android:bottomMedium">?android:attr/windowBackground</item>
+        <item name="android:centerMedium">?android:attr/windowBackground</item>
+        <item name="android:layout">@layout/oplus_boot_message_dialog</item>
+        <item name="android:^attr-private.layout_alwaysShow">@layout/oplus_boot_message_progress</item>
+    </style>
+    <style name="AlertDialog.Transparent" parent="@style/AlertDialog">
+        <item name="android:fullDark">@color/oplus_transparent</item>
+        <item name="android:fullBright">@color/oplus_transparent</item>
+    </style>
+    <style name="Theme" parent="@android:style/Theme.Material">
+        <item name="android:backgroundDimAmount">0.4</item>
+        <item name="android:textAppearance">@style/TextAppearance</item>
+        <item name="android:textAppearanceInverse">@style/TextAppearance.Inverse</item>
+        <item name="android:textColorPrimary">@color/oplus_primary_text_dark</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/oplus_primary_text_dark</item>
+        <item name="android:textAppearanceLarge">@style/ListViewTextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/ListViewTextAppearance.Large</item>
+        <item name="android:textAppearanceSmall">@style/ListViewTextAppearance.Small</item>
+        <item name="android:buttonStyle">@style/Widget.Button</item>
+        <item name="android:alertDialogStyle">@style/AlertDialog</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/oplus_scrollbar_handle_horizontal</item>
+        <item name="android:scrollbarThumbVertical">@drawable/oplus_scrollbar_handle_vertical</item>
+        <item name="android:checkboxStyle">@style/Widget.CompoundButton.CheckBox</item>
+        <item name="android:radioButtonStyle">@style/Widget.CompoundButton.RadioButton</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/oplus_btn_radio</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/oplus_btn_check</item>
+        <item name="android:textSelectHandleLeft">@drawable/oplus_text_select_left</item>
+        <item name="android:textSelectHandleRight">@drawable/oplus_text_select_right</item>
+        <item name="android:textSelectHandle">@drawable/oplus_text_select_middle</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/TextAppearance.Widget.PopupMenu.Large</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/TextAppearance.Widget.PopupMenu.Small</item>
+        <item name="android:textColorAlertDialogListItem">@color/oplus_list_text_color_small</item>
+        <item name="android:dialogTheme">@style/Theme.Dialog</item>
+        <item name="android:alertDialogTheme">@style/Theme.Dialog.Alert</item>
+        <item name="android:fastScrollTrackDrawable">@null</item>
+        <item name="android:fastScrollOverlayPosition">atThumb</item>
+        <item name="android:textCursorDrawable">@drawable/oplus_text_cursor_default</item>
+        <item name="android:colorPressedHighlight">@android:color/holo_blue_light</item>
+        <item name="android:colorLongPressedHighlight">@android:color/holo_blue_bright</item>
+        <item name="android:colorFocusedHighlight">@android:color/holo_blue_dark</item>
+        <item name="android:colorActivatedHighlight">@android:color/holo_blue_dark</item>
+        <item name="android:colorMultiSelectHighlight">@android:color/holo_green_light</item>
+        <item name="android:textAppearanceListItemSmall">?android:attr/textAppearanceMedium</item>
+        <item name="android:colorControlNormal">?android:attr/textColorPrimary</item>
+        <item name="android:colorAccent">@android:color/car_orange_800</item>
+        <item name="android:^attr-private.allowMassStorage">false</item>
+        <item name="android:^attr-private.dialogTitleIconsDecorLayout">?unknown_ref: 10602fe</item>
+        <item name="android:^attr-private.virtualButtonPressedDrawable">@drawable/oplus_quickcontact_badge_overlay</item>
+        <item name="?0x1120130">@drawable/oplus_toast_frame</item>
+        <item name="oplusOShareButtonTextColor">@color/oplus_resolver_oshare_bt_default</item>
+        <item name="oplusOShareButtonBackground">@color/oplus_resolver_oshare_bt_default_background</item>
+        <item name="isOplusTheme">true</item>
+        <item name="oplusTintControlNormal">@color/oplus_green_tint_control_normal</item>
+        <item name="oplusTintLightNormal">@color/oplus_green_tint_light_normal</item>
+        <item name="C05">@color/primary_color_dark_default</item>
+        <item name="C20">@color/monochrome_color_grey_black_default</item>
+        <item name="C18">@color/monochrome_color_darker_default</item>
+        <item name="C24">@color/warning_color_standard_default</item>
+        <item name="oplusShutdownViewStyle">@style/Widget.ShutdownView</item>
+        <item name="OplusLoadingViewStyle">@style/Widget.OplusLoadingView</item>
+        <item name="C01">@color/primary_color_lightest_default</item>
+        <item name="C02">@color/primary_color_lighter_default</item>
+        <item name="C03">@color/primary_color_light_default</item>
+        <item name="C04">@color/primary_color_standard_default</item>
+        <item name="C06">@color/primary_color_darker_default</item>
+        <item name="C07">@color/secondary_color_lighter_default</item>
+        <item name="C08">@color/secondary_color_light_default</item>
+        <item name="C09">@color/secondary_color_standard_default</item>
+        <item name="C10">@color/secondary_color_dark_default</item>
+        <item name="C11">@color/secondary_color_darker_default</item>
+        <item name="C12">@color/monochrome_color_white_default</item>
+        <item name="C13">@color/monochrome_color_lightest_default</item>
+        <item name="C14">@color/monochrome_color_lighter_default</item>
+        <item name="C15">@color/monochrome_color_light_default</item>
+        <item name="C16">@color/monochrome_color_standard_default</item>
+        <item name="C17">@color/monochrome_color_dark_default</item>
+        <item name="C19">@color/monochrome_color_darkest_default</item>
+        <item name="C21">@color/monochrome_color_black_default</item>
+        <item name="C22">@color/hyperlink_color_default</item>
+        <item name="C23">@color/warning_color_light_default</item>
+        <item name="C25">@color/brand_color_default</item>
+        <item name="C26">@color/background_color_light_default</item>
+        <item name="C27">@color/background_color_standard_default</item>
+        <item name="C28">@color/background_color_dark_default</item>
+        <item name="OplusCircleProgressBarLargeStyle">@style/Widget.OplusCircleProgressBar.Large</item>
+        <item name="oplusTextAppearanceBootMessage">@style/TextAppearance.BootMessage.Message</item>
+        <item name="oplusTextAppearanceBootPercent">@style/TextAppearance.BootMessage.Percent</item>
+        <item name="oplusTintControlDisabled">@color/oplus_green_tint_control_disabled</item>
+        <item name="oplusTintControlPressed">@color/oplus_green_tint_control_pressed</item>
+        <item name="oplusTintLightPressed">@color/oplus_green_tint_light_pressed</item>
+        <item name="themeType">0</item>
+    </style>
+    <style name="TextAppearance.Android.StatusBar" parent="@android:style/TextAppearance.Material.Widget.Calendar.Month">
+    </style>
+    <style name="TextAppearance.Android.DeviceDefault.Body2" parent="@android:style/PreferencePanel">
+    </style>
+    <style name="TextAppearance.Android.DeviceDefault.Subhead" parent="@android:style/TextAppearance.DeviceDefault.Headline">
+    </style>
+    <style name="Theme.Dialog" parent="@style/Theme">
+        <item name="android:textAppearance">@style/TextAppearance</item>
+        <item name="android:textAppearanceInverse">@style/TextAppearance.Inverse</item>
+        <item name="android:windowBackground">@drawable/oplus_alertdialog_content_full_background</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:borderlessButtonStyle">@style/Widget.Button.Borderless.Small</item>
+        <item name="android:buttonBarStyle">@style/ButtonBar</item>
+        <item name="android:windowCloseOnTouchOutside">@bool/android_config_closeDialogWhenTouchOutside</item>
+        <item name="android:listPreferredItemPaddingLeft">16dp</item>
+        <item name="android:listPreferredItemPaddingRight">16dp</item>
+    </style>
+    <style name="Theme.Dialog.Alert" parent="@style/Theme.Dialog">
+        <item name="android:textColorPrimaryDisableOnly">#ff141414</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:windowMinWidthMajor">56%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:forceDarkAllowed">true</item>
+        <item name="android:isLightTheme">true</item>
+    </style>
+    <style name="Widget.Android.Material.Notification.Text" parent="@android:style/Widget.Material.Notification.MessagingName">
+    </style>
+    <style name="Widget.Android.DeviceDefault.Toolbar" parent="@android:style/Widget.DeviceDefault.QuickContactBadgeSmall.WindowSmall">
+    </style>
+    <style name="Widget.Android.DeviceDefault.Notification.Text" parent="@android:style/Widget.DeviceDefault.Light.Spinner.DropDown">
+    </style>
+    <style name="ThemeOverlay.Android.DeviceDefault.Accent" parent="@android:style/Theme.Material.Settings.NoActionBar">
+    </style>
+    <style name="ThemeOverlay.Android.DeviceDefault.Accent.Light" parent="@android:style/Theme.Material.Settings.SearchBar">
+    </style>
+    <style name="AlertDialogStyle" parent="@android:style/AlertDialog.Leanback">
+    </style>
+    <style name="AlertDialogStyle.Bottom" parent="@style/AlertDialogStyle">
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout">@layout/oplus_bottom_alert_dialog_layout</item>
+    </style>
+    <style name="AlertDialogStyle.Center" parent="@style/AlertDialogStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout">@layout/oplus_center_alert_dialog_layout</item>
+    </style>
+    <style name="Animation" parent="@android:style/Animation">
+    </style>
+    <style name="PermissionControllerSettings" parent="@android:style/Theme.DeviceDefault.Settings">
+        <item name="android:windowBackground">@color/oplus_permission_controller_background</item>
+        <item name="android:actionBarStyle">@style/PermissionControllerActionBarStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/PermissionControllerActionOverflowButtonStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/oplus_permission_controller_back_arrow_normal</item>
+        <item name="android:actionBarTheme">@style/PermissionControllerActionBarTheme</item>
+        <item name="android:colorPrimaryDark">@color/oplus_permission_controller_background</item>
+        <item name="android:colorAccent">@color/oplus_permission_controller_green</item>
+        <item name="android:actionOverflowMenuStyle">@style/PermissionControllerActionOverflowMenuStyle</item>
+    </style>
+    <style name="PermissionControllerCategoryTitle" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.0727</item>
+    </style>
+    <style name="Theme.Android.DeviceDefault.Settings.Dialog" parent="@android:style/Theme.DeviceDefault.QuickSettings">
+    </style>
+    <style name="TextAppearance.Android.DeviceDefault.Notification.Title" parent="@android:style/TextAppearance.DeviceDefault.Display1">
+    </style>
+    <style name="TextAppearance.Android.DeviceDefault.Notification.Info" parent="@android:style/TextAppearance.DeviceDefault.Body1">
+    </style>
+    <style name="Animation.Dialog" parent="@style/Animation">
+        <item name="android:windowEnterAnimation">@anim/oplus_bottom_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/oplus_bottom_dialog_exit</item>
+    </style>
+    <style name="Animation.VolumePanel" parent="@android:style/Animation.VolumePanel">
+    </style>
+    <style name="Animation.Dialog.Alpha" parent="@style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/oplus_center_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/oplus_center_dialog_exit</item>
+    </style>
+    <style name="Animation.Dialog.Resolver" parent="@style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/oplus_resolver_enter</item>
+        <item name="android:windowExitAnimation">@anim/oplus_resolver_exit</item>
+    </style>
+    <style name="Animation.Activity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/oplus_open_slide_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/oplus_open_slide_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/oplus_close_slide_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/oplus_close_slide_exit</item>
+        <item name="android:taskOpenEnterAnimation">@anim/oplus_task_open_slide_enter</item>
+        <item name="android:taskOpenExitAnimation">@anim/oplus_task_open_slide_exit</item>
+        <item name="android:taskCloseEnterAnimation">@anim/oplus_task_close_slide_enter</item>
+        <item name="android:taskCloseExitAnimation">@anim/oplus_task_close_slide_exit</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/oplus_task_open_slide_enter</item>
+        <item name="android:taskToFrontExitAnimation">@anim/oplus_task_open_slide_exit</item>
+        <item name="android:taskToBackEnterAnimation">@anim/oplus_task_close_slide_enter</item>
+        <item name="android:taskToBackExitAnimation">@anim/oplus_task_close_slide_exit</item>
+        <item name="android:wallpaperOpenEnterAnimation">@anim/oplus_wallpaper_open_enter</item>
+        <item name="android:wallpaperOpenExitAnimation">@anim/oplus_wallpaper_open_exit</item>
+        <item name="android:wallpaperCloseEnterAnimation">@anim/oplus_wallpaper_close_enter</item>
+        <item name="android:wallpaperCloseExitAnimation">@anim/oplus_wallpaper_close_exit</item>
+    </style>
+    <style name="Animation.Layer" parent="@style/Animation.Activity">
+    </style>
+    <style name="Animation.LockScreen" parent="@android:style/Animation.LockScreen">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@anim/oplus_lock_screen_exit</item>
+    </style>
+    <style name="Animation.Oplus.Dialog" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/oplus_bottom_dialog_builder_enter</item>
+        <item name="android:windowExitAnimation">@anim/oplus_bottom_dialog_builder_exit</item>
+    </style>
+    <style name="Animation.Oplus.Dialog.Alpha" parent="@style/Animation.Oplus.Dialog">
+        <item name="android:windowEnterAnimation">@anim/oplus_center_dialog_builder_enter</item>
+        <item name="android:windowExitAnimation">@anim/oplus_center_dialog_builder_exit</item>
+    </style>
+    <style name="Animation.RecentApplications" parent="@android:style/Animation.RecentApplications">
+    </style>
+    <style name="Theme.Dialog.Alert.Share" parent="@style/Theme.Dialog.Alert">
+        <item name="android:colorBackground">@color/oplus_resolver_navigation_bar</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Dialog.Resolver</item>
+        <item name="android:windowAnimationStyle">@style/ChooserActivityWindowAnimTheme</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:listPreferredItemPaddingStart">?android:attr/dialogPreferredPadding</item>
+        <item name="android:listPreferredItemPaddingEnd">?android:attr/dialogPreferredPadding</item>
+        <item name="android:colorControlActivated">?android:attr/colorControlHighlight</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Theme.Panel.Volume" parent="@style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/Animation.VolumePanel</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="oplusAddMaskView">false</item>
+    </style>
+    <style name="AlertDialog" parent="@android:style/ActionBarTitle">
+        <item name="android:backgroundDimAmount">0.4</item>
+        <item name="android:fullDark">@null</item>
+        <item name="android:topDark">@null</item>
+        <item name="android:centerDark">@null</item>
+        <item name="android:bottomDark">@null</item>
+        <item name="android:fullBright">@null</item>
+        <item name="android:topBright">@null</item>
+        <item name="android:centerBright">@null</item>
+        <item name="android:bottomBright">@null</item>
+        <item name="android:bottomMedium">@null</item>
+        <item name="android:centerMedium">@null</item>
+        <item name="android:layout">@layout/oplus_center_alert_dialog_layout</item>
+        <item name="android:^attr-private.maxItems">@layout/oplus_select_dialog_item</item>
+        <item name="android:^attr-private.minorWeightMax">@layout/oplus_select_dialog</item>
+        <item name="android:^attr-private.request">@layout/oplus_select_dialog_multichoice</item>
+        <item name="?0x1120114">@layout/oplus_select_dialog_singlechoice</item>
+    </style>
+    <style name="TextAppearance.Small" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/oplus_primary_text_dark</item>
+    </style>
+    <style name="DialogTextAppearance.Title" parent="@style/DialogTextAppearance">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/TD11</item>
+        <item name="android:textColor">@color/oplus_alert_dialog_title_text_color</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="DialogTextAppearance.Content" parent="@style/DialogTextAppearance">
+        <item name="android:textSize">@dimen/oplus_dialog_content_text_size</item>
+        <item name="android:textColor">?attr/C20</item>
+    </style>
+    <style name="Theme.Dialog.Alert.BootMessage" parent="@style/Theme.Dialog.Alert">
+        <item name="android:alertDialogStyle">@style/AlertDialog.BootMessage</item>
+    </style>
+    <style name="Widget.ProgressBar.Horizontal" parent="@style/Widget.ProgressBar">
+        <item name="android:maxHeight">20dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">14dp</item>
+        <item name="android:mirrorForRtl">true</item>
+    </style>
+    <style name="DefaultDialogItemTextStyle" parent="">
+        <item name="android:textSize">@dimen/oplus_dialog_button_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/oplus_bottom_alert_dialog_button_text_color</item>
+    </style>
+    <style name="OplusAlertDialog.Center" parent="@style/OplusAlertDialog">
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle.Center</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Oplus.Dialog.Alpha</item>
+        <item name="android:layout">@layout/oplus_center_alert_dialog_layout</item>
+    </style>
+    <style name="OplusAlertDialog.Bottom" parent="@style/OplusAlertDialog">
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle.Bottom</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Oplus.Dialog</item>
+        <item name="android:layout">@layout/oplus_bottom_alert_dialog_layout</item>
+    </style>
+    <style name="OplusAlertDialogVerticalButStyle" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/oplus_dialog_button_text_color_center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Animation.DeviceCaseWindow" parent="@style/Animation">
+        <item name="android:windowEnterAnimation">@anim/oplus_device_case_window_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/oplus_device_case_window_fade_out</item>
+    </style>
+    <style name="OplusToolTips" parent="">
+        <item name="oplusToolTipsArrowDownDrawable">@drawable/oplus_tool_tips_arrow_down</item>
+        <item name="oplusToolTipsArrowLeftDrawable">@drawable/oplus_tool_tips_arrow_left</item>
+        <item name="oplusToolTipsArrowOverflowOffset">0dp</item>
+        <item name="oplusToolTipsArrowRightDrawable">@drawable/oplus_tool_tips_arrow_right</item>
+        <item name="oplusToolTipsArrowUpDrawable">@drawable/oplus_tool_tips_arrow_up</item>
+        <item name="oplusToolTipsBackground">@drawable/oplus_tool_tips_background</item>
+        <item name="oplusToolTipsContainerLayoutGravity">center_vertical</item>
+        <item name="oplusToolTipsContainerLayoutMarginBottom">12dp</item>
+        <item name="oplusToolTipsContainerLayoutMarginEnd">44dp</item>
+        <item name="oplusToolTipsContainerLayoutMarginStart">16dp</item>
+        <item name="oplusToolTipsContainerLayoutMarginTop">12dp</item>
+        <item name="oplusToolTipsContentTextColor">@android:color/white</item>
+        <item name="oplusToolTipsMinWidth">0dp</item>
+    </style>
+    <style name="Theme.Dialog.Alert.Share.Follow" parent="@style/Theme.Dialog.Alert.Share">
+        <item name="android:windowAnimationStyle">@style/ChooserActivityFollowWindowAnimTheme</item>
+    </style>
+    <style name="Animation.Task" parent="@style/Animation.Activity">
+        <item name="android:taskOpenEnterAnimation">@anim/oplus_task_open_slide_enter</item>
+        <item name="android:taskOpenExitAnimation">@anim/oplus_task_open_slide_exit</item>
+        <item name="android:taskCloseEnterAnimation">@anim/oplus_task_close_slide_enter</item>
+        <item name="android:taskCloseExitAnimation">@anim/oplus_task_close_slide_exit</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/oplus_task_open_slide_enter</item>
+        <item name="android:taskToFrontExitAnimation">@anim/oplus_task_open_slide_exit</item>
+        <item name="android:taskToBackEnterAnimation">@anim/oplus_task_close_slide_enter</item>
+        <item name="android:taskToBackExitAnimation">@anim/oplus_task_close_slide_exit</item>
+    </style>
+    <style name="Animation.ZoomButtons" parent="@android:style/Animation.ZoomButtons">
+    </style>
+    <style name="ButtonBar" parent="@android:style/ButtonBar">
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">0dp</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:paddingEnd">18dp</item>
+    </style>
+    <style name="ChooserActivityFollowWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/oplus_resolver_dialog_follow_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/oplus_resolver_dialog_follow_exit</item>
+    </style>
+    <style name="ChooserActivityWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/oplus_resolver_dialog_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/oplus_resolver_dialog_exit</item>
+    </style>
+    <style name="DialogTextAppearance" parent="">
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="DialogWindowTitle" parent="@android:style/CarBody2.Dark">
+        <item name="android:textAppearance">@style/TextAppearance.DialogWindowTitle</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="ListViewTextAppearance" parent="">
+    </style>
+    <style name="ListViewTextAppearance.Large" parent="@style/ListViewTextAppearance">
+        <item name="android:textSize">@dimen/oplus_list_text_size_large</item>
+        <item name="android:textColor">@color/oplus_list_text_color_large</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+    <style name="ListViewTextAppearance.Small" parent="@style/ListViewTextAppearance">
+        <item name="android:textSize">@dimen/oplus_list_text_size_small</item>
+        <item name="android:textColor">@color/oplus_list_text_color_small</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+    <style name="OplusAlertDialog" parent="@style/Theme.Dialog.Alert">
+        <item name="android:windowBackground">@color/oplus_transparence</item>
+        <item name="isOplusAlertDialogBuilderTheme">true</item>
+    </style>
+    <style name="OplusAlertDialogBottomButton" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/oplus_dialog_button_text_color_center_selector</item>
+        <item name="android:background">@drawable/oplus_alert_dialog_item_background</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+    </style>
+    <style name="OplusAlertDialogBottomButton.Bottom" parent="@style/OplusAlertDialogBottomButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+    </style>
+    <style name="OplusAlertDialogBottomButton.Bottom.Last" parent="@style/OplusAlertDialogBottomButton.Bottom">
+        <item name="android:textColor">#ffea3447</item>
+    </style>
+    <style name="OplusAlertDialogBottomButtonDivider" parent="">
+        <item name="android:layout_width">2px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">18dp</item>
+        <item name="android:src">@color/oplus_alert_dialog_button_divider_color</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="OplusAlertDialogLayoutStyle" parent="">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/oplus_alert_dialog_inset_bg</item>
+        <item name="portraitMaxHeight">@dimen/oplus_alert_dialog_builder_max_height</item>
+        <item name="landscapeMaxHeight">@dimen/oplus_alert_dialog_builder_max_height</item>
+        <item name="portraitMaxWidth">@dimen/oplus_alert_dialog_builder_max_width</item>
+        <item name="landscapeMaxWidth">@dimen/oplus_alert_dialog_builder_max_width</item>
+    </style>
+    <style name="OplusAlertDialogTextAppearance" parent="">
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="OplusAlertDialogTextAppearance.Title" parent="@style/OplusAlertDialogTextAppearance">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/oplus_alert_dialog_title_text_color</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="PermissionControllerActionBarStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionBar.Solid">
+        <item name="android:background">@color/oplus_permission_controller_background</item>
+        <item name="android:titleTextStyle">@style/PermissionControllerTitleTextStyle</item>
+    </style>
+    <style name="PermissionControllerActionBarTheme" parent="@android:style/ThemeOverlay.Material.ActionBar">
+        <item name="android:colorControlNormal">?android:attr/textColorPrimary</item>
+        <item name="oplusTintControlNormal">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="PermissionControllerActionOverflowButtonStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/oplus_permission_controller_menu_icon_more_normal</item>
+        <item name="oplusTintControlNormal">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="PermissionControllerActionOverflowMenuStyle" parent="@android:style/Widget.Material.Light.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/oplus_permission_controller_popup_list_window_bg</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+        <item name="android:overlapAnchor">false</item>
+    </style>
+    <style name="PermissionControllerTitleTextStyle" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="SegmentedButton" parent="@android:style/PreferenceHeaderList.Material">
+        <item name="android:background">@android:drawable/btn_group_normal_holo_light</item>
+    </style>
+    <style name="TextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/oplus_textview_text_size</item>
+    </style>
+    <style name="TextAppearance.BootMessage" parent="@style/TextAppearance">
+    </style>
+    <style name="TextAppearance.BootMessage.Message" parent="@style/TextAppearance.BootMessage">
+        <item name="android:textSize">@dimen/oplus_bootmessage_message_text_size</item>
+        <item name="android:textColor">@color/oplus_bootmessage_message_text_color</item>
+    </style>
+    <style name="TextAppearance.BootMessage.Percent" parent="@style/TextAppearance.BootMessage">
+        <item name="android:textSize">@dimen/oplus_bootmessage_percent_text_size</item>
+        <item name="android:textColor">@color/oplus_bootmessage_percent_text_color</item>
+    </style>
+    <style name="TextAppearance.Caption" parent="@style/TextAppearance">
+        <item name="android:textColor">@color/oplus_decor_title_light_color</item>
+    </style>
+    <style name="TextAppearance.Caption.Title" parent="@style/TextAppearance.Caption">
+        <item name="android:textColor">@color/oplus_decor_title_light_color</item>
+    </style>
+    <style name="TextAppearance.Caption.Title.Light" parent="@style/TextAppearance.Caption.Title">
+        <item name="android:textColor">@color/oplus_decor_title_light_color</item>
+    </style>
+    <style name="TextAppearance.DialogWindowTitle" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/oplus_dialog_title_text_size</item>
+        <item name="android:textColor">@color/oplus_dialog_title_text_color</item>
+    </style>
+    <style name="TextAppearance.Inverse" parent="@android:style/TextAppearance.Inverse">
+        <item name="android:textSize">@dimen/oplus_textview_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+    <style name="TextAppearance.OplusStartingWindow.Title" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/oplus_toolbar_title_text_color</item>
+    </style>
+    <style name="TextAppearance.Widget.PopupMenu" parent="@android:style/TextAppearance.StatusBar.Ticker">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Widget.PopupMenu.Large" parent="@style/TextAppearance.Widget.PopupMenu">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/oplus_list_text_color_large</item>
+    </style>
+    <style name="TextAppearance.Widget.PopupMenu.Small" parent="@style/TextAppearance.Widget.PopupMenu">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/oplus_list_text_color_small</item>
+    </style>
+    <style name="Theme.ONEPLUS" parent="@style/Theme">
+    </style>
+    <style name="Theme.ONEPLUS.Dialog" parent="@style/Theme.ONEPLUS">
+    </style>
+    <style name="Theme.ONEPLUS.Dialog.Alert" parent="@style/Theme.ONEPLUS.Dialog">
+    </style>
+    <style name="Theme.Panel" parent="@style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Widget" parent="@android:style/Widget">
+    </style>
+    <style name="Widget.Button" parent="@style/Widget">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmallInverse</item>
+        <item name="android:textSize">@dimen/oplus_btn_text_size</item>
+        <item name="android:textColor">@color/oplus_btn_default_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/oplus_btn_default</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:minWidth">@dimen/oplus_btn_small_width_min</item>
+        <item name="android:minHeight">@dimen/oplus_btn_small_height_min</item>
+    </style>
+    <style name="Widget.Button.Borderless" parent="@style/Widget.Button">
+        <item name="android:textSize">@dimen/oplus_dialog_button_text_size</item>
+        <item name="android:textColor">@color/oplus_dialog_button_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@dimen/M8</item>
+        <item name="android:paddingRight">@dimen/M8</item>
+        <item name="android:layout_height">@dimen/oplus_dialog_button_height</item>
+    </style>
+    <style name="Widget.Button.Borderless.Positive" parent="@style/Widget.Button.Borderless">
+        <item name="android:textSize">@dimen/oplus_dialog_button_text_size</item>
+        <item name="android:textColor">@color/oplus_dialog_button_text_color</item>
+        <item name="android:background">@drawable/oplus_button_bottom_single</item>
+        <item name="android:layout_height">@dimen/oplus_dialog_button_height</item>
+    </style>
+    <style name="Widget.Button.Borderless.Small" parent="@style/Widget.Button.Borderless">
+    </style>
+    <style name="Widget.CompoundButton" parent="@style/Widget">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textSize">@dimen/oplus_compoundbutton_text_size</item>
+        <item name="android:textColor">@color/oplus_compoundbutton_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="Widget.CompoundButton.CheckBox" parent="@style/Widget.CompoundButton">
+        <item name="android:button">?android:attr/listChoiceIndicatorMultiple</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:paddingStart">@dimen/M3</item>
+    </style>
+    <style name="Widget.CompoundButton.RadioButton" parent="@style/Widget.CompoundButton">
+        <item name="android:button">?android:attr/listChoiceIndicatorSingle</item>
+    </style>
+    <style name="Widget.OplusCircleProgressBar" parent="@style/Widget">
+        <item name="progressBarType">small</item>
+        <item name="progressBarWidth">@dimen/oplus_loading_view_default_width</item>
+        <item name="progressBarHeight">@dimen/oplus_loading_view_default_height</item>
+        <item name="progressBarBgCircleColor">?attr/oplusTintLightNormal</item>
+        <item name="progressBarColor">?attr/oplusTintControlNormal</item>
+    </style>
+    <style name="Widget.OplusCircleProgressBar.Large" parent="@style/Widget.OplusCircleProgressBar">
+        <item name="progressBarType">large</item>
+        <item name="progressBarWidth">@dimen/oplus_loading_view_large_width</item>
+        <item name="progressBarHeight">@dimen/oplus_loading_view_large_height</item>
+        <item name="progressBarBgCircleColor">?attr/oplusTintLightNormal</item>
+        <item name="progressBarColor">?attr/oplusTintControlNormal</item>
+    </style>
+    <style name="Widget.OplusCircleProgressBar.Medium" parent="@style/Widget.OplusCircleProgressBar">
+        <item name="progressBarType">medium</item>
+        <item name="progressBarWidth">@dimen/oplus_loading_view_medium_width</item>
+        <item name="progressBarHeight">@dimen/oplus_loading_view_medium_height</item>
+        <item name="progressBarBgCircleColor">?attr/oplusTintLightNormal</item>
+        <item name="progressBarColor">?attr/oplusTintControlNormal</item>
+    </style>
+    <style name="Widget.OplusLoadingView" parent="@style/Widget">
+        <item name="OplusLoadingViewColor">@color/OplusLoadingViewMediumColor</item>
+        <item name="OplusLoadingViewHeight">@dimen/oplus_loading_view_default_height</item>
+        <item name="OplusLoadingViewType">small</item>
+        <item name="OplusLoadingViewWidth">@dimen/oplus_loading_view_default_width</item>
+    </style>
+    <style name="Widget.ProgressBar" parent="@style/Widget">
+        <item name="android:maxWidth">48dp</item>
+        <item name="android:maxHeight">48dp</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+    <style name="Widget.ProgressBar.Horizontal.BootMessage" parent="@style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/oplus_progress_horizontal_boot</item>
+    </style>
+    <style name="Widget.ShutdownView" parent="@style/Widget">
+        <item name="oplusLockText">@string/lockscreen_manually_lock_text</item>
+        <item name="oplusManuallyNormalDrawable">@drawable/oplus_global_action_manually_lock_normal</item>
+        <item name="oplusCancelNormalDrawable">@drawable/oplus_global_action_cancel_normal</item>
+        <item name="oplusCancelPressedDrawable">@drawable/oplus_global_action_cancel_pressed</item>
+        <item name="oplusEmergencyNormalDrawable">@drawable/oplus_global_action_emergency_normal</item>
+        <item name="oplusEmergencyPressedDrawable">@drawable/oplus_global_action_emergency_pressed</item>
+        <item name="oplusCancelText">@string/oplus_power_cancel_text</item>
+        <item name="oplusEmergencyText">@android:string/network_switch_metered_toast</item>
+    </style>
+    <style name="Widget.StackView" parent="@style/Widget">
+        <item name="android:^attr-private.colorListDivider">@android:color/holo_blue_light</item>
+        <item name="android:^attr-private.yearListItemActivatedTextAppearance">@android:color/holo_blue_light</item>
+    </style>
+    <style name="oplus_contorl_text_style_subtitle" parent="">
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+</resources>

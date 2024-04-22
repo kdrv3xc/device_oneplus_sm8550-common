@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="400dp" android:width="400dp" android:viewportWidth="400" android:viewportHeight="400">
+    <group android:name="_R_G">
+        <group android:name="_R_G_L_7_G_T_1" android:scaleX="-1" android:scaleY="-1" android:translateX="201.5" android:translateY="201.469">
+            <group android:name="_R_G_L_7_G" android:translateX="9.344" android:translateY="85.531">
+                <path android:name="_R_G_L_7_G_D_0_P_0" android:fillColor="@color/oplus_resolver_empty_color" android:pathData=" M-23.69 -96.31 C-23.69,-96.31 5,-74.75 5,-74.75 C5,-74.75 -23.69,-96.31 -23.69,-96.31c " android:trimPathStart="1" android:trimPathEnd="1" android:trimPathOffset="0" android:fillAlpha="1" android:fillType="nonZero"/>
+                <path android:name="_R_G_L_7_G_D_1_P_0" android:pathData=" M-23.69 -96.31 C-23.69,-96.31 5,-74.75 5,-74.75 C5,-74.75 -23.69,-96.31 -23.69,-96.31c " android:strokeColor="@color/oplus_resolver_empty_color" android:strokeWidth="5" android:trimPathStart="1" android:trimPathEnd="1" android:trimPathOffset="0" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="1"/>
+            </group>
+        </group>
+        <group android:name="_R_G_L_6_G_T_1" android:scaleY="-1" android:translateX="202" android:translateY="201.969">
+            <group android:name="_R_G_L_6_G" android:translateX="9.344" android:translateY="85.531">
+                <path android:name="_R_G_L_6_G_D_0_P_0" android:fillColor="@color/oplus_resolver_empty_color" android:pathData=" M-23.69 -96.31 C-23.69,-96.31 5,-74.75 5,-74.75 C5,-74.75 -23.69,-96.31 -23.69,-96.31c " android:trimPathStart="1" android:trimPathEnd="1" android:trimPathOffset="0" android:fillAlpha="1" android:fillType="nonZero"/>
+                <path android:name="_R_G_L_6_G_D_1_P_0" android:pathData=" M-23.69 -96.31 C-23.69,-96.31 5,-74.75 5,-74.75 C5,-74.75 -23.69,-96.31 -23.69,-96.31c " android:strokeColor="@color/oplus_resolver_empty_color" android:strokeWidth="5" android:trimPathStart="1" android:trimPathEnd="1" android:trimPathOffset="0" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="1"/>
+            </group>
+        </group>
+        <group android:name="_R_G_L_5_G_T_1" android:translateX="201.5" android:translateY="201.969">
+            <group android:name="_R_G_L_5_G" android:translateX="9.344" android:translateY="85.531">
+                <path android:name="_R_G_L_5_G_D_0_P_0" android:fillColor="@color/oplus_resolver_empty_color" android:pathData=" M-23.69 -96.31 C-23.69,-96.31 5,-74.75 5,-74.75 C5,-74.75 -23.69,-96.31 -23.69,-96.31c " android:trimPathStart="1" android:trimPathEnd="1" android:trimPathOffset="0" android:fillAlpha="1" android:fillType="nonZero"/>
+                <path android:name="_R_G_L_5_G_D_1_P_0" android:pathData=" M-23.69 -96.31 C-23.69,-96.31 5,-74.75 5,-74.75 C5,-74.75 -23.69,-96.31 -23.69,-96.31c " android:strokeColor="@color/oplus_resolver_empty_color" android:strokeWidth="5" android:trimPathStart="1" android:trimPathEnd="1" android:trimPathOffset="0" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="1"/>
+            </group>
+        </group>
+        <group android:name="_R_G_L_4_G_T_1" android:scaleX="-1" android:translateX="202.5" android:translateY="201.469">
+            <group android:name="_R_G_L_4_G" android:translateX="9.344" android:translateY="85.531">
+                <path android:name="_R_G_L_4_G_D_0_P_0" android:fillColor="@color/oplus_resolver_empty_color" android:pathData=" M-23.69 -96.31 C-23.69,-96.31 5,-74.75 5,-74.75 C5,-74.75 -23.69,-96.31 -23.69,-96.31c " android:trimPathStart="1" android:trimPathEnd="1" android:trimPathOffset="0" android:fillAlpha="1" android:fillType="nonZero"/>
+                <path android:name="_R_G_L_4_G_D_1_P_0" android:pathData=" M-23.69 -96.31 C-23.69,-96.31 5,-74.75 5,-74.75 C5,-74.75 -23.69,-96.31 -23.69,-96.31c " android:strokeColor="@color/oplus_resolver_empty_color" android:strokeWidth="5" android:trimPathStart="1" android:trimPathEnd="1" android:trimPathOffset="0" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="1"/>
+            </group>
+        </group>
+        <group android:name="_R_G_L_3_G_N_1_T_0" android:pivotX="50" android:pivotY="-23" android:scaleX="0" android:scaleY="0" android:translateX="150" android:translateY="182.679">
+            <group android:name="_R_G_L_3_G" android:pivotY="-50.451" android:scaleX="1" android:scaleY="0" android:translateX="50" android:translateY="14.121">
+                <path android:name="_R_G_L_3_G_D_0_P_0" android:pathData=" M102.45 50.45 C102.45,50.45 85.92,-27.65 83.39,-37.8 C80.86,-47.95 75.14,-50.45 62.79,-50.45 C34.31,-50.45 10.01,-50.45 0,-50.45 C-3.63,-50.45 -50.43,-50.45 -62.79,-50.45 C-75.14,-50.45 -80.86,-47.95 -83.39,-37.8 C-85.93,-27.65 -102.45,50.45 -102.45,50.45 " android:strokeColor="@color/oplus_resolver_empty_color" android:strokeWidth="5" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="1"/>
+            </group>
+        </group>
+        <group android:name="_R_G_L_2_G_N_1_T_0" android:pivotX="50" android:pivotY="-23" android:scaleX="0" android:scaleY="0" android:translateX="150" android:translateY="182.679">
+            <group android:name="_R_G_L_2_G" android:translateX="49.786" android:translateY="19.823">
+                <clip-path android:name="_R_G_L_2_C_0" android:pathData=" M-107.88 -168.24 C-107.88,-168.24 -107.83,-31.76 -107.83,-31.76 C-107.83,-31.76 106.83,-30.76 106.83,-30.76 C106.83,-30.76 104.83,-166.66 104.83,-166.66 C104.83,-166.66 -107.88,-168.24 -107.88,-168.24c ">
+                    <path android:name="_R_G_L_2_G_G_0_D_0_P_0" android:fillColor="@drawable/res_0x0c0800e5_oplus_resolver_no_content_empty__0__0" android:pathData=" M0 -28.24 C0,-28.24 36.82,-28.24 36.82,-28.24 C41.16,-28.24 44.06,-25.56 45.52,-20.22 C45.52,-20.22 54.83,28.24 54.83,28.24 C54.83,28.24 0,28.24 0,28.24 C0,28.24 -54.83,28.24 -54.83,28.24 C-54.83,28.24 -45.52,-20.22 -45.52,-20.22 C-44.06,-25.57 -41.16,-28.24 -36.82,-28.24 C-36.82,-28.24 0,-28.24 0,-28.24 C0,-28.24 0,-28.24 0,-28.24c " android:fillAlpha="1" android:fillType="nonZero"/>
+                </clip-path>
+            </group>
+        </group>
+        <group android:name="_R_G_L_1_G_N_1_T_0" android:pivotX="50" android:pivotY="-23" android:scaleX="0" android:scaleY="0" android:translateX="150" android:translateY="182.679">
+            <group android:name="_R_G_L_1_G" android:translateX="50" android:translateY="0">
+                <path android:name="_R_G_L_1_G_D_0_P_0" android:pathData=" M0 -11.42 C0,-11.42 22.44,-11.42 22.44,-11.42 C30.21,-11.42 33.88,-16.94 33.88,-21.32 C33.88,-21.32 33.88,-35.05 33.88,-35.05 C33.88,-35.05 102.49,-35.05 102.49,-35.05 C102.49,-35.05 102.49,17.75 102.49,17.75 C102.49,28.19 93.22,35.23 83.21,35.23 C83.21,35.23 0,35.23 0,35.23 C0,35.23 0,35.05 0,35.05 C0,35.05 -83.21,35.05 -83.21,35.05 C-93.22,35.05 -102.49,28.02 -102.49,17.58 C-102.49,17.58 -102.49,-35.23 -102.49,-35.23 C-102.49,-35.23 -33.88,-35.23 -33.88,-35.23 C-33.88,-35.23 -33.88,-21.49 -33.88,-21.49 C-33.88,-17.12 -30.21,-11.6 -22.44,-11.6 C-22.44,-11.6 0,-11.6 0,-11.6 C0,-11.6 0,-11.42 0,-11.42 C0,-11.42 0,-11.42 0,-11.42c " android:strokeColor="@color/oplus_resolver_empty_color" android:strokeWidth="5" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="1"/>
+            </group>
+        </group>
+        <group android:name="_R_G_L_0_G_N_3_N_1_T_0" android:pivotX="50" android:pivotY="-23" android:scaleX="0" android:scaleY="0" android:translateX="150" android:translateY="182.679">
+            <group android:name="_R_G_L_0_G_N_3_T_0" android:translateX="50" android:translateY="0">
+                <group android:name="_R_G_L_0_G" android:translateX="0.557" android:translateY="14.9">
+                    <path android:name="_R_G_L_0_G_D_0_P_0" android:pathData=" M-17.88 0 C-17.88,0 17.88,0 17.88,0 " android:strokeColor="@color/oplus_resolver_empty_color" android:strokeWidth="5" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="1"/>
+                </group>
+            </group>
+        </group>
+    </group>
+    <group android:name="time_group"/>
+</vector>

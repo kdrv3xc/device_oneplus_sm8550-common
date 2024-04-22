@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/oplus_resolver_icon_placeholder_color"/>
+    <corners android:radius="@dimen/oplus_resolver_TD10"/>
+    <size android:height="@dimen/oplus_resolve_dialog_oshare_icon_width_and_height" android:width="@dimen/oplus_resolve_dialog_oshare_icon_width_and_height"/>
+</shape>

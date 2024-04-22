@@ -1,7 +1,7 @@
 java_library {
     name: "oplus-fwk",
     installable: true,
-
+	manifest: "AndroidManifest.xml",
     srcs: [
         "src/**/*.aidl",
         "src/**/*.java",

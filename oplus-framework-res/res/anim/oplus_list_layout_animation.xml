@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android" android:interpolator="@android:anim/accelerate_interpolator" android:delay="18%" android:animation="@anim/oplus_list_item_animation" android:animationOrder="normal"/>

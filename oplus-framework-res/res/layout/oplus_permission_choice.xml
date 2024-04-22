@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/sec_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:id="@+id/scrollView" android:paddingLeft="0dp" android:paddingTop="2dp" android:paddingRight="0dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="ifContentScrolls">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/permission_warn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/oplus_permission_warn"/>
+            <TextView android:id="@+id/permission_prompt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" style="?android:attr/textAppearanceMedium"/>
+            <TextView android:id="@+id/permission_setting_prompt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" style="?android:attr/textAppearanceSmall"/>
+            <LinearLayout android:id="@+id/save_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+                <CheckBox android:id="@+id/remember_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:minHeight="31dp" android:text="@string/oplus_permission_choice_label" style="?android:attr/textAppearanceSmall"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

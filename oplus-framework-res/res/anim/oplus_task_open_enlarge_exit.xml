@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:shareInterpolator="false" android:zAdjustment="normal">
+    <scale android:interpolator="@interpolator/oplus_task_open_enlarge_exit_scale_interpolator" android:duration="430" android:pivotX="50%" android:pivotY="50%" android:fillBefore="false" android:fillAfter="true" android:fromXScale="100%" android:toXScale="109.9976%" android:fromYScale="100%" android:toYScale="109.9976%" android:fillEnabled="true"/>
+</set>

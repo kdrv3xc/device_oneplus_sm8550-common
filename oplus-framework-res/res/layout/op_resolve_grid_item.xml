@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="?android:attr/selectableItemBackgroundBorderless" android:paddingLeft="12dp" android:paddingTop="24dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:focusable="true" android:layout_width="90dp" android:layout_height="wrap_content" android:minHeight="100dp">
+    <ImageView android:id="@android:id/icon" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="fitCenter"/>
+    <Space android:layout_width="1dp" android:layout_height="4dp"/>
+    <TextView android:textSize="12sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:gravity="top|center_horizontal" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:fontFamily="sans-serif-book"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:gravity="top|center_horizontal" android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+</LinearLayout>

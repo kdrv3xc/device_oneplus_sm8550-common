@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@+id/resolver_item_layout" android:layout_width="@dimen/oplus_resolver_osharing_grid_item_width" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.oplus.widget.OplusFadeBackImageView android:id="@+id/resolver_item_icon" android:layout_width="@dimen/resolve_dialog_icon_width" android:layout_height="@dimen/resolve_dialog_icon_height" android:layout_marginTop="@dimen/oplus_resolver_TD16" android:scaleType="fitXY" android:importantForAccessibility="no"/>
+            <RelativeLayout android:id="@+id/resolver_oshare_dot_group" android:visibility="gone" android:layout_width="@dimen/oplus_resolver_TD14" android:layout_height="@dimen/oplus_resolver_TD14" android:layout_alignTop="@+id/resolver_item_icon" android:layout_alignRight="@+id/resolver_item_icon">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/oplus_resolver_red_dot"/>
+                <TextView android:textSize="@dimen/oplus_resolver_TD10" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/resolver_oshare_dot_tv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textColor="@color/resolve_dialog_item_textcolor" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oplus_resolver_TD02" android:lines="1" android:layout_marginStart="@dimen/oplus_resolver_TD04" android:layout_marginEnd="@dimen/oplus_resolver_TD04"/>
+        <TextView android:textColor="@color/resolve_dialog_item_textcolor" android:ellipsize="end" android:gravity="top|center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/resolver_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oplus_resolver_TD02" android:lines="2" android:drawablePadding="0dp" android:layout_marginStart="@dimen/oplus_resolver_TD04" android:layout_marginEnd="@dimen/oplus_resolver_TD04"/>
+    </LinearLayout>
+</LinearLayout>

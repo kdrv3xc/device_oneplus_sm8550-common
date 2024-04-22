@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:name="vector" android:height="30dp" android:width="22dp" android:viewportWidth="66" android:viewportHeight="90">
+    <path android:name="path" android:fillColor="@color/oplus_panel_drag_color" android:pathData="M 2 30 L 64 30 C 65.1 30 66 30.9 66 32 L 66 34 C 66 35.1 65.1 36 64 36 L 2 36 C 0.9 36 0 35.1 0 34 L 0 32 C 0 30.9 0.9 30 2 30 Z" android:strokeWidth="1"/>
+</vector>

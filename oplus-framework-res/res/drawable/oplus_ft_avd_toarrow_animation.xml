@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/oplus_ft_avd_tooverflow">
+    <target android:name="path_arrow" android:animation="@anim/oplus_ft_avd_to_arrow_anim_in"/>
+    <target android:name="path_more" android:animation="@anim/oplus_ft_avd_to_arrow_anim_out"/>
+</animated-vector>

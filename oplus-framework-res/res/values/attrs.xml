@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="oplusLockText" format="string">
+    </attr>
+    <attr name="oplusManuallyNormalDrawable" format="reference">
+    </attr>
+    <attr name="oplusOShareButtonTextColor" format="reference|color">
+    </attr>
+    <attr name="oplusOShareButtonBackground" format="reference|color">
+    </attr>
+    <attr name="isOplusTheme" format="boolean">
+    </attr>
+    <attr name="oplusTintControlNormal" format="reference|color">
+    </attr>
+    <attr name="oplusTintLightNormal" format="reference|color">
+    </attr>
+    <attr name="C05" format="reference|color">
+    </attr>
+    <attr name="C20" format="reference|color">
+    </attr>
+    <attr name="C18" format="reference|color">
+    </attr>
+    <attr name="rfRadius" format="dimension">
+    </attr>
+    <attr name="C24" format="reference|color">
+    </attr>
+    <attr name="alertCornerRadius" format="dimension">
+    </attr>
+    <attr name="alertShadowDrawable" format="reference">
+    </attr>
+    <attr name="alertBackgroundDrawable" format="reference">
+    </attr>
+    <attr name="oplusShutdownViewStyle" format="reference">
+    </attr>
+    <attr name="oplusCancelNormalDrawable" format="reference">
+    </attr>
+    <attr name="oplusCancelPressedDrawable" format="reference">
+    </attr>
+    <attr name="oplusEmergencyNormalDrawable" format="reference">
+    </attr>
+    <attr name="oplusEmergencyPressedDrawable" format="reference">
+    </attr>
+    <attr name="oplusCancelText" format="string">
+    </attr>
+    <attr name="oplusEmergencyText" format="string">
+    </attr>
+    <attr name="oplusShutdownHint" format="string">
+    </attr>
+    <attr name="oplusRebootHint" format="string">
+    </attr>
+    <attr name="OplusCircleProgressBarStyle" format="reference">
+    </attr>
+    <attr name="progressBarType">
+        <enum name="large" value="2" />
+        <enum name="medium" value="1" />
+        <enum name="small" value="0" />
+    </attr>
+    <attr name="progressBarWidth" format="dimension">
+    </attr>
+    <attr name="progressBarHeight" format="dimension">
+    </attr>
+    <attr name="oplusRegularColor" format="reference|color">
+    </attr>
+    <attr name="oplusErrorColor" format="reference|color">
+    </attr>
+    <attr name="oplusSuccessColor" format="reference|color">
+    </attr>
+    <attr name="oplusPathColor" format="reference|color">
+    </attr>
+    <attr name="oplusOuterCircleMaxAlpha" format="float">
+    </attr>
+    <attr name="progressBarBgCircleColor" format="reference|color">
+    </attr>
+    <attr name="progressBarColor" format="reference|color">
+    </attr>
+    <attr name="progress" format="integer">
+    </attr>
+    <attr name="max" format="integer">
+    </attr>
+    <attr name="dotColor" format="color">
+    </attr>
+    <attr name="traceDotColor" format="color">
+    </attr>
+    <attr name="dotSize" format="dimension">
+    </attr>
+    <attr name="dotSpacing" format="dimension">
+    </attr>
+    <attr name="dotStrokeWidth" format="dimension">
+    </attr>
+    <attr name="dotCornerRadius" format="dimension">
+    </attr>
+    <attr name="dotClickable" format="boolean">
+    </attr>
+    <attr name="dotIsStrokeStyle" format="boolean">
+    </attr>
+    <attr name="oplusToastLayout" format="reference">
+    </attr>
+    <attr name="OplusLoadingViewStyle" format="reference">
+    </attr>
+    <attr name="portraitMaxHeight" format="dimension">
+    </attr>
+    <attr name="landscapeMaxHeight" format="dimension">
+    </attr>
+    <attr name="portraitMaxWidth" format="dimension">
+    </attr>
+    <attr name="landscapeMaxWidth" format="dimension">
+    </attr>
+    <attr name="containerShadowColor" format="color">
+    </attr>
+    <attr name="containerShadowRadius" format="dimension">
+    </attr>
+    <attr name="containerDeltaLength" format="dimension">
+    </attr>
+    <attr name="containerCornerRadius" format="dimension">
+    </attr>
+    <attr name="deltaX" format="dimension">
+    </attr>
+    <attr name="deltaY" format="dimension">
+    </attr>
+    <attr name="enable" format="boolean">
+    </attr>
+    <attr name="isOplusAlertDialogBuilderTheme" format="boolean">
+    </attr>
+    <attr name="oplusToolTipsStyle" format="reference">
+    </attr>
+    <attr name="C01" format="reference|color">
+    </attr>
+    <attr name="C02" format="reference|color">
+    </attr>
+    <attr name="C03" format="reference|color">
+    </attr>
+    <attr name="C04" format="reference|color">
+    </attr>
+    <attr name="C06" format="reference|color">
+    </attr>
+    <attr name="C07" format="reference|color">
+    </attr>
+    <attr name="C08" format="reference|color">
+    </attr>
+    <attr name="C09" format="reference|color">
+    </attr>
+    <attr name="C10" format="reference|color">
+    </attr>
+    <attr name="C11" format="reference|color">
+    </attr>
+    <attr name="C12" format="reference|color">
+    </attr>
+    <attr name="C13" format="reference|color">
+    </attr>
+    <attr name="C14" format="reference|color">
+    </attr>
+    <attr name="C15" format="reference|color">
+    </attr>
+    <attr name="C16" format="reference|color">
+    </attr>
+    <attr name="C17" format="reference|color">
+    </attr>
+    <attr name="C19" format="reference|color">
+    </attr>
+    <attr name="C21" format="reference|color">
+    </attr>
+    <attr name="C22" format="reference|color">
+    </attr>
+    <attr name="C23" format="reference|color">
+    </attr>
+    <attr name="C25" format="reference|color">
+    </attr>
+    <attr name="C26" format="reference|color">
+    </attr>
+    <attr name="C27" format="reference|color">
+    </attr>
+    <attr name="C28" format="reference|color">
+    </attr>
+    <attr name="ImgViewBottomPadding" format="dimension">
+    </attr>
+    <attr name="ImgViewDrawableRes" format="reference|color">
+    </attr>
+    <attr name="ImgViewLeftPadding" format="dimension">
+    </attr>
+    <attr name="ImgViewRightPadding" format="dimension">
+    </attr>
+    <attr name="ImgViewTopPadding" format="dimension">
+    </attr>
+    <attr name="OplusCircleProgressBarLargeStyle" format="reference">
+    </attr>
+    <attr name="OplusCircleProgressBarMediumStyle" format="reference">
+    </attr>
+    <attr name="OplusLoadingViewColor" format="reference|color">
+    </attr>
+    <attr name="OplusLoadingViewHeight" format="dimension">
+    </attr>
+    <attr name="OplusLoadingViewType">
+        <enum name="large" value="2" />
+        <enum name="medium" value="1" />
+        <enum name="small" value="0" />
+    </attr>
+    <attr name="OplusLoadingViewWidth" format="dimension">
+    </attr>
+    <attr name="SlidePieceBkgRes" format="reference|color">
+    </attr>
+    <attr name="TextOfTextView" format="string">
+    </attr>
+    <attr name="TextSizeOfTextView" format="integer">
+    </attr>
+    <attr name="TextViewBottomPadding" format="dimension">
+    </attr>
+    <attr name="TextViewColor" format="color">
+    </attr>
+    <attr name="TextViewLeftPadding" format="dimension">
+    </attr>
+    <attr name="TextViewRightPadding" format="dimension">
+    </attr>
+    <attr name="TextViewShine" format="boolean">
+    </attr>
+    <attr name="TextViewTopPadding" format="dimension">
+    </attr>
+    <attr name="apdupattern_mask" format="string">
+    </attr>
+    <attr name="centerOffset" format="float">
+    </attr>
+    <attr name="customContentLayout" format="reference">
+    </attr>
+    <attr name="description" format="reference">
+    </attr>
+    <attr name="detailColumn" format="string">
+    </attr>
+    <attr name="edgeWidth" format="dimension">
+    </attr>
+    <attr name="forceVertical" format="boolean">
+    </attr>
+    <attr name="frameMode" format="integer">
+        <enum name="frame_mode_3" value="0" />
+        <enum name="frame_mode_5" value="1" />
+        <enum name="frame_mode_7" value="2" />
+    </attr>
+    <attr name="frameRadio" format="float">
+    </attr>
+    <attr name="fromRollDegrees" format="float|fraction">
+    </attr>
+    <attr name="fromYRoll" format="float|fraction">
+    </attr>
+    <attr name="icon" format="reference">
+    </attr>
+    <attr name="listenEdges">
+        <flag name="left" value="0x1" />
+        <flag name="right" value="0x2" />
+    </attr>
+    <attr name="lockAuthor" format="reference">
+    </attr>
+    <attr name="lockDescription" format="reference">
+    </attr>
+    <attr name="lockThumbleft" format="reference">
+    </attr>
+    <attr name="lockThumbnail" format="reference">
+    </attr>
+    <attr name="lockThumbright" format="reference">
+    </attr>
+    <attr name="mimeType" format="string">
+    </attr>
+    <attr name="operable" format="boolean">
+    </attr>
+    <attr name="oplusAddMaskView" format="boolean">
+    </attr>
+    <attr name="oplusButtonBigStyle" format="reference">
+    </attr>
+    <attr name="oplusButtonColorfulDefaultStyle" format="reference">
+    </attr>
+    <attr name="oplusButtonColorfulStyle" format="reference">
+    </attr>
+    <attr name="oplusCustomLayoutWidth" format="boolean">
+    </attr>
+    <attr name="oplusLargeButtonLightStyle" format="reference">
+    </attr>
+    <attr name="oplusLockPatternViewLauncherStyle" format="reference">
+    </attr>
+    <attr name="oplusLockPatternViewStyle" format="reference">
+    </attr>
+    <attr name="oplusTextAppearanceBootMessage" format="reference">
+    </attr>
+    <attr name="oplusTextAppearanceBootPercent" format="reference">
+    </attr>
+    <attr name="oplusTintControlDisabled" format="reference|color">
+    </attr>
+    <attr name="oplusTintControlPressed" format="reference|color">
+    </attr>
+    <attr name="oplusTintLightPressed" format="reference|color">
+    </attr>
+    <attr name="oplusToastOffsetY" format="reference|dimension">
+    </attr>
+    <attr name="oplusToastStyle" format="reference">
+    </attr>
+    <attr name="oplusToolTipsArrowDownDrawable" format="reference">
+    </attr>
+    <attr name="oplusToolTipsArrowLeftDrawable" format="reference">
+    </attr>
+    <attr name="oplusToolTipsArrowOverflowOffset" format="dimension">
+    </attr>
+    <attr name="oplusToolTipsArrowRightDrawable" format="reference">
+    </attr>
+    <attr name="oplusToolTipsArrowUpDrawable" format="reference">
+    </attr>
+    <attr name="oplusToolTipsBackground" format="reference|color">
+    </attr>
+    <attr name="oplusToolTipsContainerLayoutGravity">
+        <flag name="bottom" value="0x50" />
+        <flag name="center" value="0x11" />
+        <flag name="center_horizontal" value="0x1" />
+        <flag name="center_vertical" value="0x10" />
+        <flag name="clip_horizontal" value="0x8" />
+        <flag name="clip_vertical" value="0x80" />
+        <flag name="end" value="0x800005" />
+        <flag name="fill" value="0x77" />
+        <flag name="fill_horizontal" value="0x7" />
+        <flag name="fill_vertical" value="0x70" />
+        <flag name="left" value="0x3" />
+        <flag name="right" value="0x5" />
+        <flag name="start" value="0x800003" />
+        <flag name="top" value="0x30" />
+    </attr>
+    <attr name="oplusToolTipsContainerLayoutMarginBottom" format="dimension">
+    </attr>
+    <attr name="oplusToolTipsContainerLayoutMarginEnd" format="dimension">
+    </attr>
+    <attr name="oplusToolTipsContainerLayoutMarginStart" format="dimension">
+    </attr>
+    <attr name="oplusToolTipsContainerLayoutMarginTop" format="dimension">
+    </attr>
+    <attr name="oplusToolTipsContentTextColor" format="color">
+    </attr>
+    <attr name="oplusToolTipsMinWidth" format="dimension">
+    </attr>
+    <attr name="oplusWarningPointMode">
+        <enum name="noPoint" value="0" />
+        <enum name="pointWithNum" value="2" />
+        <enum name="ponitOnly" value="1" />
+    </attr>
+    <attr name="oplusWarningPointNum" format="integer">
+    </attr>
+    <attr name="oplusWindowActionBarAndStatusBarOverlay" format="boolean">
+    </attr>
+    <attr name="oplusWindowContentOverlay" format="reference">
+    </attr>
+    <attr name="reference_data" format="string">
+    </attr>
+    <attr name="remoteViews" format="reference">
+    </attr>
+    <attr name="sceneModelType" format="integer">
+        <enum name="model_default" value="0" />
+        <enum name="model_music" value="1" />
+    </attr>
+    <attr name="shaowHeight" format="float">
+    </attr>
+    <attr name="singleFrame" format="boolean">
+    </attr>
+    <attr name="summaryColumn" format="string">
+    </attr>
+    <attr name="textPositionY1" format="integer">
+    </attr>
+    <attr name="textPositionY2" format="integer">
+    </attr>
+    <attr name="textPositionY3" format="integer">
+    </attr>
+    <attr name="textSize" format="dimension">
+    </attr>
+    <attr name="themeType" format="integer">
+        <enum name="black" value="1" />
+        <enum name="white" value="0" />
+    </attr>
+    <attr name="toRollDegrees" format="float|fraction">
+    </attr>
+    <attr name="toYRoll" format="float|fraction">
+    </attr>
+    <attr name="translucentMode" format="boolean">
+    </attr>
+    <attr name="verNegButVerPaddingOffset" format="reference|dimension">
+    </attr>
+    <attr name="windowEnterAnimation" format="reference">
+    </attr>
+    <attr name="windowExitAnimation" format="reference">
+    </attr>
+    <attr name="zoomEnable" format="boolean">
+    </attr>
+</resources>

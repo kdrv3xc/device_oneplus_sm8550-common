@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oplus.widget.OplusMaxLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@android:id/resolver_empty_state_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/OplusAlertDialogLayoutStyle">
+    <LinearLayout android:orientation="vertical" android:id="0x102055b" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@android:id/zoom_fit_page" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="12dp">
+            <ImageView android:layout_gravity="top" android:id="@android:id/icon" android:paddingTop="0dp" android:paddingRight="0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:ellipsize="end" android:gravity="center" android:id="@android:id/assertive" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="22dp" android:maxLines="5" style="@style/OplusAlertDialogTextAppearance.Title"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@android:id/date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <ScrollView android:scrollbarThumbVertical="@drawable/coui_scrollbar_handle_vertical" android:scrollbarStyle="insideOverlay" android:id="@android:id/stateAlwaysVisible" android:paddingTop="24dp" android:paddingBottom="10dp" android:fadingEdgeLength="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="ifContentScrolls" android:requiresFadingEdge="vertical" android:nestedScrollingEnabled="true">
+            <TextView android:textSize="12sp" android:textColor="@color/oplus_bottom_alert_dialog_msg_text_color" android:gravity="center_horizontal" android:id="@android:id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" android:paddingStart="24dp" android:paddingEnd="24dp"/>
+        </ScrollView>
+        <ImageView android:id="@+id/oplus_alert_dialog_list_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2px" android:layout_marginLeft="24dp" android:layout_marginTop="18dp" android:layout_marginRight="24dp" android:layout_marginBottom="10dp" android:src="@color/oplus_alert_dialog_button_divider_color"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/listPanel" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <FrameLayout android:id="@android:id/eight" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <FrameLayout android:gravity="center" android:id="@android:id/custom" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/iv_button_content_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2px" android:layout_marginLeft="24dp" android:layout_marginTop="18dp" android:layout_marginRight="24dp" android:layout_marginBottom="10dp" android:src="@color/oplus_alert_dialog_button_divider_color"/>
+    <include layout="@layout/oplus_bottom_alert_dialog_button_panel"/>
+</com.oplus.widget.OplusMaxLinearLayout>

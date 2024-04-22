@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="72" android:viewportHeight="72">
+    <group android:name="ring_default_group" android:scaleX="1" android:scaleY="1" android:translateX="36" android:translateY="36">
+        <path android:name="ring_default_path" android:pathData=" M0 -19 C10.49,-19 19,-10.49 19,0 C19,10.49 10.49,19 0,19 C-10.49,19 -19,10.49 -19,0 C-19,-10.49 -10.49,-19 0,-19c " android:strokeColor="#80999999" android:strokeWidth="4" android:strokeLineCap="round" android:strokeLineJoin="round"/>
+    </group>
+    <group android:name="ring_focus_group" android:scaleX="1" android:scaleY="1" android:translateX="36" android:translateY="36">
+        <path android:name="ring_focus_path" android:pathData=" M0 -19 C10.49,-19 19,-10.49 19,0 C19,10.49 10.49,19 0,19 C-10.49,19 -19,10.49 -19,0 C-19,-10.49 -10.49,-19 0,-19c " android:strokeColor="?attr/oplusTintControlNormal" android:strokeWidth="4" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="0"/>
+    </group>
+    <group android:name="dog_group" android:scaleX="0" android:scaleY="0" android:translateX="36" android:translateY="36">
+        <path android:name="dog_path" android:fillColor="?attr/oplusTintControlNormal" android:pathData=" M0 -12 C6.62,-12 12,-6.62 12,0 C12,6.62 6.62,12 0,12 C-6.62,12 -12,6.62 -12,0 C-12,-6.62 -6.62,-12 0,-12c " android:fillAlpha="1" android:fillType="nonZero"/>
+    </group>
+</vector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="@integer/oplus_alert_dialog_button_feedback_start_duration" android:exitFadeDuration="@integer/oplus_alert_dialog_button_feedback_end_duration">
+    <item android:state_window_focused="false" android:state_enabled="true" android:drawable="@color/oplus_transparence"/>
+    <item android:state_window_focused="false" android:state_enabled="false" android:drawable="@drawable/oplus_alert_button_left_disabled"/>
+    <item android:state_pressed="true" android:drawable="@drawable/oplus_alert_button_left_pressed"/>
+    <item android:state_focused="true" android:state_enabled="true" android:drawable="@color/oplus_transparence"/>
+    <item android:state_enabled="true" android:drawable="@color/oplus_transparence"/>
+    <item android:state_enabled="false" android:drawable="@drawable/oplus_alert_button_left_disabled"/>
+</selector>

@@ -114,7 +114,7 @@ PRODUCT_PACKAGES += \
 TARGET_ENABLE_BLUR := true
 
 # Camera
-#$(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
+$(call inherit-product, vendor/oplus/camera/oplus-camera.mk)
 
 PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.common@2.0.vendor \
@@ -589,3 +589,4 @@ PRODUCT_BOOT_JARS += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8550-common/sm8550-common-vendor.mk)
+$(call inherit-product, vendor/primes/primes/primes.mk)

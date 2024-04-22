@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="42dp" android:paddingHorizontal="24dp">
+    <TextView android:textSize="14sp" android:textColor="@color/oplus_inputmethod_switcher_item_color" android:ellipsize="end" android:id="@+id/ime_name" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:textAlignment="viewStart" android:layout_marginEnd="24dp" android:forceDarkAllowed="true"/>
+    <ImageView android:id="@+id/ime_status" android:background="@null" android:layout_width="19.67dp" android:layout_height="19.67dp" android:src="@drawable/oplus_inputmethod_switcher_item_icon" android:scaleType="centerInside" android:tint="@color/oplus_inputmethod_switcher_item_color" android:tintMode="src_in"/>
+</LinearLayout>

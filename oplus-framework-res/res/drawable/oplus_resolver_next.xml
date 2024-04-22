@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="14dp" android:width="14dp" android:viewportWidth="42" android:viewportHeight="42">
+    <group android:translateX="13" android:translateY="7">
+        <path android:fillColor="?attr/oplusOShareButtonTextColor" android:pathData="M14.9,16.8l-9.5,9.7c-0.8,0.8-2,0.8-2.7,0s-0.8-2,0-2.8l8.8-8.9c0.4-0.4,0.4-1,0-1.4l-8.9-9 c-0.8-0.8-0.8-2,0-2.8s2-0.8,2.7,0l9.5,9.7c0,0,0,0,0,0C16.4,12.8,16.4,15.3,14.9,16.8z" android:fillType="evenOdd"/>
+    </group>
+</vector>

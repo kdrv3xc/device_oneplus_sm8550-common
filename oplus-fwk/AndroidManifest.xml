@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" android:versionCode="80" android:versionName="8.0" android:sharedUserLabel="@string/brand_system_label" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" coreApp="true" package="oplus" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-sdk android:minSdkVersion="34" android:targetSdkVersion="34"/>
+    <eat-comment/>
+    <protected-broadcast android:name="android.intent.action.SCREEN_OFF"/>
+    <protected-broadcast android:name="android.intent.action.SCREEN_ON"/>
+    <protected-broadcast android:name="android.intent.action.USER_PRESENT"/>
+    <protected-broadcast android:name="android.intent.action.TIME_TICK"/>
+    <protected-broadcast android:name="android.intent.action.TIMEZONE_CHANGED"/>
+    <protected-broadcast android:name="android.intent.action.BOOT_COMPLETED"/>
+    <protected-broadcast android:name="android.intent.action.PACKAGE_INSTALL"/>
+    <protected-broadcast android:name="android.intent.action.PACKAGE_ADDED"/>
+    <protected-broadcast android:name="android.intent.action.PACKAGE_REPLACED"/>
+    <protected-broadcast android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+    <protected-broadcast android:name="android.intent.action.PACKAGE_REMOVED"/>
+    <protected-broadcast android:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+    <protected-broadcast android:name="android.intent.action.PACKAGE_CHANGED"/>
+    <protected-broadcast android:name="android.intent.action.PACKAGE_RESTARTED"/>
+    <protected-broadcast android:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
+    <protected-broadcast android:name="android.intent.action.PACKAGE_FIRST_LAUNCH"/>
+    <protected-broadcast android:name="android.intent.action.PACKAGE_NEEDS_VERIFICATION"/>
+    <protected-broadcast android:name="android.intent.action.UID_REMOVED"/>
+    <protected-broadcast android:name="android.intent.action.CONFIGURATION_CHANGED"/>
+    <protected-broadcast android:name="android.intent.action.LOCALE_CHANGED"/>
+    <protected-broadcast android:name="android.intent.action.BATTERY_CHANGED"/>
+    <protected-broadcast android:name="android.intent.action.BATTERY_LOW"/>
+    <protected-broadcast android:name="android.intent.action.BATTERY_OKAY"/>
+    <protected-broadcast android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+    <protected-broadcast android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+    <protected-broadcast android:name="android.intent.action.ACTION_SHUTDOWN"/>
+    <protected-broadcast android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+    <protected-broadcast android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+    <protected-broadcast android:name="android.intent.action.DEVICE_STORAGE_FULL"/>
+    <protected-broadcast android:name="android.intent.action.DEVICE_STORAGE_NOT_FULL"/>
+    <protected-broadcast android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+    <protected-broadcast android:name="android.intent.action.REBOOT"/>
+    <protected-broadcast android:name="android.intent.action.DOCK_EVENT"/>
+    <protected-broadcast android:name="android.intent.action.MASTER_CLEAR_NOTIFICATION"/>
+    <protected-broadcast android:name="android.intent.action.USER_ADDED"/>
+    <protected-broadcast android:name="android.intent.action.USER_REMOVED"/>
+    <protected-broadcast android:name="android.intent.action.USER_SWITCHED"/>
+    <protected-broadcast android:name="android.app.action.ENTER_CAR_MODE"/>
+    <protected-broadcast android:name="android.app.action.EXIT_CAR_MODE"/>
+    <protected-broadcast android:name="android.app.action.ENTER_DESK_MODE"/>
+    <protected-broadcast android:name="android.app.action.EXIT_DESK_MODE"/>
+    <protected-broadcast android:name="android.backup.intent.RUN"/>
+    <protected-broadcast android:name="android.backup.intent.CLEAR"/>
+    <protected-broadcast android:name="android.backup.intent.INIT"/>
+    <protected-broadcast android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+    <protected-broadcast android:name="android.bluetooth.adapter.action.SCAN_MODE_CHANGED"/>
+    <protected-broadcast android:name="android.bluetooth.adapter.action.DISCOVERY_STARTED"/>
+    <protected-broadcast android:name="android.bluetooth.adapter.action.DISCOVERY_FINISHED"/>
+    <protected-broadcast android:name="android.bluetooth.adapter.action.LOCAL_NAME_CHANGED"/>
+    <protected-broadcast android:name="android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"/>
+    <protected-broadcast android:name="android.bluetooth.device.action.FOUND"/>
+    <protected-broadcast android:name="android.bluetooth.device.action.DISAPPEARED"/>
+    <protected-broadcast android:name="android.bluetooth.device.action.CLASS_CHANGED"/>
+    <protected-broadcast android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
+    <protected-broadcast android:name="android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"/>
+    <protected-broadcast android:name="android.bluetooth.device.action.ACL_DISCONNECTED"/>
+    <protected-broadcast android:name="android.bluetooth.device.action.NAME_CHANGED"/>
+    <protected-broadcast android:name="android.bluetooth.device.action.BOND_STATE_CHANGED"/>
+    <protected-broadcast android:name="android.bluetooth.device.action.NAME_FAILED"/>
+    <protected-broadcast android:name="android.bluetooth.device.action.PAIRING_REQUEST"/>
+    <protected-broadcast android:name="android.bluetooth.device.action.PAIRING_CANCEL"/>
+    <protected-broadcast android:name="android.intent.action.RESTORE_DEFA_SETTINGS"/>
+    <protected-broadcast android:name="oplus.intent.action.ROM_APP_CHANGE"/>
+    <protected-broadcast android:name="oplus.intent.action.APP_SWITCH"/>
+    <protected-broadcast android:name="android.intent.action.OPLUS_GUARD_ELF_MONITOR"/>
+    <protected-broadcast android:name="android.intent.action.OPLUS_GUARD_ELF_COUNT_RESTRICT_LIST"/>
+    <protected-broadcast android:name="android.intent.action.OPLUS_GUARD_ELF_MONITOR_FORCESTOP"/>
+    <protected-broadcast android:name="android.intent.action.OPLUS_GUARD_ELF_SCREENON_WAKELOCK"/>
+    <protected-broadcast android:name="android.intent.action.OPPO_APP_FROZEN_DCS_UPLOADE"/>
+    <protected-broadcast android:name="oplus.intent.action.OPLUS_OTA_UPDATE_SUCCESSED"/>
+    <protected-broadcast android:name="oplus.intent.action.OPLUS_OTA_UPDATE_FAILED"/>
+    <protected-broadcast android:name="oplus.intent.action.OPLUS_SAU_UPDATE_SUCCESSED"/>
+    <protected-broadcast android:name="oplus.intent.action.OPLUS_SAU_UPDATE_FAILED"/>
+    <protected-broadcast android:name="oplus.intent.action.OPLUS_RECOVER_UPDATE_SUCCESSED"/>
+    <protected-broadcast android:name="oplus.intent.action.OPLUS_RECOVER_UPDATE_FAILED"/>
+    <protected-broadcast android:name="oplus.intent.action.PACKAGE_ADDED"/>
+    <protected-broadcast android:name="oplus.intent.action.PACKAGE_REMOVED"/>
+    <protected-broadcast android:name="oplus.intent.action.MULTI_APP_PACKAGE_ADDED"/>
+    <protected-broadcast android:name="oplus.intent.action.MULTI_APP_PACKAGE_REMOVED"/>
+    <protected-broadcast android:name="com.android.server.inputmethod.InputMethodManagerService.INPUT_METHOD_SHARE_STATE"/>
+    <protected-broadcast android:name="oplus.intent.action.verify_code_copied"/>
+    <protected-broadcast android:name="diagandroid.app.ApplicationState"/>
+    <protected-broadcast android:name="com.payjoy.server.am.PAYJOY"/>
+    <protected-broadcast android:name="com.payjoy.server.PAYJOY_PACKAGE_ADDED"/>
+    <protected-broadcast android:name="oplus.intent.action.camerastate"/>
+    <protected-broadcast android:name="oplus.intent.action.Other.RECOVERY_WIFI"/>
+    <protected-broadcast android:name="oplus.intent.action.Other.RECOVERY_WIFI_FWK"/>
+    <protected-broadcast android:name="oplus.intent.action.Other.RECOVERY_WIFI_FW"/>
+    <protected-broadcast android:name="oplus.intent.action.DETECT_NET_ACCESS"/>
+    <protected-broadcast android:name="oplus.intent.action.RECOVERY_WIFI"/>
+    <protected-broadcast android:name="android.net.wifi.DISABLE_ALERT_NETWORKS"/>
+    <protected-broadcast android:name="android.net.wifi.WIFI_NETWORK_INVALID"/>
+    <protected-broadcast android:name="android.net.wifi.WIFI_TO_DATA"/>
+    <protected-broadcast android:name="com.oplus.BROAD_WIFI_INFO"/>
+    <protected-broadcast android:name="android.net.wifi.WIFI_SCORE_CHANGE"/>
+    <protected-broadcast android:name="android.net.wifi2.STATE_CHANGE"/>
+    <protected-broadcast android:name="com.qualcomm.qti.wigig.WIGIG_CREDENTIAL_CHANGED"/>
+    <protected-broadcast android:name="com.qualcomm.qti.wigig.WIGIG_STATE_CHANGED"/>
+    <protected-broadcast android:name="com.qualcomm.qti.wigig.WIGIG_AP_STATE_CHANGED"/>
+    <protected-broadcast android:name="com.qualcomm.qti.wigig.supplicant.CONNECTION_CHANGE"/>
+    <protected-broadcast android:name="com.qualcomm.qti.wigig.STATE_CHANGE"/>
+    <protected-broadcast android:name="com.qualcomm.qti.wigig.CONFIGURED_NETWORKS_CHANGE"/>
+    <protected-broadcast android:name="com.qualcomm.qti.wigig.SCAN_RESULTS"/>
+    <protected-broadcast android:name="com.qualcomm.qti.wigig.LINK_CONFIGURATION_CHANGED"/>
+    <protected-broadcast android:name="com.qualcomm.qti.wigig.WIGIG_RATE_UPGRADE_STATE_CHANGED"/>
+    <protected-broadcast android:name="com.qualcomm.qti.wigig.RSSI_CHANGED"/>
+    <protected-broadcast android:name="wigig_scan_available"/>
+    <protected-broadcast android:name="android.net.wigig.p2p.STATE_CHANGED"/>
+    <protected-broadcast android:name="android.net.wigig.p2p.CONNECTION_STATE_CHANGE"/>
+    <protected-broadcast android:name="android.net.wigig.p2p.PEERS_CHANGED"/>
+    <protected-broadcast android:name="android.net.wigig.p2p.DISCOVERY_STATE_CHANGE"/>
+    <protected-broadcast android:name="android.net.wigig.p2p.THIS_DEVICE_CHANGED"/>
+    <protected-broadcast android:name="android.net.wigig.p2p.PERSISTENT_GROUPS_CHANGED"/>
+    <protected-broadcast android:name="oplus.intent.action.SIM_HOTSWAP_STATE_CHANGE"/>
+    <protected-broadcast android:name="com.oplus.quicksettings.action.OPLUS_TILE"/>
+    <protected-broadcast android:name="android.bluetooth.headset.action.SHORTCUT_ACTION"/>
+    <protected-broadcast android:name="deviceintegration.rfcomm.ACTION_BT_SOCKET_CONNECTED"/>
+    <protected-broadcast android:name="deviceintegration.rfcomm.ACTION_BT_SOCKET_DISCONNECTED"/>
+    <protected-broadcast android:name="deviceintegration.proximity.ACTION_USER_PRESENT"/>
+    <protected-broadcast android:name="deviceintegration.proximity.ACTION_SCREEN_OFF"/>
+    <permission android:name="android.permission.GLOBAL_SEARCH" android:protectionLevel="system|signature" android:permissionGroup="android.permission-group.SYSTEM_TOOLS"/>
+    <permission android:name="android.permission.GLOBAL_SEARCH_CONTROL" android:protectionLevel="signature" android:permissionGroup="android.permission-group.SYSTEM_TOOLS"/>
+    <permission android:name="android.permission.SET_WALLPAPER_COMPONENT" android:protectionLevel="system|signature" android:permissionGroup="android.permission-group.SYSTEM_TOOLS"/>
+    <permission android:name="com.oplus.permission.OPLUS_FEATURE" android:protectionLevel="system|signature"/>
+    <permission android:name="oppo.permission.OPPO_COMPONENT_SAFE" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.BACKUP" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.SECURITY" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.PRIVATE" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.RUS" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.SAU" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.FACE" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.FINGERPRINT" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.PERSISTENT" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.FINANCIAL" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.AUTHENTICATE" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.KEY_EVENT" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.PASSWORD" android:protectionLevel="signature"/>
+    <permission android:name="com.oppo.permission.safe.ACCOUNTS" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.SAFE_MANAGER" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.APP_MANAGER" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.DCS" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.UPDATE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.PUSH" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.AI_APP" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.MMS" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.PHONE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.KEYGUARD" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.LOCATION" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.NFC" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.CONNECTIVITY" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.BLUETOOTH" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.CAMERA" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.CLIPBOARD" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.LOG" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.CLOUD" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.SENSOR" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.IOT" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.PROTECT" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.SDCARD" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.USB" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.EMAIL" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.SETTINGS" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.PICTURE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.MEDIA" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.GAME" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.ASSISTANT" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.SMART_HOME" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.WEAR" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.VOICE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.ENTERTAINMENT" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.ACCESSIBILITY" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.SHARE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.READ_COMMON" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oppo.permission.safe.SETTINGS_SEARCH" android:protectionLevel="system|signature"/>
+    <permission android:name="oplus.permission.OPLUS_COMPONENT_SAFE" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.BACKUP" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.SECURITY" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.PRIVATE" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.RUS" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.SAU" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.FACE" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.FINGERPRINT" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.PERSISTENT" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.FINANCIAL" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.AUTHENTICATE" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.KEY_EVENT" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.PASSWORD" android:protectionLevel="signature"/>
+    <permission android:name="com.oplus.permission.safe.ACCOUNTS" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.SAFE_MANAGER" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.APP_MANAGER" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.DCS" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.UPDATE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.PUSH" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.AI_APP" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.MMS" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.PHONE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.KEYGUARD" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.LOCATION" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.NFC" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.CONNECTIVITY" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.BLUETOOTH" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.CAMERA" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.CLIPBOARD" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.LOG" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.CLOUD" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.SENSOR" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.IOT" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.PROTECT" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.SDCARD" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.USB" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.EMAIL" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.SETTINGS" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.PICTURE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.MEDIA" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.GAME" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.ASSISTANT" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.SMART_HOME" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.WEAR" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.VOICE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.ENTERTAINMENT" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.ACCESSIBILITY" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.SHARE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.READ_COMMON" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.SETTINGS_SEARCH" android:protectionLevel="system|signature"/>
+    <permission android:name="oplus.permission.RECEIVE_INSTALL_BACKGROUND" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.CAR_LINK" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.WINDOW" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.safe.POWER" android:protectionLevel="system|signature"/>
+    <permission android:name="deviceintegration.permission.MANAGE_CROSS_DEVICE" android:protectionLevel="system|signature"/>
+    <permission android:label="@string/permlab_bluetoothTransportEvent" android:name="deviceintegration.permission.BLUETOOTH_TRANSPORT_EVENT" android:protectionLevel="normal" android:description="@string/permdesc_bluetoothTransportEvent"/>
+    <permission android:name="diagandroid.app.receiveDetailedApplicationState" android:protectionLevel="system|signature"/>
+    <permission android:label="Receive Detailed Call States" android:name="diagandroid.phone.receiveDetailedCallState" android:protectionLevel="system|signature"/>
+    <permission android:label="Receive the PDP Context States" android:name="diagandroid.data.receivePDPContextState" android:protectionLevel="system|signature"/>
+    <permission android:name="oplus.permission.DATA_RESERVE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.sprint.internal.id.permission.LAUNCHERFACADE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.tmobile.internal.id.permission.LAUNCHERFACADE" android:protectionLevel="system|signature"/>
+    <permission android:name="com.oplus.permission.devicecase.ACCESS" android:protectionLevel="system|signature"/>
+    <application android:label="@string/brand_system_label" android:icon="@android:drawable/ic_lockscreen_ime" android:allowClearUserData="false" android:hasCode="false" android:allowBackup="false" android:killAfterRestore="false" android:extractNativeLibs="true">
+        <meta-data android:name="application_do_not_disable" android:value="true"/>
+    </application>
+</manifest>

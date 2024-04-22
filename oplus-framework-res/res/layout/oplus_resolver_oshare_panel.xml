@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/oplus_resolver_nfc_oshare_minHeight">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/oplus_resolve_dialog_oshare_icon_margin_start" android:layout_marginEnd="@dimen/oplus_resolve_dialog_oshare_icon_margin_end" android:forceDarkAllowed="false">
+        <com.oplus.resolver.OplusResolverScanLoadingIcon android:id="@+id/oplus_resolver_open_scan_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/oplus_resolver_oshare_device_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/oplus_ic_share_oshare_devices"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_vertical" android:paddingTop="@dimen/oplus_resolver_TD12" android:paddingBottom="@dimen/oplus_resolver_TD12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/resolver_open_oshare" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/TD07" android:textColor="@color/oplus_resolver_opened_title_color" android:id="@+id/resolver_open_oshare_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oplus_oshare_click_msg_OS13" android:textDirection="locale" android:layout_marginEnd="@dimen/oplus_resolve_dialog_oshare_title_margin_end"/>
+            <TextView android:textSize="@dimen/TD05" android:textColor="@color/oplus_resolver_opened_summary_color" android:id="@+id/resolver_open_oshare_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oplus_resolver_TD03" android:text="@string/oplus_oshare_finding_devices" android:layout_below="@+id/resolver_open_oshare_title" android:layout_marginEnd="@dimen/oplus_resolve_dialog_oshare_title_margin_end" android:layout_alignStart="@+id/resolver_open_oshare_title"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/TD07" android:textColor="?attr/C21" android:ellipsize="end" android:id="@+id/resolver_open_wifi_bluetooth_title" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/oplus_oshare_click_msg_OS13" android:maxLines="2" android:layout_centerVertical="true" android:lineSpacingMultiplier="1.2" android:textDirection="locale" android:layout_marginEnd="@dimen/oplus_resolver_TD18"/>
+    </FrameLayout>
+</LinearLayout>

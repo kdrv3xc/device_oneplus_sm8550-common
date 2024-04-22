@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="bottom|center_horizontal" android:id="@+id/flexible_three_split_background_rect" android:visibility="invisible" android:layout_width="300dp" android:layout_height="150dp" android:layout_marginBottom="63dp"/>
+    <FrameLayout android:layout_gravity="bottom|center_horizontal" android:id="@+id/flexible_three_split_content_pre" android:visibility="invisible" android:layout_width="300dp" android:layout_height="150dp" android:layout_marginBottom="63dp">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/flexible_wait_enter_split_icon" android:background="@drawable/oplus_flexiable_wait_enter_three_split_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="14sp" android:textColor="@color/flexible_enter_split_text_color" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/flexible_wait_enter_split_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxWidth="276dp" android:text="@string/flexible_wait_enter_three_split_text" android:maxLines="3" android:textAlignment="center"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center_horizontal" android:id="@+id/flexible_three_split_content_post" android:visibility="invisible" android:layout_width="360dp" android:layout_height="180dp" android:layout_marginBottom="48dp">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/flexible_enter_split_icon" android:background="@drawable/oplus_flexiable_enter_three_split_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="14sp" android:textColor="@color/flexible_enter_split_text_color" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/flexible_enter_split_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxWidth="276dp" android:text="@string/flexible_enter_three_split_text" android:maxLines="3" android:textAlignment="center"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

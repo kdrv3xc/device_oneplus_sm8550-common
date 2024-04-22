@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:shareInterpolator="false" android:zAdjustment="top">
+    <alpha android:interpolator="@anim/oplus_task_open_shrink_interpolator" android:duration="267" android:fillBefore="true" android:fillAfter="true" android:fromAlpha="0" android:toAlpha="1" android:fillEnabled="true"/>
+    <scale android:interpolator="@interpolator/oplus_open_slide_enter_translate_interpolator" android:duration="267" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="true" android:fromXScale="60%" android:toXScale="100%" android:fromYScale="60%" android:toYScale="100%" android:fillEnabled="true"/>
+</set>

@@ -1,0 +1,24 @@
+android_app {
+	name: "oplus-fwk-res",
+	use_resource_processor: false,
+	sdk_version: "core_platform",
+	certificate: "platform",
+	srcs: [
+		"res/**/*.xml",
+		"src/**/*.java",
+	],
+	enforce_uses_libs: false,
+	dex_preopt: {
+		enabled: false,
+	},
+	aaptflags: [
+		"--private-symbols",
+		"com.andorid.internal",
+		"--no-auto-version",
+		"--auto-add-overlay",
+		"--enable-sparse-encoding",
+	],
+	export_package_resources: true,
+	generate_product_characteristics_rro: true,
+	manifest: "AndroidManifest.xml",
+}

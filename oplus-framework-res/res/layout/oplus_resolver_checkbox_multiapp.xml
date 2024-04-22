@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oplus_resolver_TD03">
+    <CheckBox android:textSize="@dimen/TF05" android:textColor="?attr/C17" android:layout_gravity="start|center_vertical" android:id="@+id/button_always_multiapp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/always_open_main_app_btn" android:maxLines="2" android:layout_weight="1" android:layout_marginStart="@dimen/oplus_resolver_TD16"/>
+</LinearLayout>

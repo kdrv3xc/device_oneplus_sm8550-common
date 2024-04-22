@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oplus.widget.OplusCheckableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="@color/oplus_dialog_button_text_color_bottom" android:ellipsize="marquee" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:lineSpacingMultiplier="1.1" android:textAlignment="viewStart" android:layout_marginEnd="@dimen/alert_dialog_single_list_title_margin_end"/>
+    <RadioButton android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:forceDarkAllowed="false"/>
+</com.oplus.widget.OplusCheckableLayout>

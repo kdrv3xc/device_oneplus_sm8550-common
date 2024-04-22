@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tethered_cellular_connected_sta_message">
+        <item quantity="one">%d device is connected to your mobile data hotspot.</item>
+        <item quantity="other">%d devices are connected to your mobile data hotspot.</item>
+    </plurals>
+    <plurals name="tethered_wifi_connected_sta_message">
+        <item quantity="one">%d device is connected via Wi-Fi sharing.</item>
+        <item quantity="other">%d devices are connected via Wi-Fi sharing.</item>
+    </plurals>
+    <plurals name="tethered_default_connected_sta_message">
+        <item quantity="one">%d device is connected to your personal hotspot.</item>
+        <item quantity="other">%d devices are connected to your personal hotspot.</item>
+    </plurals>
+    <plurals name="oplus_tethered_notification_title2_plurals">
+        <item quantity="one">%s device is connected to the personal hotspot.</item>
+        <item quantity="other">%s devices are connected to the personal hotspot.</item>
+    </plurals>
+    <plurals name="oplus_tethered_notification_title2_sharing_plurals">
+        <item quantity="one">%s device is connected via Wi-Fi tethering.</item>
+        <item quantity="other">%s devices are connected via Wi-Fi tethering.</item>
+    </plurals>
+    <plurals name="oplus_choose_preview_file_count_content">
+        <item quantity="one">%d file</item>
+        <item quantity="other">%d files</item>
+    </plurals>
+    <plurals name="oplus_oshare_found_devices">
+        <item quantity="one">%d device found</item>
+        <item quantity="other">%d devices found</item>
+    </plurals>
+</resources>

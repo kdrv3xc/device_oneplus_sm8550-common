@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="24dp" android:layout_height="24dp">
+    <ImageView android:id="@+id/oplus_resolver_inner_circle" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/oplus_resolver_scan_inner_circle"/>
+    <ImageView android:id="@+id/oplus_resolver_outer_circle" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/oplus_resolver_scan_outer_circle"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/oplus_resolver_scan_middle_pillar"/>
+</FrameLayout>

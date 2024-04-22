@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="start" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_width="match_parent" android:layout_height="4.67dp"/>
+    <View android:background="@color/oplus_inputmethod_switcher_divider_color" android:layout_width="match_parent" android:layout_height="0.34dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/oplus_inputmethod_switcher_item_color" android:ellipsize="end" android:gravity="start|center_vertical" android:id="@+id/btn_more_settings" android:background="@drawable/oplus_popup_list_selector" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/oplus_inputmethod_switcher_more_settings" android:singleLine="true" android:textAlignment="viewStart" android:paddingHorizontal="24dp" android:forceDarkAllowed="true"/>
+</LinearLayout>

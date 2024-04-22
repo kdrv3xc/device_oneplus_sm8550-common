@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@android:id/immersive_cling_back_bg" android:background="@drawable/oplus_floating_popup_background" android:padding="0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:forceDarkAllowed="false"/>

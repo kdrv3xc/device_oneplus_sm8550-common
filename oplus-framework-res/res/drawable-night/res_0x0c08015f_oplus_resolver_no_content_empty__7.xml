@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator android:interpolator="@drawable/res_0x0c08011e_oplus_resolver_no_content_empty__7__0" android:duration="333" android:startOffset="0" android:valueFrom="1" android:valueTo="0.5" android:valueType="floatType" android:propertyName="trimPathStart"/>
+    <objectAnimator android:interpolator="@drawable/res_0x0c08011f_oplus_resolver_no_content_empty__7__1" android:duration="167" android:startOffset="333" android:valueFrom="0.5" android:valueTo="0.5" android:valueType="floatType" android:propertyName="trimPathStart"/>
+    <objectAnimator android:interpolator="@drawable/res_0x0c080120_oplus_resolver_no_content_empty__7__2" android:duration="333" android:startOffset="500" android:valueFrom="0.5" android:valueTo="0.5" android:valueType="floatType" android:propertyName="trimPathStart"/>
+</set>

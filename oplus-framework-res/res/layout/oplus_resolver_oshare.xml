@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.oplus.resolver.OplusResolverOshareLayout android:orientation="vertical" android:id="@+id/oplus_resolver_oshare_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/oplus_resolver_nfc_oshare_minHeight">
+        <ViewStub android:id="@+id/resolver_oshare_panel" android:layout="@layout/oplus_resolver_oshare_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/oplus_resolver_TD24" android:layout_marginEnd="@dimen/oplus_resolver_TD24"/>
+        <ViewStub android:id="@+id/resolver_oshareing_panel" android:layout="@layout/oplus_resolver_osharing" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/oplus_resolver_oshare_devider_line" android:background="@color/oplus_resolver_oshare_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2px" android:layout_marginTop="@dimen/oplus_resolve_dialog_oshareing_panel_padding_top_and_bottom" android:layout_marginStart="@dimen/oplus_resolver_TD24" android:layout_marginEnd="@dimen/oplus_resolver_TD24" android:forceDarkAllowed="false"/>
+    </com.oplus.resolver.OplusResolverOshareLayout>
+</merge>

@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="aquatic_alarm_natural_vitality">
+        <item>@string/ringtone_ripplingwater</item>
+        <item>@string/ringtone_shimmer</item>
+        <item>@string/ringtone_batheearth</item>
+        <item>@string/ringtone_junglemorning</item>
+        <item>@string/ringtone_silver</item>
+        <item>@string/ringtone_elegantquiet</item>
+        <item>@string/ringtone_summerbeach</item>
+        <item>@string/ringtone_summernight</item>
+        <item>@string/ringtone_icesnow</item>
+        <item>@string/ringtone_wintersnow</item>
+        <item>@string/ringtone_rainforest</item>
+        <item>@string/ringtone_raineverything</item>
+    </array>
+    <array name="aquatic_alarm_natural_vitality_files">
+        <item>Shimmer</item>
+        <item>First rays</item>
+        <item>Waking city</item>
+        <item>Forest morning</item>
+        <item>Blanket of snow</item>
+        <item>Tranquil</item>
+        <item>Summer beach</item>
+        <item>Summer night</item>
+        <item>Sunlight on snow</item>
+        <item>Snow falling</item>
+        <item>Rainforest</item>
+        <item>Drizzling</item>
+    </array>
+    <array name="android_config_mobile_hotspot_provision_app">
+    </array>
+    <array name="android_config_virtualKeyVibePattern">
+    </array>
+    <array name="android_common_nicknames">
+    </array>
+    <array name="oplus_uxicon_common_style_path_exp">
+        <item>@string/icon_mask_theme_rectangle</item>
+        <item>@string/icon_mask_theme_rectangle</item>
+        <item>@string/icon_mask_theme_pebble</item>
+    </array>
+    <array name="brand_select_ringtone_files">
+        <item>OnePlus new feeling</item>
+        <item>OnePlus tune</item>
+        <item>Alacrity</item>
+        <item>Alarm clock</item>
+        <item>Amenity</item>
+        <item>Beep</item>
+        <item>Blues</item>
+        <item>Bounce</item>
+        <item>Breeze</item>
+        <item>Calm</item>
+        <item>Chase</item>
+        <item>Climber</item>
+        <item>Cloud</item>
+        <item>Cloudscape</item>
+        <item>Cyclotron</item>
+        <item>Dawn</item>
+        <item>Distinct</item>
+        <item>Dream</item>
+        <item>Dynamic</item>
+        <item>Eager</item>
+        <item>Ebullition</item>
+        <item>Echo</item>
+        <item>Expect</item>
+        <item>Fanatical</item>
+        <item>Fluttering</item>
+        <item>Flyer</item>
+        <item>Friendship</item>
+        <item>Funky</item>
+        <item>Good energy</item>
+        <item>Guitar</item>
+        <item>Harping</item>
+        <item>Highlight</item>
+        <item>Idyl</item>
+        <item>Innocence</item>
+        <item>Interesting</item>
+        <item>Jazz life</item>
+        <item>Journey</item>
+        <item>Joyous</item>
+        <item>Lazy</item>
+        <item>Leisurely</item>
+        <item>Marimba</item>
+        <item>Memory</item>
+        <item>Mystical</item>
+        <item>Nature</item>
+        <item>Old telephone</item>
+        <item>Optimistic</item>
+        <item>Piano</item>
+        <item>Relieved</item>
+        <item>OnePlus tune rhythm</item>
+        <item>Ripple</item>
+        <item>Slowly</item>
+        <item>Spring</item>
+        <item>Stars</item>
+        <item>Sun glittering</item>
+        <item>Surging</item>
+        <item>Tactfully</item>
+        <item>The wind</item>
+        <item>Walking in the rain</item>
+        <item>Whirl</item>
+        <item>Allay</item>
+        <item>Allusion</item>
+        <item>Amiable</item>
+        <item>Blare</item>
+        <item>Blink</item>
+        <item>Blissful</item>
+        <item>Brisk</item>
+        <item>Bubble</item>
+        <item>Cheerful</item>
+        <item>Clear</item>
+        <item>Comely</item>
+        <item>Cozy</item>
+        <item>Ding</item>
+        <item>Effervesce</item>
+        <item>Elegant</item>
+        <item>Free</item>
+        <item>Hallucination</item>
+        <item>Inbound</item>
+        <item>Light</item>
+        <item>Meet</item>
+        <item>Naivety</item>
+        <item>Quickly</item>
+        <item>Rhythm</item>
+        <item>Surprise</item>
+        <item>Twinkle</item>
+        <item>Whoop-doop</item>
+    </array>
+    <array name="brand_select_ringtone_names">
+        <item>@string/ringtone_new_feeling</item>
+        <item>@string/ringtone_oneplus_tune</item>
+        <item>@string/ringtone_alacrity</item>
+        <item>@string/ringtone_alarm_clock</item>
+        <item>@string/ringtone_amenity</item>
+        <item>@string/ringtone_beep</item>
+        <item>@string/ringtone_blues</item>
+        <item>@string/ringtone_bounce</item>
+        <item>@string/ringtone_breeze</item>
+        <item>@string/ringtone_clam</item>
+        <item>@string/ringtone_chase</item>
+        <item>@string/ringtone_climber</item>
+        <item>@string/ringtone_cloud</item>
+        <item>@string/ringtone_cloudscape</item>
+        <item>@string/ringtone_cyclotron</item>
+        <item>@string/ringtone_dawn</item>
+        <item>@string/ringtone_distinct</item>
+        <item>@string/ringtone_dream</item>
+        <item>@string/ringtone_dynamic</item>
+        <item>@string/ringtone_eager</item>
+        <item>@string/ringtone_ebullition</item>
+        <item>@string/ringtone_echo</item>
+        <item>@string/ringtone_expect</item>
+        <item>@string/ringtone_fanatical</item>
+        <item>@string/ringtone_fluttering</item>
+        <item>@string/ringtone_flyer</item>
+        <item>@string/ringtone_friendship</item>
+        <item>@string/ringtone_funky</item>
+        <item>@string/ringtone_goodenergy</item>
+        <item>@string/ringtone_guitar</item>
+        <item>@string/ringtone_harping</item>
+        <item>@string/ringtone_highlight</item>
+        <item>@string/ringtone_idyl</item>
+        <item>@string/ringtone_innocence</item>
+        <item>@string/ringtone_interesting</item>
+        <item>@string/ringtone_jazz_life</item>
+        <item>@string/ringtone_journey</item>
+        <item>@string/ringtone_joyous</item>
+        <item>@string/ringtone_lazy</item>
+        <item>@string/ringtone_leisurely</item>
+        <item>@string/ringtone_marimba</item>
+        <item>@string/ringtone_memory</item>
+        <item>@string/ringtone_mystical</item>
+        <item>@string/ringtone_nature</item>
+        <item>@string/ringtone_old_telephone</item>
+        <item>@string/ringtone_optimistic</item>
+        <item>@string/ringtone_piano</item>
+        <item>@string/ringtone_relieved</item>
+        <item>@string/ringtone_ring_rhythm</item>
+        <item>@string/ringtone_ripple</item>
+        <item>@string/ringtone_slowly</item>
+        <item>@string/ringtone_spring</item>
+        <item>@string/ringtone_stars</item>
+        <item>@string/ringtone_glittering</item>
+        <item>@string/ringtone_surging</item>
+        <item>@string/ringtone_tactfully</item>
+        <item>@string/ringtone_the_wind</item>
+        <item>@string/ringtone_walking_in_the_rain</item>
+        <item>@string/ringtone_whirl</item>
+        <item>@string/ringtone_allay</item>
+        <item>@string/ringtone_allusion</item>
+        <item>@string/ringtone_amiable</item>
+        <item>@string/ringtone_blare</item>
+        <item>@string/ringtone_blink</item>
+        <item>@string/ringtone_blissful</item>
+        <item>@string/ringtone_brisk</item>
+        <item>@string/ringtone_bubble</item>
+        <item>@string/ringtone_cheerful</item>
+        <item>@string/ringtone_clear</item>
+        <item>@string/ringtone_comely</item>
+        <item>@string/ringtone_cozy</item>
+        <item>@string/ringtone_ding</item>
+        <item>@string/ringtone_effervesce</item>
+        <item>@string/ringtone_elegant</item>
+        <item>@string/ringtone_free</item>
+        <item>@string/ringtone_hallucination</item>
+        <item>@string/ringtone_inbound</item>
+        <item>@string/ringtone_light</item>
+        <item>@string/ringtone_meet</item>
+        <item>@string/ringtone_naivety</item>
+        <item>@string/ringtone_quickly</item>
+        <item>@string/ringtone_rhythm</item>
+        <item>@string/ringtone_surprise</item>
+        <item>@string/ringtone_twinkle</item>
+        <item>@string/ringtone_whoopdoop</item>
+    </array>
+    <array name="oplus_config_statusBarIcons">
+        <item>managed_profile</item>
+        <item>ime</item>
+        <item>sync_failing</item>
+        <item>sync_active</item>
+        <item>hotspot</item>
+        <item>tty</item>
+        <item>speakerphone</item>
+        <item>mute</item>
+        <item>wifi</item>
+        <item>cdma_eri</item>
+        <item>data_connection</item>
+        <item>phone_evdo_signal</item>
+        <item>phone_signal</item>
+        <item>battery</item>
+        <item>secure</item>
+        <item>clock</item>
+        <item>children_mode</item>
+        <item>game_speedup</item>
+        <item>protect_eye</item>
+        <item>cast</item>
+        <item>nfc</item>
+        <item>logging</item>
+        <item>volume</item>
+        <item>smart_driver</item>
+        <item>ride</item>
+        <item>block_banner</item>
+        <item>zen</item>
+        <item>rotation</item>
+        <item>location</item>
+        <item>alarm_clock</item>
+        <item>bluetooth</item>
+        <item>headset</item>
+        <item>accessibility</item>
+        <item>vowifi</item>
+        <item>volte</item>
+    </array>
+    <array name="oplus_permissions_prompt">
+        <item>@string/oplus_permissions_phone</item>
+        <item>@string/oplus_permissions_phone_recore</item>
+        <item>@string/oplus_permissions_read_contact</item>
+        <item>@string/oplus_permissions_read_sms</item>
+        <item>@string/oplus_permissions_send_sms</item>
+        <item>@string/oplus_permissions_send_mms</item>
+        <item>@string/oplus_permissions_turn_data</item>
+        <item>@string/oplus_permissions_turn_wlan</item>
+        <item>@string/oplus_permissions_turn_bluetoon</item>
+        <item>@string/oplus_permissions_turn_gps</item>
+        <item>@string/oplus_permissions_use_camera</item>
+        <item>@string/oplus_permissions_record_calls</item>
+        <item>@string/oplus_permissions_turn_nfc</item>
+        <item>@string/oplus_permissions_write_phone_records</item>
+        <item>@string/oplus_permissions_write_contacts</item>
+        <item>@string/oplus_permissions_write_sms_records</item>
+        <item>@string/oplus_permissions_write_mms_records</item>
+        <item>@string/oplus_permissions_read_mms_records</item>
+    </array>
+    <array name="oplus_data_not_enough_array">
+        <item>@string/oplus_data_not_enough_array_cleanup</item>
+        <item>@string/oplus_data_not_enough_array_transfer</item>
+        <item>@android:string/cancel</item>
+    </array>
+    <array name="oplus_data_full_array">
+        <item>@string/oplus_data_full_array_cleanup</item>
+        <item>@string/oplus_data_full_array_uninstall</item>
+        <item>@android:string/cancel</item>
+    </array>
+    <array name="splash_screen_black_packages">
+        <item>com.oneplus.screenrecord</item>
+    </array>
+    <array name="splash_screen_black_activities">
+        <item>com.oneplus.soundrecorder/.TransparentActivity</item>
+    </array>
+    <array name="task_snapshot_black_packages">
+        <item>com.android.contacts</item>
+        <item>com.android.incallui</item>
+        <item>com.tudou.android</item>
+        <item>com.oplus.camera</item>
+    </array>
+    <array name="task_snapshot_black_activities">
+    </array>
+    <array name="snapshot_preview_suggest_activities">
+    </array>
+    <array name="snapshot_preview_support_calling_packages">
+        <item>com.android.launcher</item>
+        <item>com.oplus.safecenter</item>
+    </array>
+    <array name="system_app_prefixes">
+        <item>com.oplus.</item>
+        <item>com.oppo.</item>
+        <item>com.oneplus.</item>
+        <item>com.heytap.</item>
+        <item>com.coloros.</item>
+    </array>
+    <array name="not_capture_screen_packages">
+        <item>com.oplus.games</item>
+    </array>
+    <array name="not_change_status_bar_packages">
+    </array>
+    <array name="task_splash_restarting_process_black_activities">
+    </array>
+    <array name="op_one_key_lock_screen_list">
+        <item>com.android.launcher</item>
+    </array>
+    <array name="config_tmo_apps_list">
+    </array>
+    <array name="config_sprint_apps_list">
+    </array>
+    <array name="config_sprint_enabled_apps_list">
+    </array>
+    <array name="config_unified_device_tmo_pai_packages">
+    </array>
+    <array name="config_unified_device_sprint_pai_packages">
+    </array>
+    <array name="config_metro_apps_list">
+    </array>
+    <array name="config_assu_apps_list">
+    </array>
+    <array name="ota_package_update_list">
+        <item>com.*neplus.gallery:com.c*l*r*s.gallery3d</item>
+        <item>com.*neplus.filemanager:com.c*l*r*s.filemanager</item>
+        <item>com.*neplus.findmyphone:com.c*l*r*s.findmyphone</item>
+        <item>com.*neplus.calculator:com.c*l*r*s.calculator</item>
+        <item>com.*neplus.deskclock:com.c*l*r*s.alarmclock</item>
+        <item>com.*neplus.soundrecorder:com.c*l*r*s.soundrecorder</item>
+        <item>com.*neplus.screenrecord:com.c*l*r*s.screenrecorder</item>
+        <item>com.*neplus.calendar:com.c*l*r*s.calendar</item>
+        <item>com.*neplus.note:com.c*l*r*s.note</item>
+        <item>com.*neplus.weather:com.c*l*r*s.weather2</item>
+        <item>cn.*neplus.wallet:com.*neplus.card</item>
+        <item>com.*neplus.backuprestore:com.c*l*r*s.backuprestore</item>
+        <item>com.*neplus.tws:com.c*l*r*s.oppopods</item>
+        <item>com.*neplus.mms:com.android.mms</item>
+        <item>com.*neplus.dialer:com.android.incallui</item>
+        <item>com.*neplus.contacts:com.android.contacts</item>
+    </array>
+    <array name="app_icons_info">
+        <item>ic_launcher_stk.png/com.android.stk</item>
+        <item>ic_launcher_nearme_usercenter.png/com.oplus.vip</item>
+        <item>ic_launcher_nearme_play.png/com.oplus.play</item>
+        <item>ic_launcher_camera.png/com.oneplus.camera</item>
+        <item>ic_launcher_camera.png/com.oplus.camera</item>
+        <item>ic_launcher_videoeditor.png/com.oplus.videoeditor</item>
+    </array>
+    <array name="oplus_resolver_target_pin">
+        <item>@string/oplus_resolver_target_pin_top_OS13</item>
+        <item>@string/oplus_resolver_target_pin_detail</item>
+    </array>
+    <array name="oplus_resolver_target_unpin">
+        <item>@string/oplus_resolver_target_unpin_cancel_top_OS13</item>
+        <item>@string/oplus_resolver_target_unpin_detail</item>
+    </array>
+    <array name="oplus_preloaded_drawables">
+        <item>@android:mipmap/sym_def_app_icon</item>
+        <item>@drawable/oplus_ic_account_circle</item>
+    </array>
+    <array name="oplus_preloaded_color_state_lists">
+    </array>
+    <array name="oplus_uxicon_common_style_path">
+        <item>@string/icon_mask_theme_rectangle</item>
+        <item>@string/icon_mask_theme_rectangle</item>
+        <item>@string/icon_mask_theme_pebble</item>
+    </array>
+    <array name="oplus_uxicon_common_style_name">
+        <item>@string/theme_rectangle_name</item>
+        <item>@string/theme_material_name</item>
+        <item>@string/theme_pebble_name</item>
+    </array>
+    <array name="oplus_uxicon_common_style_prefix">
+        <item>recfg</item>
+        <item>recbg</item>
+        <item>mat</item>
+        <item>peb</item>
+    </array>
+    <array name="oplus_uxicon_common_style_config_range">
+        <item>2</item>
+        <item>1</item>
+        <item>4</item>
+        <item>3</item>
+    </array>
+    <array name="oplus_uxicon_special_style_path">
+        <item>M75,0 C116.421356,-7.6089797e-15 150,33.5786438 150,75 C150,116.421356 116.421356,150 75,150 C33.5786438,150 5.07265313e-15,116.421356 0,75 C-5.07265313e-15,33.5786438 33.5786438,7.6089797e-15 75,0 Z</item>
+    </array>
+    <array name="oplus_uxicon_special_style_name">
+        <item>@string/theme_classical_name</item>
+    </array>
+    <array name="oplus_uxicon_special_style_prefix">
+        <item>classic</item>
+    </array>
+    <array name="oplus_uxicon_special_style_config_range">
+        <item>8</item>
+    </array>
+    <array name="ux_preset_app_package">
+        <item>com.android.contacts</item>
+        <item>com.android.email</item>
+        <item>com.android.fmradio</item>
+        <item>com.android.mms</item>
+        <item>com.android.settings</item>
+        <item>com.android.stk</item>
+        <item>com.caf.fmradio</item>
+        <item>com.finshell.wallet</item>
+        <item>com.heytap.browser</item>
+        <item>com.heytap.health</item>
+        <item>com.heytap.market</item>
+        <item>com.heytap.music</item>
+        <item>com.heytap.reader</item>
+        <item>com.heytap.smarthome</item>
+        <item>com.heytap.speechassist</item>
+        <item>com.heytap.themestore</item>
+        <item>com.heytap.vip</item>
+        <item>com.heytap.yoli</item>
+        <item>com.nearme.gamecenter</item>
+        <item>com.oneplus.bbs</item>
+        <item>com.oneplus.brickmode</item>
+        <item>com.redteamobile.roaming</item>
+        <item>com.oplus.camera</item>
+        <item>com.oneplus.gallery</item>
+        <item>com.oneplus.calculator</item>
+        <item>com.oneplus.deskclock</item>
+        <item>net.oneplus.forums</item>
+        <item>com.oneplus.filemanager</item>
+        <item>net.oneplus.weather</item>
+        <item>com.oplus.games</item>
+        <item>com.google.android.contacts</item>
+        <item>com.google.android.dialer</item>
+        <item>com.oneplus.camera</item>
+        <item>com.oneplus.backuprestore</item>
+        <item>com.oneplus.note</item>
+        <item>com.oneplus.soundrecorder</item>
+        <item>com.oneplus.mall</item>
+    </array>
+    <array name="ux_desk_app_package">
+        <item>com.heytap.market</item>
+    </array>
+    <array name="ux_system_app_prefix">
+        <item>com.oplus.</item>
+        <item>com.nearme.</item>
+        <item>com.heytap.</item>
+        <item>com.oplus.</item>
+        <item>com.oneplus.</item>
+    </array>
+    <array name="oplus_systemui_receive_download_pkgs">
+        <item>com.bitstrips.imoji</item>
+    </array>
+    <array name="oplus_cn_operator_list">
+        <item>中国移动</item>
+        <item>中国联通</item>
+        <item>中国电信</item>
+        <item>中国广电</item>
+        <item>中國移動</item>
+        <item>中國聯通</item>
+        <item>中國電信</item>
+        <item>中國廣電</item>
+        <item>CMCC</item>
+        <item>CTC</item>
+        <item>UNICOM</item>
+        <item>CBN</item>
+        <item>CMHK</item>
+        <item>CU</item>
+        <item>China Unicom</item>
+        <item>China Mobile</item>
+        <item>China Broadcasting</item>
+        <item>China Telecom</item>
+        <item>UNICOM HK</item>
+        <item>台灣之星</item>
+        <item>台湾之星</item>
+    </array>
+    <array name="oplus_cmcc_operator_list">
+        <item>中国移动</item>
+        <item>中國移動</item>
+        <item>CMCC</item>
+    </array>
+    <array name="config_tenbit_autoBrightnessLcdBacklightValues">
+        <item>11</item>
+        <item>43</item>
+        <item>70</item>
+        <item>131</item>
+        <item>215</item>
+        <item>342</item>
+        <item>550</item>
+        <item>693</item>
+        <item>1023</item>
+    </array>
+    <array name="config_elevenbit_autoBrightnessLcdBacklightValues">
+        <item>15</item>
+        <item>65</item>
+        <item>106</item>
+        <item>191</item>
+        <item>317</item>
+        <item>510</item>
+        <item>813</item>
+        <item>1034</item>
+        <item>1508</item>
+        <item>2047</item>
+    </array>
+    <array name="config_tenbit_autoBrightnessLevels">
+        <item>12</item>
+        <item>18</item>
+        <item>30</item>
+        <item>360</item>
+        <item>1200</item>
+        <item>2250</item>
+        <item>4600</item>
+        <item>10000</item>
+    </array>
+    <array name="config_elevenbit_autoBrightnessLevels">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>360</item>
+        <item>1200</item>
+        <item>2250</item>
+        <item>3200</item>
+        <item>30000</item>
+        <item>31000</item>
+    </array>
+    <array name="config_autoBrightnessLuxMinLimit">
+        <item>0</item>
+        <item>1</item>
+        <item>6</item>
+        <item>540</item>
+        <item>1025</item>
+        <item>2000</item>
+        <item>2800</item>
+    </array>
+    <array name="config_autoBrightnessLuxMaxLimit">
+        <item>5</item>
+        <item>150</item>
+        <item>1150</item>
+        <item>1900</item>
+        <item>2800</item>
+        <item>4000</item>
+        <item>80000</item>
+    </array>
+    <array name="config_tenbit_autoBrightnessLuxMinLimit">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>18</item>
+        <item>30</item>
+        <item>300</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>4000</item>
+    </array>
+    <array name="config_tenbit_autoBrightnessLuxMaxLimit">
+        <item>9</item>
+        <item>17</item>
+        <item>30</item>
+        <item>50</item>
+        <item>700</item>
+        <item>1600</item>
+        <item>2940</item>
+        <item>5900</item>
+        <item>80000</item>
+    </array>
+    <array name="config_elevenbit_autoBrightnessLuxMinLimit">
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>9</item>
+        <item>18</item>
+        <item>300</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>2940</item>
+        <item>14000</item>
+    </array>
+    <array name="config_elevenbit_autoBrightnessLuxMaxLimit">
+        <item>4</item>
+        <item>10</item>
+        <item>22</item>
+        <item>40</item>
+        <item>700</item>
+        <item>1600</item>
+        <item>2940</item>
+        <item>4220</item>
+        <item>30000</item>
+        <item>80000</item>
+    </array>
+    <array name="config_networkLocationProviderPackageNames">
+        <item>com.oplus.location</item>
+        <item>com.google.android.gms</item>
+        <item>com.tencent.android.location</item>
+        <item>com.android.location.fused</item>
+        <item>com.amap.android.location</item>
+        <item>com.baidu.map.location</item>
+    </array>
+    <array name="internal_ogg_info">
+    </array>
+    <array name="high_cpu_list">
+        <item>SM7475</item>
+        <item>SM7550</item>
+        <item>SM7675</item>
+        <item>SM8250</item>
+        <item>SM8350</item>
+        <item>SM8450</item>
+        <item>SM8475</item>
+        <item>SM8550</item>
+        <item>SM8650</item>
+        <item>MT6989</item>
+        <item>MT6893</item>
+        <item>MT6895</item>
+        <item>MT6983</item>
+        <item>MT6985</item>
+        <item>MT6989</item>
+        <item>MT6896</item>
+        <item>MT6891</item>
+    </array>
+    <array name="high_gpu_list">
+        <item>SM7475</item>
+        <item>SM7550</item>
+        <item>SM7675</item>
+        <item>SM8250</item>
+        <item>SM8350</item>
+        <item>SM8450</item>
+        <item>SM8475</item>
+        <item>SM8550</item>
+        <item>SM8650</item>
+        <item>MT6989</item>
+        <item>MT6893</item>
+        <item>MT6895</item>
+        <item>MT6983</item>
+        <item>MT6985</item>
+        <item>MT6989</item>
+        <item>MT6896</item>
+        <item>MT6891</item>
+    </array>
+    <array name="middle_cpu_list">
+        <item>MT6878</item>
+        <item>SDM845</item>
+        <item>SM7125</item>
+        <item>SM7250</item>
+        <item>MT6873</item>
+        <item>MT6833</item>
+        <item>SM6375</item>
+        <item>SM7225</item>
+        <item>MT6877</item>
+        <item>MT6885</item>
+        <item>SM8150</item>
+        <item>SM7325</item>
+        <item>SM7450</item>
+        <item>MT6853</item>
+        <item>MT6889</item>
+        <item>SM7150</item>
+        <item>MT6785</item>
+        <item>MT6789</item>
+        <item>MT6781</item>
+        <item>MT6835</item>
+        <item>SM6450</item>
+        <item>SM7435</item>
+    </array>
+    <array name="middle_gpu_list">
+        <item>MT6878</item>
+        <item>SM7450</item>
+        <item>SM7325</item>
+        <item>SM8150</item>
+        <item>MT6885</item>
+        <item>MT6877</item>
+        <item>SM7225</item>
+        <item>SM6375</item>
+        <item>MT6833</item>
+        <item>MT6873</item>
+        <item>SM7250</item>
+        <item>SM7125</item>
+        <item>SDM845</item>
+        <item>MT6853</item>
+        <item>MT6889</item>
+        <item>SM7150</item>
+        <item>MT6785</item>
+        <item>MT6789</item>
+        <item>MT6835</item>
+        <item>SM6450</item>
+        <item>SM7435</item>
+    </array>
+    <array name="low_cpu_list">
+        <item>MSM8953</item>
+        <item>MSM8937</item>
+        <item>MT6768</item>
+        <item>MT6765</item>
+        <item>MT6762</item>
+        <item>SM4250</item>
+        <item>SDM660</item>
+        <item>SM6115</item>
+        <item>SM6125</item>
+        <item>SDM710</item>
+        <item>MT6779</item>
+        <item>SM6150</item>
+        <item>SM6225</item>
+        <item>SM4350</item>
+        <item>MT6769</item>
+    </array>
+    <array name="low_gpu_list">
+        <item>SDM660</item>
+        <item>MSM8953</item>
+        <item>MSM8937</item>
+        <item>MT6768</item>
+        <item>MT6765</item>
+        <item>MT6762</item>
+        <item>SM4250</item>
+        <item>SM6115</item>
+        <item>SM6125</item>
+        <item>SDM710</item>
+        <item>MT6779</item>
+        <item>SM6150</item>
+        <item>SM6225</item>
+        <item>SM4350</item>
+        <item>MT6781</item>
+        <item>MT6769</item>
+    </array>
+    <array name="splash_screen_exception_list_packages">
+        <item>com.tencent.mm</item>
+        <item>com.xunmeng.pinduoduo</item>
+        <item>com.taobao.taobao</item>
+        <item>com.smile.gifmaker</item>
+        <item>com.baidu.searchbox</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.kuaishou.nebula</item>
+        <item>com.kugou.android</item>
+        <item>com.tencent.mtt</item>
+        <item>com.tencent.qqlive</item>
+        <item>com.sankuai.meituan</item>
+        <item>com.baidu.BaiduMap</item>
+        <item>com.nearme.play</item>
+        <item>com.xingin.xhs</item>
+        <item>com.youku.phone</item>
+        <item>com.alibaba.android.rimet</item>
+        <item>com.ss.android.article.video</item>
+        <item>com.tencent.qqmusic</item>
+        <item>com.tencent.tmgp.pubgmhd</item>
+        <item>com.lemon.lv</item>
+        <item>com.ss.android.ugc.live</item>
+        <item>com.baidu.homework</item>
+        <item>com.chinamworld.main</item>
+        <item>com.wuba</item>
+        <item>com.hicorenational.antifraud</item>
+        <item>com.ximalaya.ting.android</item>
+        <item>com.sohu.inputmethod.sogouoem</item>
+        <item>me.ele</item>
+        <item>com.unionpay</item>
+        <item>com.yitong.mbank.psbc</item>
+        <item>com.shizhuang.duapp</item>
+        <item>com.kwai.videoeditor</item>
+        <item>com.chinamworld.bocmbci</item>
+        <item>com.sinovatech.unicom.ui</item>
+        <item>com.mt.mtxx.mtxx</item>
+        <item>com.kwai.m2u</item>
+        <item>com.tencent.wework</item>
+        <item>com.taobao.idlefish</item>
+        <item>com.tencent.weishi</item>
+        <item>com.sankuai.meituan.takeoutnew</item>
+        <item>com.meta.box</item>
+        <item>com.tencent.wemeet.app</item>
+        <item>com.tencent.androidqqmail</item>
+        <item>cn.xuexi.android</item>
+        <item>com.shoujiduoduo.ringtone</item>
+        <item>com.sohu.inputmethod.sogou</item>
+        <item>com.taptap</item>
+        <item>com.alibaba.wireless</item>
+        <item>com.xt.retouch</item>
+        <item>com.taobao.live</item>
+        <item>com.snda.lantern.wifilocating</item>
+        <item>com.cubic.autohome</item>
+        <item>cn.soulapp.android</item>
+        <item>com.lingan.seeyou</item>
+        <item>com.clover.daysmatter</item>
+        <item>com.handsgo.jiakao.android</item>
+        <item>com.tencent.zebra</item>
+        <item>net.evecom.android.mztapp</item>
+        <item>com.duowan.kiwi</item>
+        <item>com.zf.myds.nearme.gamecenter</item>
+        <item>com.m4399.gamecenter</item>
+        <item>com.anjuke.android.app</item>
+        <item>com.videogo</item>
+        <item>com.dianping.v1</item>
+        <item>com.tencent.mf.uam</item>
+        <item>com.sdu.didi.psnger</item>
+        <item>com.campmobile.snowcamera</item>
+        <item>com.baidu.appsearch</item>
+        <item>com.xtc.watch</item>
+        <item>com.bairimeng.dmmdzz.nearme.gamecenter</item>
+        <item>com.pingan.lifeinsurance</item>
+        <item>com.lianjia.beike</item>
+        <item>com.tianyancha.skyeye</item>
+        <item>com.chinatelecom.bestpayclient</item>
+        <item>com.netease.sky.nearme.gamecenter</item>
+        <item>com.zhuoqu.wangxingrenyibihua.nearme.gamecenter</item>
+        <item>com.ifreetalk.ftalk</item>
+        <item>com.chinamobile.mcloud</item>
+        <item>com.hpbr.bosszhipin</item>
+        <item>com.glodon.drawingexplorer</item>
+        <item>com.tencent.lolm</item>
+        <item>com.bankcomm.maidanba</item>
+        <item>com.p1.mobile.putong</item>
+        <item>com.ziipin.softkeyboard</item>
+        <item>com.seetong.app.seetong</item>
+        <item>com.kugou.android.ringtone</item>
+        <item>com.android.ikfctsbxd.rdctspen</item>
+        <item>com.tencent.tmgp.cf</item>
+        <item>com.tencent.tmgp.cod</item>
+        <item>com.tencent.gamehelper.smoba</item>
+        <item>me.yidui</item>
+        <item>com.xhey.xcamera</item>
+        <item>com.netease.moyi</item>
+        <item>com.ls.tgjyxd.nearme.gamecenter</item>
+        <item>com.intsig.camscanner</item>
+        <item>com.hzyys.jdatm.nearme.gamecenter</item>
+        <item>com.jxedt</item>
+        <item>com.vivo.easyshare</item>
+        <item>com.zcdqgg.atmyxjfdj.nearme.gamecenter</item>
+        <item>com.yzxx.xstksjdts.nearme.gamecenter</item>
+        <item>com.eyzbagq.atmrxjjw.nearme.gamecenter</item>
+        <item>com.zf.htdj.nearme.gamecenter</item>
+        <item>com.kingpoint.gmcchh</item>
+        <item>com.ls.yqdld.nearme.gamecenter</item>
+        <item>com.xunlei.downloadprovider</item>
+        <item>com.bgzgaq.tpgc.nearme.gamecenter</item>
+        <item>com.fy.bywzl.nearme.gamecenter</item>
+        <item>com.njh.biubiu</item>
+        <item>com.tencent.gamehelper.pg</item>
+        <item>com.wemomo.tietie</item>
+        <item>com.xmcy.hykb</item>
+        <item>com.chaoxing.mobile</item>
+        <item>com.fenbi.android.leo</item>
+        <item>com.glife.dqkpapk.nearme.gamecenter</item>
+        <item>com.sankuai.youxuan</item>
+        <item>com.all.video</item>
+        <item>com.caict.xingchengka</item>
+        <item>com.xiaomi.smarthome</item>
+        <item>com.didapinche.booking</item>
+        <item>com.foxgames.MetalSlug.nearme.gamecenter</item>
+        <item>com.tencent.KiHan</item>
+        <item>com.ChillyRoom.nearme.gamecenter</item>
+        <item>com.benqu.wuta</item>
+        <item>com.fy.ccdz.nearme.gamecenter</item>
+        <item>com.zf.mrjj.astore.nearme.gamecenter</item>
+        <item>com.sup.android.superb</item>
+        <item>com.zf.wdlscs.nearme.gamecenter</item>
+        <item>com.kiloo.subwaysurf</item>
+        <item>com.tencent.transfer</item>
+        <item>cn.jj</item>
+        <item>com.tm.shbyhw.nearme.gamecenter</item>
+        <item>com.qq.ac.android</item>
+        <item>com.hanweb.android.zhejiang.activity</item>
+        <item>com.mosheng</item>
+        <item>cn.ninegame.gamemanager</item>
+        <item>android.xkctsnw.irctsoptic</item>
+        <item>com.hipu.yidian</item>
+        <item>com.tm.zjbydz.nearme.gamecenter</item>
+        <item>com.sinyee.babybus.recommendapp</item>
+        <item>com.youloft.calendar</item>
+        <item>com.fy.yqzzz.nearme.gamecenter</item>
+        <item>com.tencent.qqpim</item>
+        <item>com.zenmen.palmchat</item>
+        <item>com.ygkj.chelaile.standard</item>
+        <item>com.xinhang.mobileclient</item>
+        <item>com.netease.dwrg.nearme.gamecenter</item>
+        <item>com.yek.android.kfc.activitys</item>
+        <item>com.popcap.pvz2cthdop</item>
+        <item>com.hnys.jqdd</item>
+        <item>com.ubestkid.beilehu.android</item>
+        <item>com.mihoyo.hyperion</item>
+        <item>com.cmcm.cfwallpaper</item>
+        <item>com.android.cfctsuvy.amfctsccl</item>
+        <item>com.fenqile.fenqile</item>
+        <item>com.tplink.ipc</item>
+        <item>com.wuba.town.client</item>
+        <item>com.yaoqi.zhiyuweather</item>
+        <item>com.cleanmaster.mguard_cn</item>
+        <item>com.jjwxc.reader</item>
+        <item>com.yiyou.ga</item>
+        <item>com.happy.walker</item>
+        <item>com.yicong.ants</item>
+        <item>com.hupu.shihuo</item>
+        <item>com.playgame.havefun</item>
+        <item>com.szgov.entrance</item>
+        <item>com.yunxiao.haofenshu</item>
+        <item>com.netease.tom.nearme.gamecenter</item>
+        <item>com.nxy.sc</item>
+        <item>com.sabac.hy</item>
+        <item>com.gstarmc.android</item>
+        <item>com.android.ptctsul.ahctsfactor</item>
+        <item>com.yipiao</item>
+        <item>cn.etouch.ecalendar</item>
+        <item>com.ucmobile.lite</item>
+        <item>com.tencent.submarine</item>
+        <item>com.yuncheapp.android.pearl</item>
+        <item>com.yangcong345.android.phone</item>
+        <item>com.yiruike.sodacn.android</item>
+        <item>com.xiachufang</item>
+        <item>com.lechuan.mdwz</item>
+        <item>com.jifen.qukan</item>
+        <item>com.android.clock.sd</item>
+        <item>com.youzu.bs.nearme.gamecenter</item>
+        <item>com.cootek.crazyreader</item>
+        <item>com.nx.nxapp</item>
+        <item>com.qidian.QDReader</item>
+        <item>com.yitong.mbank</item>
+        <item>com.qq.reader</item>
+        <item>com.network.xf100</item>
+        <item>com.martian.ttbookhd</item>
+        <item>com.hanweb.android.sdzwfw.activity</item>
+        <item>com.sf.activity</item>
+        <item>com.kwai.hisense</item>
+        <item>cn.xiaochuankeji.tieba</item>
+        <item>com.suning.mobile.ebuy</item>
+        <item>com.baidu.baidutranslate</item>
+        <item>com.babytree.apps.pregnancy</item>
+        <item>com.ganji.android.haoche_c</item>
+        <item>com.sankuai.meituan.meituanwaimaibusiness</item>
+        <item>com.xiwei.logistics</item>
+        <item>cn.com.cmbc.newmbank</item>
+        <item>com.mygolbs.mybus</item>
+        <item>com.sitech.ac</item>
+        <item>com.wepie.weplay</item>
+        <item>com.alibaba.ailabs.tg</item>
+        <item>cn.cj.pe</item>
+        <item>com.zuoyebang.knowledge</item>
+        <item>com.msxf.ayh</item>
+        <item>com.tencent.qt.qtl</item>
+        <item>com.kugou.android.elder</item>
+        <item>com.netease.g67.nearme.gamecenter</item>
+        <item>com.feiyu.luobo4.nearme.gamecenter</item>
+        <item>com.seewo.easicare.pro</item>
+        <item>cn.xender</item>
+        <item>com.xwtec.sd.mobileclient</item>
+        <item>com.chif.weather</item>
+        <item>com.nineton.shouzhang</item>
+        <item>com.dewmobile.kuaiya</item>
+        <item>com.huaxiaozhu.rider</item>
+        <item>com.music.jqssl</item>
+        <item>com.tencent.ttpic</item>
+        <item>com.baidu.video</item>
+        <item>com.tencent.gallerymanager</item>
+        <item>com.little.idiom</item>
+        <item>com.job.android</item>
+        <item>com.lanjingren.ivwen</item>
+        <item>com.qiyi.video.child</item>
+        <item>com.ydtx.camera</item>
+        <item>cn.missevan</item>
+        <item>com.tencent.weread</item>
+        <item>com.sinyee.babybus.world</item>
+        <item>com.cib.xyk</item>
+        <item>com.join.android.app.mgsim.wufun</item>
+        <item>com.xunmeng.merchant</item>
+        <item>com.spdbccc.app</item>
+        <item>com.cebbank.mobile.cemb</item>
+        <item>sleepy.mouse.chargingbox</item>
+        <item>com.t3go.passenger</item>
+        <item>com.meituan.turbo</item>
+        <item>com.tencent.tvoem</item>
+        <item>com.starbaba.simulator</item>
+        <item>com.xiaojingling.qcjb</item>
+        <item>com.sk.calculator</item>
+        <item>com.mgss.mihuan.nearme.gamecenter</item>
+        <item>com.haobo.huilife</item>
+        <item>com.zs.clean</item>
+        <item>com.mistong.ewt360</item>
+        <item>com.cmbc.cc.mbank</item>
+        <item>tv.pps.mobile</item>
+        <item>com.pandadastudio.ninjamustdie3.nearme.gamecenter</item>
+        <item>com.ss.android.homed</item>
+        <item>com.hxak.liangongbao</item>
+        <item>com.hpplay.happycast</item>
+        <item>com.youloft.icloser</item>
+        <item>com.outfit7.mytalkingtom2.nearme.gamecenter</item>
+        <item>com.eastmoney.android.berlin</item>
+        <item>com.wm.dmall</item>
+        <item>cmccwm.mobilemusic</item>
+        <item>com.tongcheng.android</item>
+        <item>cn.yonghui.hyd</item>
+        <item>com.netease.mail</item>
+        <item>com.qzone</item>
+        <item>com.summer_app</item>
+        <item>com.lailiang.jbxhj</item>
+        <item>com.lucky.luckyclient</item>
+        <item>cn.samsclub.app</item>
+        <item>com.umetrip.android.msky.app</item>
+        <item>com.antutu.ABenchMark</item>
+        <item>com.htinns</item>
+        <item>com.byd.aeri.caranywhere</item>
+        <item>cn.com.bmac.nfc</item>
+        <item>com.coolapk.market</item>
+        <item>com.taou.maimai</item>
+        <item>com.taobao.movie.android</item>
+        <item>com.vmall.client</item>
+        <item>com.bankofbeijing.mobilebanking</item>
+        <item>com.hundsun.winner.pazq</item>
+        <item>android.zhibo8</item>
+        <item>com.nbbank</item>
+        <item>com.smzdm.client.android</item>
+        <item>com.zxscnew</item>
+        <item>com.xiniaoyun.hongye</item>
+        <item>cn.eol.wen</item>
+        <item>com.hupu.games</item>
+        <item>com.tfsmy.apps.android.tfsmy</item>
+        <item>cn.ishansong</item>
+        <item>com.lietou.mishu</item>
+        <item>com.sankuai.movie</item>
+        <item>com.systoon.beijingtoon</item>
+        <item>com.bmcc.ms.ui</item>
+        <item>com.kaola</item>
+        <item>cn.xiaochuankeji.zuiyouLite</item>
+        <item>com.gtgj.view</item>
+        <item>com.hypergryph.arknights</item>
+        <item>com.wuba.bangjob</item>
+        <item>com.lingyue.zebraloan</item>
+        <item>com.tencent.tgp</item>
+        <item>com.android.ictstl.lwctsfactor</item>
+        <item>com.truedian.dragon</item>
+        <item>com.szlanyou.nissaniov</item>
+        <item>com.xiaomi.youpin</item>
+        <item>com.guotai.dazhihui</item>
+        <item>com.netease.edu.ucmooc</item>
+        <item>com.weifeng.hobby</item>
+        <item>com.redrcd.ylxf</item>
+        <item>cn.danatech.xingseapp</item>
+        <item>com.ushaqi.zhuishushenqi</item>
+        <item>com.jf.lkrj</item>
+        <item>com.sgcc.evs.echarge</item>
+        <item>com.guosen.android</item>
+        <item>com.mfw.roadbook</item>
+        <item>com.taobao.shoppingstreets</item>
+        <item>cn.bevol.p</item>
+        <item>com.luojilab.player</item>
+        <item>com.huayi.cme</item>
+        <item>com.alibaba.taurus.zhejiang</item>
+        <item>com.dingYZ.dingyzwater</item>
+        <item>com.hlg.daydaytobusiness</item>
+        <item>com.mfp.jelly.oppo</item>
+        <item>com.hnzycfc.zyxj</item>
+        <item>com.weaver.emobile7</item>
+        <item>com.navinfo.gw</item>
+        <item>com.duitang.main</item>
+        <item>com.jf.my</item>
+        <item>com.android.wqctsoc.sizctsaio</item>
+        <item>com.pingan.smt</item>
+        <item>com.android.gctscm.vxjctsratio</item>
+        <item>com.okinc.okex</item>
+        <item>com.youdao.note</item>
+        <item>com.gree.greesmarthome</item>
+        <item>com.netease.cbg</item>
+        <item>com.meituan.retail.v.android</item>
+        <item>android.xctsgi.ructsratio</item>
+        <item>com.android.haitong</item>
+        <item>com.uroad.piaogen</item>
+        <item>com.tencent.tim</item>
+        <item>com.microsoft.office.outlook</item>
+        <item>com.liulishuo.engzo</item>
+        <item>com.aibang.bjtraffic</item>
+        <item>com.lbvolunteer.gaokao</item>
+        <item>com.ss.android.merchant</item>
+        <item>com.lixiangdong.textscanner</item>
+        <item>com.fenbi.android.zenglish</item>
+        <item>com.bertadata.qxb</item>
+        <item>com.niwodai.universityloan</item>
+        <item>cn.missfresh.application</item>
+        <item>com.bqg.ddnoverl</item>
+        <item>com.car300.activity</item>
+        <item>com.qingdou.android</item>
+        <item>zhongxinjiantou.szkingdom.android.newphone</item>
+        <item>com.galaxy.stock</item>
+        <item>cn.com.shbank.mper</item>
+        <item>com.chipsea.btcontrol</item>
+        <item>com.netease.yanxuan</item>
+        <item>com.cmri.ercs.yqx</item>
+        <item>com.v2ray.ang</item>
+        <item>com.tencent.docs</item>
+        <item>com.wenhua.bamboo</item>
+        <item>com.alimama.moon</item>
+        <item>cn.com.sina.finance</item>
+        <item>com.zhinengremote.mohan</item>
+        <item>com.slkj.paotui.customer</item>
+        <item>cn.ninebot.ninebot</item>
+        <item>com.vbill.shoushua.biz</item>
+        <item>com.zmzx.college.search</item>
+        <item>com.kingsoft</item>
+        <item>me.suncloud.marrymemo</item>
+        <item>com.yinxiang</item>
+        <item>com.netease.buff</item>
+        <item>com.yumc.phsuperapp</item>
+        <item>ai.zuoye.app</item>
+        <item>com.ksxxzk.edu</item>
+        <item>com.seeyon.cmp</item>
+        <item>com.imaginer.yunji</item>
+        <item>com.tvbc.maiduidui</item>
+        <item>cn.com.changan.cvim</item>
+        <item>com.gangduo.microbeauty</item>
+        <item>com.lengjing.poezw</item>
+        <item>com.wandafilm.app</item>
+        <item>com.xfplay.play</item>
+        <item>com.seewo.en</item>
+        <item>com.aligames.kuang.kybc.nearme.gamecenter</item>
+        <item>com.baidu.xin.aiqicha</item>
+        <item>com.ocrm.im</item>
+        <item>com.hyww.wisdomtree</item>
+        <item>com.tencent.portfolio</item>
+        <item>com.chinasofti.shanghaihuateng.metroapp</item>
+        <item>com.fbx.handwriteime</item>
+        <item>com.cqmc.client</item>
+        <item>com.peopledailychina.activity</item>
+        <item>com.hanweb.android.jszwfw.activity</item>
+        <item>com.maimemo.android.momo</item>
+        <item>com.scjkl.ovh</item>
+        <item>com.android.pctsjq.cdctsoptic</item>
+        <item>com.Kingdee.Express</item>
+        <item>com.cleanmaster.mguard_cn</item>
+        <item>com.sinovatech.gxmobile.ui</item>
+        <item>com.shuqu.banyan</item>
+        <item>com.bwton.tjmetro</item>
+        <item>com.wondersgroup.whs</item>
+        <item>com.vcredit.ddcash</item>
+        <item>com.laiwanyt.laiwanyt</item>
+        <item>com.anjuke.android.newbroker</item>
+        <item>com.teslamotors.tesla</item>
+        <item>com.sina.oasis</item>
+        <item>android.lhictszd.rcwctsspeed</item>
+        <item>com.ruidonghy.will</item>
+        <item>com.android.fctszz.qvctsspeed</item>
+        <item>com.cn21.ecloud</item>
+        <item>com.mhqq.comic</item>
+        <item>com.daimler.ris.mercedesme.cn.android</item>
+        <item>com.android.cmctsymn.yrctsapple</item>
+        <item>com.vanke.activity</item>
+        <item>com.meitu.meipaimv</item>
+        <item>com.shanbay.sentence</item>
+        <item>com.tencent.pao</item>
+        <item>com.example.servyouappzhuhai</item>
+        <item>com.netease.onmyoji.nearme.gamecenter</item>
+        <item>cn.com.njcb.android.mobilebank</item>
+        <item>com.xxx.svideo</item>
+        <item>com.ibike.publicbicycle.activity</item>
+        <item>com.wlqq4consignor</item>
+        <item>com.yiban.app</item>
+        <item>com.shuojie.recognize</item>
+        <item>com.cerdillac.proccd.cn</item>
+        <item>com.tencent.tmgp.qmdgl</item>
+        <item>com.bly.dkplat</item>
+        <item>com.hihonor.vmall</item>
+        <item>com.ovelin.guitartuna</item>
+        <item>com.cmcc.android.ysx</item>
+        <item>com.manmanbuy.bijia</item>
+        <item>com.tencent.FileManager</item>
+        <item>com.tencent.mp</item>
+        <item>com.cashtoutiao</item>
+        <item>com.tianyancha.skyeyequery</item>
+        <item>com.xj.tiger</item>
+        <item>com.psyone.brainmusic</item>
+        <item>com.cam.faceshow</item>
+        <item>com.picooc</item>
+        <item>com.xtuone.android.syllabus</item>
+        <item>com.crland.mixc</item>
+        <item>com.ylzinfo.chinahrss</item>
+        <item>cn.dictcn.android.digitize.swg_xhzd_21003</item>
+        <item>com.gome.eshopnew</item>
+        <item>com.qcplay.snail.nearme.gamecenter</item>
+        <item>com.nike.omega</item>
+        <item>com.huania.earthquakewarning</item>
+        <item>com.fxphone</item>
+        <item>com.qp333.car</item>
+        <item>com.jingcai.apps.qualitydev</item>
+        <item>cn.com.weilaihui3</item>
+        <item>ch999.app.UI</item>
+        <item>com.timanetworks.android.faw.vw.aftermarket.release</item>
+        <item>com.tianlutech.ebus</item>
+        <item>com.yuedong.sport</item>
+        <item>com.lengjing.ktyaokong</item>
+        <item>com.fcbox.hiveconsumer</item>
+        <item>com.suning.mobile.epa</item>
+        <item>net.afdian.afdian</item>
+        <item>com.ss.android.ugc.aweme</item>
+        <item>com.jingdong.app.mall</item>
+        <item>com.tencent.ibg.joox</item>
+    </array>
+    <array name="device_case_view_ports">
+        <item>100 60 980 700</item>
+    </array>
+    <array name="oplus_nav_bar_gesture_gear_value">
+        <item>12,19,24,32,40</item>
+        <item>12,19,24,32,40</item>
+        <item>12,19,24,32,40</item>
+        <item>12,19,24,32,40</item>
+    </array>
+    <array name="block_app_window_package_list">
+        <item>com.nimobile.nearme.gamecenter</item>
+        <item>com.skatesurfers.nearme.gamecenter</item>
+        <item>com.racingstunt.man.nearme.gamecenter</item>
+        <item>com.fightord.nearme.gamecenter</item>
+        <item>com.realdrift.nearme.gamecenter</item>
+        <item>com.offroad.racing.nearme.gamecenter</item>
+        <item>com.rdrift.nearme.gamecenter</item>
+    </array>
+    <array name="avoid_configchange_notify_for_zoom_pkg">
+        <item>com.android.vending</item>
+        <item>com.google.android.apps.docs</item>
+        <item>com.google.android.gm</item>
+        <item>com.google.android.calculator</item>
+        <item>com.google.android.apps.docs.editors.slides</item>
+        <item>com.taxsee.taxsee</item>
+        <item>com.medium.reader</item>
+        <item>com.google.android.keep</item>
+        <item>com.google.android.calendar</item>
+        <item>com.finshell.fin</item>
+        <item>com.google.android.apps.adm</item>
+        <item>com.google.android.apps.tachyon</item>
+    </array>
+    <array name="oplus_autofill_blacklist">
+        <item>com.taobao.search.searchdoor.SearchDoorActivity</item>
+        <item>com.jd.lib.search.view.Activity.SearchActivity</item>
+        <item>com.android.contacts.DialtactsActivityAlias</item>
+        <item>com.customize.contacts.activities.ContactsTabActivity</item>
+        <item>com.tencent.mm.ui.chatting.ChattingUI</item>
+        <item>com.tencent.mm.ui.LauncherUI</item>
+        <item>com.tencent.mobileqq.activity.SplashActivity</item>
+        <item>com.yunzhijia.im.chat.ui.ChatActivity</item>
+        <item>com.alibaba.android.dingtalkim.activities.ChatMsgActivity</item>
+    </array>
+    <array name="aquatic_alarm_peace_voice">
+        <item>@string/ringtone_nightsky</item>
+        <item>@string/ringtone_thestars</item>
+        <item>@string/ringtone_thesunrise</item>
+        <item>@string/ringtone_thesunset</item>
+        <item>@string/ringtone_meditate</item>
+        <item>@string/ringtone_distant</item>
+        <item>@string/ringtone_pond</item>
+        <item>@string/ringtone_moonlotus</item>
+    </array>
+    <array name="aquatic_alarm_peace_voice_files">
+        <item>Night sky</item>
+        <item>Twinkling stars</item>
+        <item>Sunrise</item>
+        <item>Sunset</item>
+        <item>Meditation</item>
+        <item>Far away</item>
+        <item>Verdant lotus pond</item>
+        <item>Lotus by moonlight</item>
+    </array>
+    <array name="aquatic_mms_natural_vitality">
+        <item>@string/ringtone_fluctuation</item>
+        <item>@string/ringtone_blow</item>
+        <item>@string/ringtone_leaveslight</item>
+        <item>@string/ringtone_warmsun</item>
+        <item>@string/ringtone_snowflake</item>
+        <item>@string/ringtone_crystalclear</item>
+        <item>@string/ringtone_insects</item>
+        <item>@string/ringtone_dew</item>
+        <item>@string/ringtone_shine</item>
+        <item>@string/ringtone_frost</item>
+        <item>@string/ringtone_rainsplash</item>
+        <item>@string/ringtone_raindrop</item>
+    </array>
+    <array name="aquatic_mms_natural_vitality_files">
+        <item>A gust of wind</item>
+        <item>Wind chime</item>
+        <item>Sliver of light</item>
+        <item>Warming sun</item>
+        <item>Snowflake</item>
+        <item>Crystal</item>
+        <item>Droplets</item>
+        <item>Dew on the bamboo</item>
+        <item>Snow underfoot</item>
+        <item>Glistening</item>
+        <item>Splash</item>
+        <item>Raindrop</item>
+    </array>
+    <array name="aquatic_mms_peace_voice">
+        <item>@string/ringtone_staracross</item>
+        <item>@string/ringtone_fullmoon</item>
+        <item>@string/ringtone_clouds</item>
+        <item>@string/ringtone_wonderland</item>
+        <item>@string/ringtone_still</item>
+        <item>@string/ringtone_haunting</item>
+        <item>@string/ringtone_dragonfly</item>
+        <item>@string/ringtone_dropwater</item>
+    </array>
+    <array name="aquatic_mms_peace_voice_files">
+        <item>Shooting star</item>
+        <item>Full moon</item>
+        <item>Clouds</item>
+        <item>Fairy realm</item>
+        <item>Serenity</item>
+        <item>Reverberation</item>
+        <item>Dragonfly</item>
+        <item>Slipping</item>
+    </array>
+    <array name="aquatic_notification_natural_vitality">
+        <item>@string/ringtone_fluctuation</item>
+        <item>@string/ringtone_blow</item>
+        <item>@string/ringtone_leaveslight</item>
+        <item>@string/ringtone_warmsun</item>
+        <item>@string/ringtone_snowflake</item>
+        <item>@string/ringtone_crystalclear</item>
+        <item>@string/ringtone_insects</item>
+        <item>@string/ringtone_dew</item>
+        <item>@string/ringtone_shine</item>
+        <item>@string/ringtone_frost</item>
+        <item>@string/ringtone_rainsplash</item>
+        <item>@string/ringtone_raindrop</item>
+    </array>
+    <array name="aquatic_notification_natural_vitality_files">
+        <item>A gust of wind</item>
+        <item>Wind chime</item>
+        <item>Sliver of light</item>
+        <item>Warming sun</item>
+        <item>Snowflake</item>
+        <item>Crystal</item>
+        <item>Droplets</item>
+        <item>Dew on the bamboo</item>
+        <item>Snow underfoot</item>
+        <item>Glistening</item>
+        <item>Splash</item>
+        <item>Raindrop</item>
+    </array>
+    <array name="aquatic_notification_peace_voice">
+        <item>@string/ringtone_staracross</item>
+        <item>@string/ringtone_fullmoon</item>
+        <item>@string/ringtone_clouds</item>
+        <item>@string/ringtone_wonderland</item>
+        <item>@string/ringtone_still</item>
+        <item>@string/ringtone_haunting</item>
+        <item>@string/ringtone_dragonfly</item>
+        <item>@string/ringtone_dropwater</item>
+    </array>
+    <array name="aquatic_notification_peace_voice_files">
+        <item>Shooting star</item>
+        <item>Full moon</item>
+        <item>Clouds</item>
+        <item>Fairy realm</item>
+        <item>Serenity</item>
+        <item>Reverberation</item>
+        <item>Dragonfly</item>
+        <item>Slipping</item>
+    </array>
+    <array name="aquatic_ringtone_natural_vitality">
+        <item>@string/ringtone_ripplingwater</item>
+        <item>@string/ringtone_shimmer</item>
+        <item>@string/ringtone_batheearth</item>
+        <item>@string/ringtone_junglemorning</item>
+        <item>@string/ringtone_silver</item>
+        <item>@string/ringtone_elegantquiet</item>
+        <item>@string/ringtone_summerbeach</item>
+        <item>@string/ringtone_summernight</item>
+        <item>@string/ringtone_icesnow</item>
+        <item>@string/ringtone_wintersnow</item>
+        <item>@string/ringtone_rainforest</item>
+        <item>@string/ringtone_raineverything</item>
+    </array>
+    <array name="aquatic_ringtone_natural_vitality_files">
+        <item>Shimmer</item>
+        <item>First rays</item>
+        <item>Waking city</item>
+        <item>Forest morning</item>
+        <item>Blanket of snow</item>
+        <item>Tranquil</item>
+        <item>Summer beach</item>
+        <item>Summer night</item>
+        <item>Sunlight on snow</item>
+        <item>Snow falling</item>
+        <item>Rainforest</item>
+        <item>Drizzling</item>
+    </array>
+    <array name="aquatic_ringtone_peace_voice">
+        <item>@string/ringtone_nightsky</item>
+        <item>@string/ringtone_thestars</item>
+        <item>@string/ringtone_thesunrise</item>
+        <item>@string/ringtone_thesunset</item>
+        <item>@string/ringtone_meditate</item>
+        <item>@string/ringtone_distant</item>
+        <item>@string/ringtone_pond</item>
+        <item>@string/ringtone_moonlotus</item>
+    </array>
+    <array name="aquatic_ringtone_peace_voice_files">
+        <item>Night sky</item>
+        <item>Twinkling stars</item>
+        <item>Sunrise</item>
+        <item>Sunset</item>
+        <item>Meditation</item>
+        <item>Far away</item>
+        <item>Verdant lotus pond</item>
+        <item>Lotus by moonlight</item>
+    </array>
+    <array name="aquatic_theme_array_alarm">
+        <item>aquatic_alarm_peace_voice</item>
+        <item>aquatic_alarm_natural_vitality</item>
+    </array>
+    <array name="aquatic_theme_array_mms">
+        <item>aquatic_mms_peace_voice</item>
+        <item>aquatic_mms_natural_vitality</item>
+    </array>
+    <array name="aquatic_theme_array_notification">
+        <item>aquatic_notification_peace_voice</item>
+        <item>aquatic_notification_natural_vitality</item>
+    </array>
+    <array name="aquatic_theme_array_ringtone">
+        <item>aquatic_ringtone_peace_voice</item>
+        <item>aquatic_ringtone_natural_vitality</item>
+    </array>
+</resources>

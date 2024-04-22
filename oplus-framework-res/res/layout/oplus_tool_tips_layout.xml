@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/oplus_tool_tips_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ScrollView android:layout_gravity="center_vertical" android:id="@+id/tool_tips_scrollView" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never">
+        <TextView android:textColor="@android:color/white" android:id="@+id/tool_tips_contentTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" android:textAlignment="viewStart" android:fallbackLineSpacing="false"/>
+    </ScrollView>
+    <ImageView android:layout_gravity="end|center_vertical" android:id="@+id/tool_tips_dismissIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/oplus_tool_tips_delete_icon" android:contentDescription="@string/oplus_tool_tips_delete_icon_description" android:layout_marginEnd="9dp"/>
+</FrameLayout>
