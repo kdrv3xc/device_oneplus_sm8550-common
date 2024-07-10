@@ -1,6 +1,7 @@
 package com.oplus.uifirst;
 
+/* loaded from: classes.dex */
 public class Utils {
-    public void setUxThreadValue(int pid, int tid, String value) {
+    public void setUxThreadValue(int i, int i2, String str) {
     }
 }

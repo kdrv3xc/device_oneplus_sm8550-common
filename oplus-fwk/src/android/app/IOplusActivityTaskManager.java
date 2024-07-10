@@ -8,7 +8,6 @@ import java.util.List;
 
 /* loaded from: classes.dex */
 public interface IOplusActivityTaskManager extends IOplusBaseActivityTaskManager {
-
     List<OplusAppInfo> getAllTopAppInfos() throws RemoteException;
 
     List<OplusAppInfo> getAllTopApps() throws RemoteException;

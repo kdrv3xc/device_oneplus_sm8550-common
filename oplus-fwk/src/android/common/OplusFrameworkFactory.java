@@ -1,7 +1,7 @@
 package android.common;
 
+/* loaded from: classes.dex */
 public class OplusFrameworkFactory {
-
     private static OplusFrameworkFactory sOplusFrameworkFactory = null;
 
     public static OplusFrameworkFactory getInstance() {

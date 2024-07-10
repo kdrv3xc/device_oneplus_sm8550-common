@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.os.UserHandle;
 import android.util.Log;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes.dex */
 public abstract class OplusSettingsChangeListener extends ContentObserver {
     public abstract void onSettingsChange(boolean z, String str, int i);
 
@@ -15,31 +15,31 @@ public abstract class OplusSettingsChangeListener extends ContentObserver {
     }
 
     @Override // android.database.ContentObserver
-    public final void onChange(boolean selfChange) {
+    public final void onChange(boolean z) {
     }
 
     @Override // android.database.ContentObserver
-    public final void onChange(boolean selfChange, Uri uri) {
-        filterUserId(selfChange, uri);
+    public final void onChange(boolean z, Uri uri) {
+        filterUserId(z, uri);
     }
 
     @Override // android.database.ContentObserver
-    public final void onChange(boolean selfChange, Uri uri, int userId) {
-        filterUserId(selfChange, uri);
+    public final void onChange(boolean z, Uri uri, int i) {
+        filterUserId(z, uri);
     }
 
-    private void filterUserId(boolean selfChange, Uri uri) {
+    private void filterUserId(boolean z, Uri uri) {
         try {
-            int id = Integer.valueOf(uri.getQueryParameter(OplusSettingsConfig.PARAMS_USER_ID)).intValue();
+            int intValue = Integer.valueOf(uri.getQueryParameter(OplusSettingsConfig.PARAMS_USER_ID)).intValue();
             if (OplusSettings.isSystemProcess()) {
-                onSettingsChange(selfChange, uri.getPath(), id);
-            } else if (id == UserHandle.myUserId()) {
-                onSettingsChange(selfChange, uri.getPath(), id);
+                onSettingsChange(z, uri.getPath(), intValue);
+            } else if (intValue != UserHandle.myUserId()) {
+                Log.w("CSListener", "filterUserId else selfChange=" + z + " uri=" + uri.toString());
             } else {
-                Log.w("CSListener", "filterUserId else selfChange=" + selfChange + " uri=" + uri.toString());
+                onSettingsChange(z, uri.getPath(), intValue);
             }
         } catch (Exception e) {
-            Log.e("CSListener", "filterUserId ERROR selfChange=" + selfChange + " uri=" + uri.toString(), e);
+            Log.e("CSListener", "filterUserId ERROR selfChange=" + z + " uri=" + uri.toString(), e);
         }
     }
 }

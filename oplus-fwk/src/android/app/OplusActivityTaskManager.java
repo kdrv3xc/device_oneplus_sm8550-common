@@ -24,67 +24,63 @@ public class OplusActivityTaskManager extends OplusBaseActivityTaskManager imple
 
     @Override // android.app.IOplusActivityTaskManager
     public ComponentName getTopActivityComponentName() throws RemoteException {
-        Parcel data = Parcel.obtain();
-        Parcel reply = Parcel.obtain();
+        Parcel obtain = Parcel.obtain();
+        Parcel obtain2 = Parcel.obtain();
         try {
-            data.writeInterfaceToken("android.app.IActivityTaskManager");
-            this.mRemote.transact(10007, data, reply, 0);
-            reply.readException();
-            ComponentName name = ComponentName.readFromParcel(reply);
-            return name;
+            obtain.writeInterfaceToken(IOplusBaseActivityTaskManager.DESCRIPTOR);
+            this.mRemote.transact(10007, obtain, obtain2, 0);
+            obtain2.readException();
+            return ComponentName.readFromParcel(obtain2);
         } finally {
-            data.recycle();
-            reply.recycle();
+            obtain.recycle();
+            obtain2.recycle();
         }
     }
 
     @Override // android.app.IOplusActivityTaskManager
     public ApplicationInfo getTopApplicationInfo() throws RemoteException {
-        Parcel data = Parcel.obtain();
-        Parcel reply = Parcel.obtain();
+        Parcel obtain = Parcel.obtain();
+        Parcel obtain2 = Parcel.obtain();
         try {
-            data.writeInterfaceToken("android.app.IActivityTaskManager");
-            this.mRemote.transact(10011, data, reply, 0);
-            reply.readException();
-            ApplicationInfo info = ApplicationInfo.CREATOR.createFromParcel(reply);
-            return info;
+            obtain.writeInterfaceToken(IOplusBaseActivityTaskManager.DESCRIPTOR);
+            this.mRemote.transact(10011, obtain, obtain2, 0);
+            obtain2.readException();
+            return (ApplicationInfo) ApplicationInfo.CREATOR.createFromParcel(obtain2);
         } finally {
-            data.recycle();
-            reply.recycle();
+            obtain.recycle();
+            obtain2.recycle();
         }
     }
 
     @Override // android.app.IOplusActivityTaskManager
     public List<OplusAppInfo> getAllTopAppInfos() throws RemoteException {
-        Parcel data = Parcel.obtain();
-        Parcel reply = Parcel.obtain();
+        Parcel obtain = Parcel.obtain();
+        Parcel obtain2 = Parcel.obtain();
         new ArrayList();
         try {
-            data.writeInterfaceToken("android.app.IActivityTaskManager");
-            this.mRemote.transact(10053, data, reply, 0);
-            reply.readException();
-            List<OplusAppInfo> list = reply.createTypedArrayList(OplusAppInfo.CREATOR);
-            return list;
+            obtain.writeInterfaceToken(IOplusBaseActivityTaskManager.DESCRIPTOR);
+            this.mRemote.transact(10053, obtain, obtain2, 0);
+            obtain2.readException();
+            return obtain2.createTypedArrayList(OplusAppInfo.CREATOR);
         } finally {
-            data.recycle();
-            reply.recycle();
+            obtain.recycle();
+            obtain2.recycle();
         }
     }
 
     @Override // android.app.IOplusActivityTaskManager
     public List<OplusAppInfo> getAllTopApps() throws RemoteException {
-        Parcel data = Parcel.obtain();
-        Parcel reply = Parcel.obtain();
+        Parcel obtain = Parcel.obtain();
+        Parcel obtain2 = Parcel.obtain();
         new ArrayList();
         try {
-            data.writeInterfaceToken("android.app.IActivityTaskManager");
-            this.mRemote.transact(10058, data, reply, 0);
-            reply.readException();
-            List<OplusAppInfo> list = reply.createTypedArrayList(OplusAppInfo.CREATOR);
-            return list;
+            obtain.writeInterfaceToken(IOplusBaseActivityTaskManager.DESCRIPTOR);
+            this.mRemote.transact(10058, obtain, obtain2, 0);
+            obtain2.readException();
+            return obtain2.createTypedArrayList(OplusAppInfo.CREATOR);
         } finally {
-            data.recycle();
-            reply.recycle();
+            obtain.recycle();
+            obtain2.recycle();
         }
     }
 }

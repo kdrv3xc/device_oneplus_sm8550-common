@@ -1,43 +1,51 @@
 package android.app.job;
 
+/* loaded from: classes.dex */
 public interface IJobInfoExt {
 
-    public final class JobBuilderExt {
-
+    /* loaded from: classes.dex */
+    public static final class JobBuilderExt {
         public boolean mIsOplusJob;
 
-        public JobBuilderExt setRequiresBattIdle(boolean requiresBattIdle, int extra) {
+        public JobBuilderExt setRequiresBattIdle(boolean z, int i) {
             return this;
         }
     }
 
-    default boolean getBooleanConstraint(String type, boolean defValue) {
-        return defValue;
+    default boolean getBooleanConstraint(String str, boolean z) {
+        return z;
     }
 
-    default String getStringConstraint(String type, String defValue) {
-        return defValue;
+    default String getStringConstraint(String str, String str2) {
+        return str2;
     }
 
-    default int getIntConstraint(String type, int defValue) {
-        return defValue;
+    default int getIntConstraint(String str, int i) {
+        return i;
     }
 
-    default long getLongConstraint(String type, long defValue) {
-        return defValue;
+    default long getLongConstraint(String str, long j) {
+        return j;
     }
 
-    default void setBooleanConstraint(String type, boolean value) {}
+    default void setBooleanConstraint(String str, boolean z) {
+    }
 
-    default void setStringConstraint(String type, String value) {}
+    default void setStringConstraint(String str, String str2) {
+    }
 
-    default void setIntConstraint(String type, int value) {}
+    default void setIntConstraint(String str, int i) {
+    }
 
-    default void setLongConstraint(JobInfo job, String type, long value) {}
+    default void setLongConstraint(JobInfo jobInfo, String str, long j) {
+    }
 
-    default void initJobInfo(Object in) {}
+    default void initJobInfo(Object obj) {
+    }
 
-    default void initJobInfoPure(JobBuilderExt jobBuilderExt) {}
+    default void initJobInfoPure(JobBuilderExt jobBuilderExt) {
+    }
 
-    default void writeToParcelJobInfo(Object out, int flags) {}
+    default void writeToParcelJobInfo(Object obj, int i) {
+    }
 }

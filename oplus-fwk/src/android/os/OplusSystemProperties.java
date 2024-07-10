@@ -1,20 +1,20 @@
 package android.os;
 
+/* loaded from: classes.dex */
 public class OplusSystemProperties {
-
-    public static String get(String key) {
-        return SystemProperties.get(key, "");
+    public static String get(String str) {
+        return SystemProperties.get(str, "");
     }
 
-    public static String get(String key, String def) {
-        return SystemProperties.get(key, def);
+    public static String get(String str, String str2) {
+        return SystemProperties.get(str, str2);
     }
 
-    public static int getInt(String key, int def) {
-        return SystemProperties.getInt(key, def);
+    public static int getInt(String str, int i) {
+        return SystemProperties.getInt(str, i);
     }
 
-    public static boolean getBoolean(String key, boolean def) {
-        return SystemProperties.getBoolean(key, def);
+    public static boolean getBoolean(String str, boolean z) {
+        return SystemProperties.getBoolean(str, z);
     }
 }

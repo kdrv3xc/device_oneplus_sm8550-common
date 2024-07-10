@@ -2,40 +2,41 @@ package vendor.oplus.hardware.performance.V1_0;
 
 import java.util.ArrayList;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes.dex */
 public final class UploadType {
     public static final int DELTA = 1;
     public static final int PRIMITIVE = 0;
     public static final int SKIP = 2;
 
-    public static final String toString(int o) {
-        if (o == 0) {
+    public static final String toString(int i) {
+        if (i == 0) {
             return "PRIMITIVE";
         }
-        if (o == 1) {
+        if (i == 1) {
             return "DELTA";
         }
-        if (o == 2) {
+        if (i == 2) {
             return "SKIP";
         }
-        return "0x" + Integer.toHexString(o);
+        return "0x" + Integer.toHexString(i);
     }
 
-    public static final String dumpBitfield(int o) {
-        ArrayList<String> list = new ArrayList<>();
-        int flipped = 0;
-        list.add("PRIMITIVE");
-        if ((o & 1) == 1) {
-            list.add("DELTA");
-            flipped = 0 | 1;
+    public static final String dumpBitfield(int i) {
+        ArrayList arrayList = new ArrayList();
+        arrayList.add("PRIMITIVE");
+        int i2 = 1;
+        if ((i & 1) != 1) {
+            i2 = 0;
+        } else {
+            arrayList.add("DELTA");
         }
-        if ((o & 2) == 2) {
-            list.add("SKIP");
-            flipped |= 2;
+        if ((i & 2) == 2) {
+            arrayList.add("SKIP");
+            i2 |= 2;
         }
-        if (o != flipped) {
-            list.add("0x" + Integer.toHexString((~flipped) & o));
+        if (i != i2) {
+            arrayList.add("0x" + Integer.toHexString(i & (~i2)));
         }
-        return String.join(" | ", list);
+        return String.join(" | ", arrayList);
     }
 }

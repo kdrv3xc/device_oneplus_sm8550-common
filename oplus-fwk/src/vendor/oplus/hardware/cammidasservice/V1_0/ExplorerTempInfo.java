@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes.dex */
 public final class ExplorerTempInfo {
     public float[] DDRTemp = new float[2];
     public float[] NPUTemp = new float[2];
@@ -15,15 +15,15 @@ public final class ExplorerTempInfo {
     public float[] MAXCPUTemp = new float[2];
     public float[] surfaceTemp = new float[2];
 
-    public final boolean equals(Object otherObject) {
-        if (this == otherObject) {
+    public final boolean equals(Object obj) {
+        if (this == obj) {
             return true;
         }
-        if (otherObject == null || otherObject.getClass() != ExplorerTempInfo.class) {
+        if (obj == null || obj.getClass() != ExplorerTempInfo.class) {
             return false;
         }
-        ExplorerTempInfo other = (ExplorerTempInfo) otherObject;
-        if (HidlSupport.deepEquals(this.DDRTemp, other.DDRTemp) && HidlSupport.deepEquals(this.NPUTemp, other.NPUTemp) && HidlSupport.deepEquals(this.ISPTemp, other.ISPTemp) && HidlSupport.deepEquals(this.MAXCPUTemp, other.MAXCPUTemp) && HidlSupport.deepEquals(this.surfaceTemp, other.surfaceTemp)) {
+        ExplorerTempInfo explorerTempInfo = (ExplorerTempInfo) obj;
+        if (HidlSupport.deepEquals(this.DDRTemp, explorerTempInfo.DDRTemp) && HidlSupport.deepEquals(this.NPUTemp, explorerTempInfo.NPUTemp) && HidlSupport.deepEquals(this.ISPTemp, explorerTempInfo.ISPTemp) && HidlSupport.deepEquals(this.MAXCPUTemp, explorerTempInfo.MAXCPUTemp) && HidlSupport.deepEquals(this.surfaceTemp, explorerTempInfo.surfaceTemp)) {
             return true;
         }
         return false;
@@ -37,87 +37,81 @@ public final class ExplorerTempInfo {
         return "{.DDRTemp = " + Arrays.toString(this.DDRTemp) + ", .NPUTemp = " + Arrays.toString(this.NPUTemp) + ", .ISPTemp = " + Arrays.toString(this.ISPTemp) + ", .MAXCPUTemp = " + Arrays.toString(this.MAXCPUTemp) + ", .surfaceTemp = " + Arrays.toString(this.surfaceTemp) + "}";
     }
 
-    public final void readFromParcel(HwParcel parcel) {
-        HwBlob blob = parcel.readBuffer(40L);
-        readEmbeddedFromParcel(parcel, blob, 0L);
+    public final void readFromParcel(HwParcel hwParcel) {
+        readEmbeddedFromParcel(hwParcel, hwParcel.readBuffer(40L), 0L);
     }
 
-    public static final ArrayList<ExplorerTempInfo> readVectorFromParcel(HwParcel parcel) {
-        ArrayList<ExplorerTempInfo> _hidl_vec = new ArrayList<>();
-        HwBlob _hidl_blob = parcel.readBuffer(16L);
-        int _hidl_vec_size = _hidl_blob.getInt32(8L);
-        HwBlob childBlob = parcel.readEmbeddedBuffer(_hidl_vec_size * 40, _hidl_blob.handle(), 0L, true);
-        _hidl_vec.clear();
-        for (int _hidl_index_0 = 0; _hidl_index_0 < _hidl_vec_size; _hidl_index_0++) {
-            ExplorerTempInfo _hidl_vec_element = new ExplorerTempInfo();
-            _hidl_vec_element.readEmbeddedFromParcel(parcel, childBlob, _hidl_index_0 * 40);
-            _hidl_vec.add(_hidl_vec_element);
+    public static final ArrayList<ExplorerTempInfo> readVectorFromParcel(HwParcel hwParcel) {
+        ArrayList<ExplorerTempInfo> arrayList = new ArrayList<>();
+        HwBlob readBuffer = hwParcel.readBuffer(16L);
+        int int32 = readBuffer.getInt32(8L);
+        HwBlob readEmbeddedBuffer = hwParcel.readEmbeddedBuffer(int32 * 40, readBuffer.handle(), 0L, true);
+        arrayList.clear();
+        for (int i = 0; i < int32; i++) {
+            ExplorerTempInfo explorerTempInfo = new ExplorerTempInfo();
+            explorerTempInfo.readEmbeddedFromParcel(hwParcel, readEmbeddedBuffer, i * 40);
+            arrayList.add(explorerTempInfo);
         }
-        return _hidl_vec;
+        return arrayList;
     }
 
-    public final void readEmbeddedFromParcel(HwParcel parcel, HwBlob _hidl_blob, long _hidl_offset) {
-        long _hidl_array_offset_0 = 0 + _hidl_offset;
-        _hidl_blob.copyToFloatArray(_hidl_array_offset_0, this.DDRTemp, 2);
-        long _hidl_array_offset_02 = 8 + _hidl_offset;
-        _hidl_blob.copyToFloatArray(_hidl_array_offset_02, this.NPUTemp, 2);
-        long _hidl_array_offset_03 = 16 + _hidl_offset;
-        _hidl_blob.copyToFloatArray(_hidl_array_offset_03, this.ISPTemp, 2);
-        long _hidl_array_offset_04 = 24 + _hidl_offset;
-        _hidl_blob.copyToFloatArray(_hidl_array_offset_04, this.MAXCPUTemp, 2);
-        long _hidl_array_offset_05 = 32 + _hidl_offset;
-        _hidl_blob.copyToFloatArray(_hidl_array_offset_05, this.surfaceTemp, 2);
+    public final void readEmbeddedFromParcel(HwParcel hwParcel, HwBlob hwBlob, long j) {
+        hwBlob.copyToFloatArray(0 + j, this.DDRTemp, 2);
+        hwBlob.copyToFloatArray(8 + j, this.NPUTemp, 2);
+        hwBlob.copyToFloatArray(16 + j, this.ISPTemp, 2);
+        hwBlob.copyToFloatArray(24 + j, this.MAXCPUTemp, 2);
+        hwBlob.copyToFloatArray(j + 32, this.surfaceTemp, 2);
     }
 
-    public final void writeToParcel(HwParcel parcel) {
-        HwBlob _hidl_blob = new HwBlob(40);
-        writeEmbeddedToBlob(_hidl_blob, 0L);
-        parcel.writeBuffer(_hidl_blob);
+    public final void writeToParcel(HwParcel hwParcel) {
+        HwBlob hwBlob = new HwBlob(40);
+        writeEmbeddedToBlob(hwBlob, 0L);
+        hwParcel.writeBuffer(hwBlob);
     }
 
-    public static final void writeVectorToParcel(HwParcel parcel, ArrayList<ExplorerTempInfo> _hidl_vec) {
-        HwBlob _hidl_blob = new HwBlob(16);
-        int _hidl_vec_size = _hidl_vec.size();
-        _hidl_blob.putInt32(8L, _hidl_vec_size);
-        _hidl_blob.putBool(12L, false);
-        HwBlob childBlob = new HwBlob(_hidl_vec_size * 40);
-        for (int _hidl_index_0 = 0; _hidl_index_0 < _hidl_vec_size; _hidl_index_0++) {
-            _hidl_vec.get(_hidl_index_0).writeEmbeddedToBlob(childBlob, _hidl_index_0 * 40);
+    public static final void writeVectorToParcel(HwParcel hwParcel, ArrayList<ExplorerTempInfo> arrayList) {
+        HwBlob hwBlob = new HwBlob(16);
+        int size = arrayList.size();
+        hwBlob.putInt32(8L, size);
+        hwBlob.putBool(12L, false);
+        HwBlob hwBlob2 = new HwBlob(size * 40);
+        for (int i = 0; i < size; i++) {
+            arrayList.get(i).writeEmbeddedToBlob(hwBlob2, i * 40);
         }
-        _hidl_blob.putBlob(0L, childBlob);
-        parcel.writeBuffer(_hidl_blob);
+        hwBlob.putBlob(0L, hwBlob2);
+        hwParcel.writeBuffer(hwBlob);
     }
 
-    public final void writeEmbeddedToBlob(HwBlob _hidl_blob, long _hidl_offset) {
-        long _hidl_array_offset_0 = 0 + _hidl_offset;
-        float[] _hidl_array_item_0 = this.DDRTemp;
-        if (_hidl_array_item_0 == null || _hidl_array_item_0.length != 2) {
+    public final void writeEmbeddedToBlob(HwBlob hwBlob, long j) {
+        long j2 = 0 + j;
+        float[] fArr = this.DDRTemp;
+        if (fArr == null || fArr.length != 2) {
             throw new IllegalArgumentException("Array element is not of the expected length");
         }
-        _hidl_blob.putFloatArray(_hidl_array_offset_0, _hidl_array_item_0);
-        long _hidl_array_offset_02 = 8 + _hidl_offset;
-        float[] _hidl_array_item_02 = this.NPUTemp;
-        if (_hidl_array_item_02 == null || _hidl_array_item_02.length != 2) {
+        hwBlob.putFloatArray(j2, fArr);
+        long j3 = 8 + j;
+        float[] fArr2 = this.NPUTemp;
+        if (fArr2 == null || fArr2.length != 2) {
             throw new IllegalArgumentException("Array element is not of the expected length");
         }
-        _hidl_blob.putFloatArray(_hidl_array_offset_02, _hidl_array_item_02);
-        long _hidl_array_offset_03 = 16 + _hidl_offset;
-        float[] _hidl_array_item_03 = this.ISPTemp;
-        if (_hidl_array_item_03 == null || _hidl_array_item_03.length != 2) {
+        hwBlob.putFloatArray(j3, fArr2);
+        long j4 = 16 + j;
+        float[] fArr3 = this.ISPTemp;
+        if (fArr3 == null || fArr3.length != 2) {
             throw new IllegalArgumentException("Array element is not of the expected length");
         }
-        _hidl_blob.putFloatArray(_hidl_array_offset_03, _hidl_array_item_03);
-        long _hidl_array_offset_04 = 24 + _hidl_offset;
-        float[] _hidl_array_item_04 = this.MAXCPUTemp;
-        if (_hidl_array_item_04 == null || _hidl_array_item_04.length != 2) {
+        hwBlob.putFloatArray(j4, fArr3);
+        long j5 = 24 + j;
+        float[] fArr4 = this.MAXCPUTemp;
+        if (fArr4 == null || fArr4.length != 2) {
             throw new IllegalArgumentException("Array element is not of the expected length");
         }
-        _hidl_blob.putFloatArray(_hidl_array_offset_04, _hidl_array_item_04);
-        long _hidl_array_offset_05 = 32 + _hidl_offset;
-        float[] _hidl_array_item_05 = this.surfaceTemp;
-        if (_hidl_array_item_05 == null || _hidl_array_item_05.length != 2) {
+        hwBlob.putFloatArray(j5, fArr4);
+        long j6 = j + 32;
+        float[] fArr5 = this.surfaceTemp;
+        if (fArr5 == null || fArr5.length != 2) {
             throw new IllegalArgumentException("Array element is not of the expected length");
         }
-        _hidl_blob.putFloatArray(_hidl_array_offset_05, _hidl_array_item_05);
+        hwBlob.putFloatArray(j6, fArr5);
     }
 }

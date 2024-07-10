@@ -6,20 +6,20 @@ import android.os.HwParcel;
 import java.util.ArrayList;
 import java.util.Objects;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes.dex */
 public final class SensorDimension {
     public int width = 0;
     public int height = 0;
 
-    public final boolean equals(Object otherObject) {
-        if (this == otherObject) {
+    public final boolean equals(Object obj) {
+        if (this == obj) {
             return true;
         }
-        if (otherObject == null || otherObject.getClass() != SensorDimension.class) {
+        if (obj == null || obj.getClass() != SensorDimension.class) {
             return false;
         }
-        SensorDimension other = (SensorDimension) otherObject;
-        if (this.width == other.width && this.height == other.height) {
+        SensorDimension sensorDimension = (SensorDimension) obj;
+        if (this.width == sensorDimension.width && this.height == sensorDimension.height) {
             return true;
         }
         return false;
@@ -33,51 +33,50 @@ public final class SensorDimension {
         return "{.width = " + this.width + ", .height = " + this.height + "}";
     }
 
-    public final void readFromParcel(HwParcel parcel) {
-        HwBlob blob = parcel.readBuffer(8L);
-        readEmbeddedFromParcel(parcel, blob, 0L);
+    public final void readFromParcel(HwParcel hwParcel) {
+        readEmbeddedFromParcel(hwParcel, hwParcel.readBuffer(8L), 0L);
     }
 
-    public static final ArrayList<SensorDimension> readVectorFromParcel(HwParcel parcel) {
-        ArrayList<SensorDimension> _hidl_vec = new ArrayList<>();
-        HwBlob _hidl_blob = parcel.readBuffer(16L);
-        int _hidl_vec_size = _hidl_blob.getInt32(8L);
-        HwBlob childBlob = parcel.readEmbeddedBuffer(_hidl_vec_size * 8, _hidl_blob.handle(), 0L, true);
-        _hidl_vec.clear();
-        for (int _hidl_index_0 = 0; _hidl_index_0 < _hidl_vec_size; _hidl_index_0++) {
-            SensorDimension _hidl_vec_element = new SensorDimension();
-            _hidl_vec_element.readEmbeddedFromParcel(parcel, childBlob, _hidl_index_0 * 8);
-            _hidl_vec.add(_hidl_vec_element);
+    public static final ArrayList<SensorDimension> readVectorFromParcel(HwParcel hwParcel) {
+        ArrayList<SensorDimension> arrayList = new ArrayList<>();
+        HwBlob readBuffer = hwParcel.readBuffer(16L);
+        int int32 = readBuffer.getInt32(8L);
+        HwBlob readEmbeddedBuffer = hwParcel.readEmbeddedBuffer(int32 * 8, readBuffer.handle(), 0L, true);
+        arrayList.clear();
+        for (int i = 0; i < int32; i++) {
+            SensorDimension sensorDimension = new SensorDimension();
+            sensorDimension.readEmbeddedFromParcel(hwParcel, readEmbeddedBuffer, i * 8);
+            arrayList.add(sensorDimension);
         }
-        return _hidl_vec;
+        return arrayList;
     }
 
-    public final void readEmbeddedFromParcel(HwParcel parcel, HwBlob _hidl_blob, long _hidl_offset) {
-        this.width = _hidl_blob.getInt32(0 + _hidl_offset);
-        this.height = _hidl_blob.getInt32(4 + _hidl_offset);
+    public final void readEmbeddedFromParcel(HwParcel hwParcel, HwBlob hwBlob, long j) {
+        this.width = hwBlob.getInt32(0 + j);
+        this.height = hwBlob.getInt32(j + 4);
     }
 
-    public final void writeToParcel(HwParcel parcel) {
-        HwBlob _hidl_blob = new HwBlob(8);
-        writeEmbeddedToBlob(_hidl_blob, 0L);
-        parcel.writeBuffer(_hidl_blob);
+    public final void writeToParcel(HwParcel hwParcel) {
+        HwBlob hwBlob = new HwBlob(8);
+        writeEmbeddedToBlob(hwBlob, 0L);
+        hwParcel.writeBuffer(hwBlob);
     }
 
-    public static final void writeVectorToParcel(HwParcel parcel, ArrayList<SensorDimension> _hidl_vec) {
-        HwBlob _hidl_blob = new HwBlob(16);
-        int _hidl_vec_size = _hidl_vec.size();
-        _hidl_blob.putInt32(8L, _hidl_vec_size);
-        _hidl_blob.putBool(12L, false);
-        HwBlob childBlob = new HwBlob(_hidl_vec_size * 8);
-        for (int _hidl_index_0 = 0; _hidl_index_0 < _hidl_vec_size; _hidl_index_0++) {
-            _hidl_vec.get(_hidl_index_0).writeEmbeddedToBlob(childBlob, _hidl_index_0 * 8);
+    public static final void writeVectorToParcel(HwParcel hwParcel, ArrayList<SensorDimension> arrayList) {
+        HwBlob hwBlob = new HwBlob(16);
+        int size = arrayList.size();
+        hwBlob.putInt32(8L, size);
+        hwBlob.putBool(12L, false);
+        HwBlob hwBlob2 = new HwBlob(size * 8);
+        for (int i = 0; i < size; i++) {
+            arrayList.get(i).writeEmbeddedToBlob(hwBlob2, i * 8);
         }
-        _hidl_blob.putBlob(0L, childBlob);
-        parcel.writeBuffer(_hidl_blob);
+        hwBlob.putBlob(0L, hwBlob2);
+        hwParcel.writeBuffer(hwBlob);
     }
 
-    public final void writeEmbeddedToBlob(HwBlob _hidl_blob, long _hidl_offset) {
-        _hidl_blob.putInt32(0 + _hidl_offset, this.width);
-        _hidl_blob.putInt32(4 + _hidl_offset, this.height);
+    public final void writeEmbeddedToBlob(HwBlob hwBlob, long j) {
+        hwBlob.putInt32(0 + j, this.width);
+        hwBlob.putInt32(j + 4, this.height);
     }
 }

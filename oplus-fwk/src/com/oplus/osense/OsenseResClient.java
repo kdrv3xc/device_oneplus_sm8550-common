@@ -9,15 +9,15 @@ public class OsenseResClient {
     private static final String TAG = OsenseResClient.class.getSimpleName();
 
     public static OsenseResClient get(Class cls) {
-        OsenseResClient resClient;
+        OsenseResClient osenseResClient;
         if (cls == null) {
             Log.e(TAG, "the parameter class is null!!!");
             return null;
         }
-        String className = cls.getSimpleName();
+        String simpleName = cls.getSimpleName();
         synchronized (sOsenseResClientMap) {
-            resClient = sOsenseResClientMap.get(className);
+            osenseResClient = sOsenseResClientMap.get(simpleName);
         }
-        return resClient;
+        return osenseResClient;
     }
 }

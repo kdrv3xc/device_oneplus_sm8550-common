@@ -4,7 +4,7 @@ import android.net.Uri;
 import android.os.UserHandle;
 import java.io.File;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes.dex */
 public final class OplusSettingsConfig {
     private static final String CONFIG_PATH = "/data/oplus";
     public static final String PARAMS_TYPE = "ParamsType";
@@ -12,46 +12,38 @@ public final class OplusSettingsConfig {
     private static final String TAG = "CSConfig";
     protected static final int TYPE_OPLUS = 0;
 
-    private static String transferTypeToStr(int type) {
-        switch (type) {
+    private static String transferTypeToStr(int i) {
+        switch (i) {
             case 0:
                 return "os";
             default:
-                throw new IllegalArgumentException("Error type=" + type);
+                throw new IllegalArgumentException("Error type=" + i);
         }
     }
 
-    public static String getFilePath(int type, int userId, String customPath) {
-        String typeStr = transferTypeToStr(type);
-        if (userId == 0) {
-            String path = CONFIG_PATH + File.separator + typeStr + File.separator + customPath;
-            return path;
-        } else if (userId == -2) {
-            int userId2 = UserHandle.myUserId();
-            if (userId2 == 0) {
-                String path2 = CONFIG_PATH + File.separator + typeStr + File.separator + customPath;
-                return path2;
-            }
-            String path3 = CONFIG_PATH + File.separator + typeStr + File.separator + userId2 + File.separator + customPath;
-            return path3;
-        } else if (userId < 0) {
-            throw new IllegalArgumentException("Error userId=" + userId);
-        } else {
-            String path4 = CONFIG_PATH + File.separator + typeStr + File.separator + userId + File.separator + customPath;
-            return path4;
+    public static String getFilePath(int i, int i2, String str) {
+        String transferTypeToStr = transferTypeToStr(i);
+        if (i2 == 0) {
+            return CONFIG_PATH + File.separator + transferTypeToStr + File.separator + str;
         }
+        if (i2 == -2) {
+            int myUserId = UserHandle.myUserId();
+            return myUserId == 0 ? CONFIG_PATH + File.separator + transferTypeToStr + File.separator + str : CONFIG_PATH + File.separator + transferTypeToStr + File.separator + myUserId + File.separator + str;
+        }
+        if (i2 >= 0) {
+            return CONFIG_PATH + File.separator + transferTypeToStr + File.separator + i2 + File.separator + str;
+        }
+        throw new IllegalArgumentException("Error userId=" + i2);
     }
 
-    public static Uri getUri(String base, String path, int userId, int type) {
-        Uri uri = Uri.parse(base);
-        Uri.Builder builder = uri.buildUpon();
-        builder.appendQueryParameter(PARAMS_TYPE, String.valueOf(type));
-        if (userId == -2) {
-            userId = UserHandle.myUserId();
+    public static Uri getUri(String str, String str2, int i, int i2) {
+        Uri.Builder buildUpon = Uri.parse(str).buildUpon();
+        buildUpon.appendQueryParameter(PARAMS_TYPE, String.valueOf(i2));
+        if (i == -2) {
+            i = UserHandle.myUserId();
         }
-        builder.appendQueryParameter(PARAMS_USER_ID, String.valueOf(userId));
-        builder.encodedPath(path);
-        Uri uri2 = builder.build();
-        return uri2;
+        buildUpon.appendQueryParameter(PARAMS_USER_ID, String.valueOf(i));
+        buildUpon.encodedPath(str2);
+        return buildUpon.build();
     }
 }

@@ -1,7 +1,7 @@
 package com.oplus.zoomwindow;
 
+/* loaded from: classes.dex */
 public class OplusZoomWindowManager {
-
     public static OplusZoomWindowManager sOplusZoomWindowManager = null;
 
     public static OplusZoomWindowManager getInstance() {
@@ -11,11 +11,11 @@ public class OplusZoomWindowManager {
         return sOplusZoomWindowManager;
     }
 
-    public boolean registerZoomWindowObserver(IOplusZoomWindowObserver observer) {
+    public boolean registerZoomWindowObserver(IOplusZoomWindowObserver iOplusZoomWindowObserver) {
         return false;
     }
 
-    public boolean unregisterZoomWindowObserver(IOplusZoomWindowObserver observer) {
+    public boolean unregisterZoomWindowObserver(IOplusZoomWindowObserver iOplusZoomWindowObserver) {
         return false;
     }
 }

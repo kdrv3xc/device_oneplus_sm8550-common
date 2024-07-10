@@ -2,8 +2,7 @@ package android.os;
 
 import java.io.File;
 
-/* renamed from: android.os.OplusBaseEnvironment */
-/* loaded from: classes2.dex */
+/* loaded from: classes.dex */
 public class OplusBaseEnvironment {
     private static final String DIR_OPLUS_RESERVE = "/mnt/vendor/oplusreserve";
     private static final String ENV_MY_BIGBALL_ROOT = "MY_BIGBALL_ROOT";
@@ -48,9 +47,9 @@ public class OplusBaseEnvironment {
         return false;
     }
 
-    protected static File getDirectorySup(String variableName, String defaultPath) {
-        String path = System.getenv(variableName);
-        return path == null ? new File(defaultPath) : new File(path);
+    protected static File getDirectorySup(String str, String str2) {
+        String str3 = System.getenv(str);
+        return str3 == null ? new File(str2) : new File(str3);
     }
 
     public static File getOplusCustomDirectory() {
@@ -68,8 +67,7 @@ public class OplusBaseEnvironment {
     }
 
     public static boolean isOplusCustomDirectoryEmpty() {
-        File file = getOplusCustomDirectory();
-        File[] listFiles = file.listFiles();
+        File[] listFiles = getOplusCustomDirectory().listFiles();
         if (listFiles != null && listFiles.length > 0) {
             return false;
         }
@@ -77,8 +75,7 @@ public class OplusBaseEnvironment {
     }
 
     public static boolean isOplusCotaDirectoryEmpty() {
-        File file = getOplusCotaDirectory();
-        File[] listFiles = file.listFiles();
+        File[] listFiles = getOplusCotaDirectory().listFiles();
         if (listFiles != null && listFiles.length > 0) {
             return false;
         }

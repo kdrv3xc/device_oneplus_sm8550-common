@@ -36,9 +36,12 @@ import android.view.WindowContentFrameStats;
 import android.view.displayhash.DisplayHash;
 import android.view.displayhash.VerifiedDisplayHash;
 import android.window.AddToSurfaceSyncGroupResult;
+import android.window.IGlobalDragListener;
+import android.window.IScreenRecordingCallback;
 import android.window.ISurfaceSyncGroupCompletedListener;
 import android.window.ITaskFpsCallback;
 import android.window.ITrustedPresentationListener;
+import android.window.InputTransferToken;
 import android.window.TrustedPresentationThresholds;
 import android.window.ScreenCapture;
 import android.window.WindowContextInfo;
@@ -609,6 +612,21 @@ public interface IWindowManager {
             public void unregisterTrustedPresentationListener(ITrustedPresentationListener listener, int id) {
             }
 
+            public boolean registerScreenRecordingCallback(IScreenRecordingCallback callback) {
+                return false;
+            }
+
+            public void unregisterScreenRecordingCallback(IScreenRecordingCallback callback) {
+            }
+
+            public void setGlobalDragListener(IGlobalDragListener listener) {
+            }
+
+            public boolean transferTouchGesture(InputTransferToken transferFromToken,
+                    InputTransferToken transferToToken) {
+                return false;
+            }
+
             public void onOverlayChanged() {
             }
         };
@@ -696,4 +714,3 @@ public interface IWindowManager {
         }
     }
 }
-

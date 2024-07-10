@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.util.AttributeSet;
 
+/* loaded from: classes.dex */
 public class OplusBezierInterpolator extends BaseInterpolator {
     private final float ABOVE_ONE;
     private final float ABOVE_ZERO;
@@ -15,11 +16,11 @@ public class OplusBezierInterpolator extends BaseInterpolator {
     private boolean mLimit;
     private OplusUnitBezier mOplusUnitBezier;
 
-    public OplusBezierInterpolator(Context context, AttributeSet attrs) {
-        this(context.getResources(), context.getTheme(), attrs);
+    public OplusBezierInterpolator(Context context, AttributeSet attributeSet) {
+        this(context.getResources(), context.getTheme(), attributeSet);
     }
 
-    public OplusBezierInterpolator(Resources res, Resources.Theme theme, AttributeSet attrs) {
+    public OplusBezierInterpolator(Resources resources, Resources.Theme theme, AttributeSet attributeSet) {
         this.TAG = "OplusBezierInterpolator";
         this.DEBUG = false;
         this.EPSILON = 6.25E-5d;
@@ -30,7 +31,7 @@ public class OplusBezierInterpolator extends BaseInterpolator {
         this.mLimit = false;
     }
 
-    public OplusBezierInterpolator(double p1x, double p1y, double p2x, double p2y, boolean limit) {
+    public OplusBezierInterpolator(double d, double d2, double d3, double d4, boolean z) {
         this.TAG = "OplusBezierInterpolator";
         this.DEBUG = false;
         this.EPSILON = 6.25E-5d;
@@ -39,25 +40,25 @@ public class OplusBezierInterpolator extends BaseInterpolator {
         this.ABOVE_ZERO = 1.0E-4f;
         this.mAbove = false;
         this.mLimit = false;
-        this.mLimit = limit;
-        this.mOplusUnitBezier = new OplusUnitBezier(p1x, p1y, p2x, p2y);
+        this.mLimit = z;
+        this.mOplusUnitBezier = new OplusUnitBezier(d, d2, d3, d4);
     }
 
-    @Override
-    public float getInterpolation(float input) {
-        double interpolation = this.mOplusUnitBezier.solve(input, 6.25E-5d);
+    @Override // android.animation.TimeInterpolator
+    public float getInterpolation(float f) {
+        double solve = this.mOplusUnitBezier.solve(f, 6.25E-5d);
         if (this.mLimit) {
-            if (input < 1.0E-4f || input > 0.9999f) {
+            if (f < 1.0E-4f || f > 0.9999f) {
                 this.mAbove = false;
             }
-            if (interpolation > 1.0d && !this.mAbove) {
-                interpolation = 1.0d;
+            if (solve > 1.0d && !this.mAbove) {
                 this.mAbove = true;
+                solve = 1.0d;
             }
             if (this.mAbove) {
-                interpolation = 1.0d;
+                solve = 1.0d;
             }
         }
-        return (float) interpolation;
+        return (float) solve;
     }
 }

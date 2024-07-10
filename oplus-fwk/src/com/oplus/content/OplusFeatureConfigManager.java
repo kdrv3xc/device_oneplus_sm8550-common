@@ -2,6 +2,7 @@ package com.oplus.content;
 
 import android.os.RemoteException;
 
+/* loaded from: classes.dex */
 public class OplusFeatureConfigManager {
     private static OplusFeatureConfigManager sInstance = null;
 
@@ -12,7 +13,7 @@ public class OplusFeatureConfigManager {
         return sInstance;
     }
 
-    public boolean hasFeature(String name) throws RemoteException {
+    public boolean hasFeature(String str) throws RemoteException {
         return false;
     }
 }

@@ -4,22 +4,23 @@ import android.os.IBinder;
 import android.os.ServiceManager;
 import android.util.Log;
 
+/* loaded from: classes.dex */
 public abstract class OplusCommonManager {
     protected final IBinder mRemote;
 
-    public OplusCommonManager(String name) {
-        this(ServiceManager.getService(name), name);
+    public OplusCommonManager(String str) {
+        this(ServiceManager.getService(str), str);
     }
 
-    public OplusCommonManager(IBinder remote, String name) {
-        if (remote == null) {
-            Log.e("OplusCommonManager", "remote is null: " + name);
-            remote = ServiceManager.getService(name);
+    public OplusCommonManager(IBinder iBinder, String str) {
+        if (iBinder == null) {
+            Log.e("OplusCommonManager", "remote is null: " + str);
+            iBinder = ServiceManager.getService(str);
             StringBuilder sb = new StringBuilder();
             sb.append("Retry remote is null: ");
-            sb.append(remote == null);
+            sb.append(iBinder == null);
             Log.d("OplusCommonManager", sb.toString());
         }
-        this.mRemote = remote;
+        this.mRemote = iBinder;
     }
 }

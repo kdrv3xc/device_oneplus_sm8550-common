@@ -26,20 +26,20 @@ public class PowerManager {
         return this.mPowerManager.getMinimumScreenBrightnessSetting();
     }
 
-    public void wakeUp(long time, String details) {
-        this.mPowerManager.wakeUp(time, details);
+    public void wakeUp(long j, String str) {
+        this.mPowerManager.wakeUp(j, str);
     }
 
-    public void wakeUp(long time, int reason, String details) {
-        this.mPowerManager.wakeUp(time, reason, details);
+    public void wakeUp(long j, int i, String str) {
+        this.mPowerManager.wakeUp(j, i, str);
     }
 
     public int getDefaultScreenBrightnessSetting() {
         return this.mPowerManager.getDefaultScreenBrightnessSetting();
     }
 
-    public PowerSaveState getPowerSaveState(int serviceType) {
-        android.os.PowerSaveState powerSaveState = this.mPowerManager.getPowerSaveState(serviceType);
+    public PowerSaveState getPowerSaveState(int i) {
+        android.os.PowerSaveState powerSaveState = this.mPowerManager.getPowerSaveState(i);
         if (powerSaveState == null) {
             return null;
         }
@@ -50,23 +50,23 @@ public class PowerManager {
         return this.mPowerManager.getLastSleepReason();
     }
 
-    public void shutdown(boolean confirm, String reason, boolean wait) {
-        this.mPowerManager.shutdown(confirm, reason, wait);
+    public void shutdown(boolean z, String str, boolean z2) {
+        this.mPowerManager.shutdown(z, str, z2);
     }
 
-    public void reboot(String reason) {
-        this.mPowerManager.reboot(reason);
+    public void reboot(String str) {
+        this.mPowerManager.reboot(str);
     }
 
-    public void goToSleep(long time) {
-        this.mPowerManager.goToSleep(time);
+    public void goToSleep(long j) {
+        this.mPowerManager.goToSleep(j);
     }
 
-    public void userActivity(long when, int event, int flags) {
-        this.mPowerManager.userActivity(when, event, flags);
+    public void userActivity(long j, int i, int i2) {
+        this.mPowerManager.userActivity(j, i, i2);
     }
 
-    public boolean setPowerSaveModeEnabled(boolean mode) {
-        return this.mPowerManager.setPowerSaveModeEnabled(mode);
+    public boolean setPowerSaveModeEnabled(boolean z) {
+        return this.mPowerManager.setPowerSaveModeEnabled(z);
     }
 }

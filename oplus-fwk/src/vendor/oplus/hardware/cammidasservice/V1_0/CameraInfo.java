@@ -6,21 +6,21 @@ import android.os.HwParcel;
 import java.util.ArrayList;
 import java.util.Objects;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes.dex */
 public final class CameraInfo {
     public int physicalCameraId = 0;
     public int isActive = 0;
     public SensorDimension sensorOutDimension = new SensorDimension();
 
-    public final boolean equals(Object otherObject) {
-        if (this == otherObject) {
+    public final boolean equals(Object obj) {
+        if (this == obj) {
             return true;
         }
-        if (otherObject == null || otherObject.getClass() != CameraInfo.class) {
+        if (obj == null || obj.getClass() != CameraInfo.class) {
             return false;
         }
-        CameraInfo other = (CameraInfo) otherObject;
-        if (this.physicalCameraId == other.physicalCameraId && this.isActive == other.isActive && HidlSupport.deepEquals(this.sensorOutDimension, other.sensorOutDimension)) {
+        CameraInfo cameraInfo = (CameraInfo) obj;
+        if (this.physicalCameraId == cameraInfo.physicalCameraId && this.isActive == cameraInfo.isActive && HidlSupport.deepEquals(this.sensorOutDimension, cameraInfo.sensorOutDimension)) {
             return true;
         }
         return false;
@@ -34,53 +34,52 @@ public final class CameraInfo {
         return "{.physicalCameraId = " + this.physicalCameraId + ", .isActive = " + this.isActive + ", .sensorOutDimension = " + this.sensorOutDimension + "}";
     }
 
-    public final void readFromParcel(HwParcel parcel) {
-        HwBlob blob = parcel.readBuffer(16L);
-        readEmbeddedFromParcel(parcel, blob, 0L);
+    public final void readFromParcel(HwParcel hwParcel) {
+        readEmbeddedFromParcel(hwParcel, hwParcel.readBuffer(16L), 0L);
     }
 
-    public static final ArrayList<CameraInfo> readVectorFromParcel(HwParcel parcel) {
-        ArrayList<CameraInfo> _hidl_vec = new ArrayList<>();
-        HwBlob _hidl_blob = parcel.readBuffer(16L);
-        int _hidl_vec_size = _hidl_blob.getInt32(8L);
-        HwBlob childBlob = parcel.readEmbeddedBuffer(_hidl_vec_size * 16, _hidl_blob.handle(), 0L, true);
-        _hidl_vec.clear();
-        for (int _hidl_index_0 = 0; _hidl_index_0 < _hidl_vec_size; _hidl_index_0++) {
-            CameraInfo _hidl_vec_element = new CameraInfo();
-            _hidl_vec_element.readEmbeddedFromParcel(parcel, childBlob, _hidl_index_0 * 16);
-            _hidl_vec.add(_hidl_vec_element);
+    public static final ArrayList<CameraInfo> readVectorFromParcel(HwParcel hwParcel) {
+        ArrayList<CameraInfo> arrayList = new ArrayList<>();
+        HwBlob readBuffer = hwParcel.readBuffer(16L);
+        int int32 = readBuffer.getInt32(8L);
+        HwBlob readEmbeddedBuffer = hwParcel.readEmbeddedBuffer(int32 * 16, readBuffer.handle(), 0L, true);
+        arrayList.clear();
+        for (int i = 0; i < int32; i++) {
+            CameraInfo cameraInfo = new CameraInfo();
+            cameraInfo.readEmbeddedFromParcel(hwParcel, readEmbeddedBuffer, i * 16);
+            arrayList.add(cameraInfo);
         }
-        return _hidl_vec;
+        return arrayList;
     }
 
-    public final void readEmbeddedFromParcel(HwParcel parcel, HwBlob _hidl_blob, long _hidl_offset) {
-        this.physicalCameraId = _hidl_blob.getInt32(0 + _hidl_offset);
-        this.isActive = _hidl_blob.getInt32(4 + _hidl_offset);
-        this.sensorOutDimension.readEmbeddedFromParcel(parcel, _hidl_blob, 8 + _hidl_offset);
+    public final void readEmbeddedFromParcel(HwParcel hwParcel, HwBlob hwBlob, long j) {
+        this.physicalCameraId = hwBlob.getInt32(0 + j);
+        this.isActive = hwBlob.getInt32(4 + j);
+        this.sensorOutDimension.readEmbeddedFromParcel(hwParcel, hwBlob, j + 8);
     }
 
-    public final void writeToParcel(HwParcel parcel) {
-        HwBlob _hidl_blob = new HwBlob(16);
-        writeEmbeddedToBlob(_hidl_blob, 0L);
-        parcel.writeBuffer(_hidl_blob);
+    public final void writeToParcel(HwParcel hwParcel) {
+        HwBlob hwBlob = new HwBlob(16);
+        writeEmbeddedToBlob(hwBlob, 0L);
+        hwParcel.writeBuffer(hwBlob);
     }
 
-    public static final void writeVectorToParcel(HwParcel parcel, ArrayList<CameraInfo> _hidl_vec) {
-        HwBlob _hidl_blob = new HwBlob(16);
-        int _hidl_vec_size = _hidl_vec.size();
-        _hidl_blob.putInt32(8L, _hidl_vec_size);
-        _hidl_blob.putBool(12L, false);
-        HwBlob childBlob = new HwBlob(_hidl_vec_size * 16);
-        for (int _hidl_index_0 = 0; _hidl_index_0 < _hidl_vec_size; _hidl_index_0++) {
-            _hidl_vec.get(_hidl_index_0).writeEmbeddedToBlob(childBlob, _hidl_index_0 * 16);
+    public static final void writeVectorToParcel(HwParcel hwParcel, ArrayList<CameraInfo> arrayList) {
+        HwBlob hwBlob = new HwBlob(16);
+        int size = arrayList.size();
+        hwBlob.putInt32(8L, size);
+        hwBlob.putBool(12L, false);
+        HwBlob hwBlob2 = new HwBlob(size * 16);
+        for (int i = 0; i < size; i++) {
+            arrayList.get(i).writeEmbeddedToBlob(hwBlob2, i * 16);
         }
-        _hidl_blob.putBlob(0L, childBlob);
-        parcel.writeBuffer(_hidl_blob);
+        hwBlob.putBlob(0L, hwBlob2);
+        hwParcel.writeBuffer(hwBlob);
     }
 
-    public final void writeEmbeddedToBlob(HwBlob _hidl_blob, long _hidl_offset) {
-        _hidl_blob.putInt32(0 + _hidl_offset, this.physicalCameraId);
-        _hidl_blob.putInt32(4 + _hidl_offset, this.isActive);
-        this.sensorOutDimension.writeEmbeddedToBlob(_hidl_blob, 8 + _hidl_offset);
+    public final void writeEmbeddedToBlob(HwBlob hwBlob, long j) {
+        hwBlob.putInt32(0 + j, this.physicalCameraId);
+        hwBlob.putInt32(4 + j, this.isActive);
+        this.sensorOutDimension.writeEmbeddedToBlob(hwBlob, j + 8);
     }
 }

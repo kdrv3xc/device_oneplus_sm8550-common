@@ -6,35 +6,30 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 
+/* loaded from: classes.dex */
 public class OplusNetworkUtils {
-
     private static final String DEFAULT_HTTP_URI = "http://connectivitycheck.gstatic.com/generate_204";
 
     public static boolean isWifiConnected(Context context) {
-        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (cm != null) {
-            return cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState()
-                    == NetworkInfo.State.CONNECTED;
+        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService("connectivity");
+        if (connectivityManager == null || connectivityManager.getNetworkInfo(1).getState() != NetworkInfo.State.CONNECTED) {
+            return false;
         }
-        return false;
+        return true;
     }
-  
+
     public static boolean isMobileDataConnected(Context context) {
-        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (cm != null) {
-            return cm.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState()
-                    == NetworkInfo.State.CONNECTED;
-        }
-        return false;
+        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService("connectivity");
+        return connectivityManager != null && connectivityManager.getNetworkInfo(0).getState() == NetworkInfo.State.CONNECTED;
     }
-  
+
     public static void onClickLoginBtn(Context context) {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(DEFAULT_HTTP_URI));
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+        Intent intent = new Intent("android.intent.action.VIEW", Uri.parse(DEFAULT_HTTP_URI));
+        intent.setFlags(272629760);
         context.startActivity(intent);
     }
-  
-    public static int getErrorString(Context context, String url) {
-        return 1; 
+
+    public static int getErrorString(Context context, String str) {
+        return 1;
     }
 }

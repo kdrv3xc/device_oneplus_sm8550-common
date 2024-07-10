@@ -3,35 +3,40 @@ package com.oplus.zoomwindow;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+/* loaded from: classes.dex */
 public class OplusZoomWindowInfo implements Parcelable {
-
-    public static final Parcelable.Creator<OplusZoomWindowInfo> CREATOR =
-            new Parcelable.Creator<OplusZoomWindowInfo>() {
-
-        @Override
-        public OplusZoomWindowInfo createFromParcel(Parcel source) {
-            return new OplusZoomWindowInfo(source);
+    public static final Parcelable.Creator<OplusZoomWindowInfo> CREATOR = new Parcelable.Creator<OplusZoomWindowInfo>() { // from class: com.oplus.zoomwindow.OplusZoomWindowInfo.1
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public OplusZoomWindowInfo createFromParcel(Parcel parcel) {
+            return new OplusZoomWindowInfo(parcel);
         }
 
-        @Override
-        public OplusZoomWindowInfo[] newArray(int size) {
-            return new OplusZoomWindowInfo[size];
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public OplusZoomWindowInfo[] newArray(int i) {
+            return new OplusZoomWindowInfo[i];
         }
     };
 
-    public OplusZoomWindowInfo() {}
+    public OplusZoomWindowInfo() {
+    }
 
-    public OplusZoomWindowInfo(Parcel in) {}
+    public OplusZoomWindowInfo(Parcel parcel) {
+    }
 
-    public OplusZoomWindowInfo(OplusZoomWindowInfo in) {}
+    public OplusZoomWindowInfo(OplusZoomWindowInfo oplusZoomWindowInfo) {
+    }
 
-    @Override
+    @Override // android.os.Parcelable
     public int describeContents() {
         return 0;
     }
 
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {}
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i) {
+    }
 
-    public void readFromParcel(Parcel in) {}
+    public void readFromParcel(Parcel parcel) {
+    }
 }

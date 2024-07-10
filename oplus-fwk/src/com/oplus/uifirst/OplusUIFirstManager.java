@@ -1,10 +1,11 @@
 package com.oplus.uifirst;
 
-import com.oplus.uifirst.Utils;
-
+/* loaded from: classes.dex */
 public class OplusUIFirstManager extends Utils {
     private static OplusUIFirstManager sInstance = null;
-    private OplusUIFirstManager() {}
+
+    private OplusUIFirstManager() {
+    }
 
     public static OplusUIFirstManager getInstance() {
         if (sInstance == null) {
@@ -13,6 +14,7 @@ public class OplusUIFirstManager extends Utils {
         return sInstance;
     }
 
-    public void setUxThreadValue(int pid, int tid, String value) {
+    @Override // com.oplus.uifirst.Utils
+    public void setUxThreadValue(int i, int i2, String str) {
     }
 }

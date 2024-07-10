@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes.dex */
 public class OplusAppInfo implements Parcelable {
     public static final int ACTIVITY_TYPE_ASSISTANT = 4;
     public static final int ACTIVITY_TYPE_HOME = 2;
@@ -17,14 +17,14 @@ public class OplusAppInfo implements Parcelable {
     public static final Parcelable.Creator<OplusAppInfo> CREATOR = new Parcelable.Creator<OplusAppInfo>() { // from class: com.oplus.app.OplusAppInfo.1
         /* JADX WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
-        public OplusAppInfo createFromParcel(Parcel source) {
-            return new OplusAppInfo(source);
+        public OplusAppInfo createFromParcel(Parcel parcel) {
+            return new OplusAppInfo(parcel);
         }
 
         /* JADX WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
-        public OplusAppInfo[] newArray(int size) {
-            return new OplusAppInfo[size];
+        public OplusAppInfo[] newArray(int i) {
+            return new OplusAppInfo[i];
         }
     };
     public static final int WINDOWING_MODE_FREEFORM = 5;
@@ -53,32 +53,32 @@ public class OplusAppInfo implements Parcelable {
         this.extension = new Bundle();
     }
 
-    public OplusAppInfo(OplusAppInfo info) {
+    public OplusAppInfo(OplusAppInfo oplusAppInfo) {
         this.appBounds = new Rect();
         this.orientation = -1;
         this.isRootActivity = false;
         this.extension = new Bundle();
-        if (info != null) {
-            this.windowingMode = info.windowingMode;
-            this.activityType = info.activityType;
-            this.appBounds = info.appBounds;
-            this.taskId = info.taskId;
-            this.topActivity = info.topActivity;
-            this.displayId = info.displayId;
-            this.orientation = info.orientation;
-            this.userId = info.userId;
-            this.launchedFromPackage = info.launchedFromPackage;
-            this.isRootActivity = info.isRootActivity;
-            this.extension = info.extension;
+        if (oplusAppInfo != null) {
+            this.windowingMode = oplusAppInfo.windowingMode;
+            this.activityType = oplusAppInfo.activityType;
+            this.appBounds = oplusAppInfo.appBounds;
+            this.taskId = oplusAppInfo.taskId;
+            this.topActivity = oplusAppInfo.topActivity;
+            this.displayId = oplusAppInfo.displayId;
+            this.orientation = oplusAppInfo.orientation;
+            this.userId = oplusAppInfo.userId;
+            this.launchedFromPackage = oplusAppInfo.launchedFromPackage;
+            this.isRootActivity = oplusAppInfo.isRootActivity;
+            this.extension = oplusAppInfo.extension;
         }
     }
 
-    public OplusAppInfo(Parcel source) {
+    public OplusAppInfo(Parcel parcel) {
         this.appBounds = new Rect();
         this.orientation = -1;
         this.isRootActivity = false;
         this.extension = new Bundle();
-        readFromParcel(source);
+        readFromParcel(parcel);
     }
 
     @Override // android.os.Parcelable
@@ -86,49 +86,49 @@ public class OplusAppInfo implements Parcelable {
         return 0;
     }
 
-    public void readFromParcel(Parcel source) {
-        this.windowingMode = source.readInt();
-        this.activityType = source.readInt();
-        this.taskId = source.readInt();
-        this.appBounds = (Rect) source.readParcelable(Rect.class.getClassLoader());
-        if (source.readInt() != 0) {
-            this.appInfo = ApplicationInfo.CREATOR.createFromParcel(source);
+    public void readFromParcel(Parcel parcel) {
+        this.windowingMode = parcel.readInt();
+        this.activityType = parcel.readInt();
+        this.taskId = parcel.readInt();
+        this.appBounds = (Rect) parcel.readParcelable(Rect.class.getClassLoader());
+        if (parcel.readInt() != 0) {
+            this.appInfo = (ApplicationInfo) ApplicationInfo.CREATOR.createFromParcel(parcel);
         }
-        if (source.readInt() != 0) {
-            this.topActivity = ComponentName.CREATOR.createFromParcel(source);
+        if (parcel.readInt() != 0) {
+            this.topActivity = (ComponentName) ComponentName.CREATOR.createFromParcel(parcel);
         }
-        this.displayId = source.readInt();
-        this.orientation = source.readInt();
-        this.userId = source.readInt();
-        this.launchedFromPackage = source.readString();
-        this.isRootActivity = source.readBoolean();
-        this.extension = source.readBundle();
+        this.displayId = parcel.readInt();
+        this.orientation = parcel.readInt();
+        this.userId = parcel.readInt();
+        this.launchedFromPackage = parcel.readString();
+        this.isRootActivity = parcel.readBoolean();
+        this.extension = parcel.readBundle();
     }
 
     @Override // android.os.Parcelable
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(this.windowingMode);
-        dest.writeInt(this.activityType);
-        dest.writeInt(this.taskId);
-        dest.writeParcelable(this.appBounds, flags);
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(this.windowingMode);
+        parcel.writeInt(this.activityType);
+        parcel.writeInt(this.taskId);
+        parcel.writeParcelable(this.appBounds, i);
         if (this.appInfo != null) {
-            dest.writeInt(1);
-            this.appInfo.writeToParcel(dest, flags);
+            parcel.writeInt(1);
+            this.appInfo.writeToParcel(parcel, i);
         } else {
-            dest.writeInt(0);
+            parcel.writeInt(0);
         }
         if (this.topActivity != null) {
-            dest.writeInt(1);
-            this.topActivity.writeToParcel(dest, flags);
+            parcel.writeInt(1);
+            this.topActivity.writeToParcel(parcel, i);
         } else {
-            dest.writeInt(0);
+            parcel.writeInt(0);
         }
-        dest.writeInt(this.displayId);
-        dest.writeInt(this.orientation);
-        dest.writeInt(this.userId);
-        dest.writeString(this.launchedFromPackage);
-        dest.writeBoolean(this.isRootActivity);
-        dest.writeBundle(this.extension);
+        parcel.writeInt(this.displayId);
+        parcel.writeInt(this.orientation);
+        parcel.writeInt(this.userId);
+        parcel.writeString(this.launchedFromPackage);
+        parcel.writeBoolean(this.isRootActivity);
+        parcel.writeBundle(this.extension);
     }
 
     public String toString() {

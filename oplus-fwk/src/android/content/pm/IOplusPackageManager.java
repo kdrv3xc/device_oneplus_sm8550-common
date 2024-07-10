@@ -10,6 +10,8 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.RemoteException;
 import android.os.UserHandle;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -137,52 +139,52 @@ public interface IOplusPackageManager extends IInterface {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public Bitmap getAppIconBitmap(String packageName) throws RemoteException {
+        public Bitmap getAppIconBitmap(String str) throws RemoteException {
             return null;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public Map getAppIconsCache(boolean compress) throws RemoteException {
+        public Map getAppIconsCache(boolean z) throws RemoteException {
             return null;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public Map getActivityIconsCache(IPackageDeleteObserver observer) throws RemoteException {
+        public Map getActivityIconsCache(IPackageDeleteObserver iPackageDeleteObserver) throws RemoteException {
             return null;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean prohibitChildInstallation(int userId, boolean isInstall) throws RemoteException {
+        public boolean prohibitChildInstallation(int i, boolean z) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public int oplusFreezePackage(String pkgName, int userId, int freezeFlag, int flag, String callingPkg) throws RemoteException {
+        public int oplusFreezePackage(String str, int i, int i2, int i3, String str2) throws RemoteException {
             return 0;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public int oplusUnFreezePackage(String pkgName, int userId, int freezeFlag, int flag, String callingPkg) throws RemoteException {
+        public int oplusUnFreezePackage(String str, int i, int i2, int i3, String str2) throws RemoteException {
             return 0;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public int getOplusFreezePackageState(String pkgName, int userId) throws RemoteException {
+        public int getOplusFreezePackageState(String str, int i) throws RemoteException {
             return 0;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean inOplusFreezePackageList(String pkgName, int userId) throws RemoteException {
+        public boolean inOplusFreezePackageList(String str, int i) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public List<String> getOplusFreezedPackageList(int userId) throws RemoteException {
+        public List<String> getOplusFreezedPackageList(int i) throws RemoteException {
             return null;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public int getOplusPackageFreezeFlag(String pkgName, int userId) throws RemoteException {
+        public int getOplusPackageFreezeFlag(String str, int i) throws RemoteException {
             return 0;
         }
 
@@ -192,17 +194,17 @@ public interface IOplusPackageManager extends IInterface {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean isSecurePayApp(String name) throws RemoteException {
+        public boolean isSecurePayApp(String str) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean isSystemDataApp(String packageName) throws RemoteException {
+        public boolean isSystemDataApp(String str) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean inPmsWhiteList(int type, String verifyStr, List<String> defaultList) throws RemoteException {
+        public boolean inPmsWhiteList(int i, String str, List<String> list) throws RemoteException {
             return false;
         }
 
@@ -212,7 +214,7 @@ public interface IOplusPackageManager extends IInterface {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean restoreRemovableApp(String packageName, IntentSender sender, Bundle bundle) throws RemoteException {
+        public boolean restoreRemovableApp(String str, IntentSender intentSender, Bundle bundle) throws RemoteException {
             return false;
         }
 
@@ -222,22 +224,22 @@ public interface IOplusPackageManager extends IInterface {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public List<String> getCptListByType(int tag) throws RemoteException {
+        public List<String> getCptListByType(int i) throws RemoteException {
             return null;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean inCptWhiteList(int type, String verifyStr) throws RemoteException {
+        public boolean inCptWhiteList(int i, String str) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean inOplusStandardWhiteList(String filterName, int type, String verifyStr) throws RemoteException {
+        public boolean inOplusStandardWhiteList(String str, int i, String str2) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public void sendMapCommonDcsUpload(String logTag, String eventId, Map map) throws RemoteException {
+        public void sendMapCommonDcsUpload(String str, String str2, Map map) throws RemoteException {
         }
 
         @Override // android.content.pm.IOplusPackageManager
@@ -246,7 +248,7 @@ public interface IOplusPackageManager extends IInterface {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean isDetectApp(String packageName) throws RemoteException {
+        public boolean isDetectApp(String str) throws RemoteException {
             return false;
         }
 
@@ -271,45 +273,45 @@ public interface IOplusPackageManager extends IInterface {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public List<String> getAppListFromPartition(String partition) throws RemoteException {
+        public List<String> getAppListFromPartition(String str) throws RemoteException {
             return null;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public void deletePackageDelegated(String packageName, int callUid, int callPid, int flags, int userId, IPackageDeleteObserver observer) throws RemoteException {
+        public void deletePackageDelegated(String str, int i, int i2, int i3, int i4, IPackageDeleteObserver iPackageDeleteObserver) throws RemoteException {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean setCustomizeDefaultApp(String roleName, String packageName) throws RemoteException {
+        public boolean setCustomizeDefaultApp(String str, String str2) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public void removeCustomizeDefaultApp(String roleName) throws RemoteException {
+        public void removeCustomizeDefaultApp(String str) throws RemoteException {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public String getCustomizeDefaultApp(String roleName) throws RemoteException {
+        public String getCustomizeDefaultApp(String str) throws RemoteException {
             return null;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean fixupAppData(String pkgName, String relativePath, int flags) throws RemoteException {
+        public boolean fixupAppData(String str, String str2, int i) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public String getMigMappingPkgName(boolean findOldNameByNew, String refPkgName) throws RemoteException {
+        public String getMigMappingPkgName(boolean z, String str) throws RemoteException {
             return null;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public List<String> getUninstallableAppConfig(int type) throws RemoteException {
+        public List<String> getUninstallableAppConfig(int i) throws RemoteException {
             return null;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean inUninstallableAppConfig(int type, String pkgName) throws RemoteException {
+        public boolean inUninstallableAppConfig(int i, String str) throws RemoteException {
             return false;
         }
 
@@ -319,25 +321,25 @@ public interface IOplusPackageManager extends IInterface {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public void setFreezeEnable(boolean enabled) throws RemoteException {
+        public void setFreezeEnable(boolean z) throws RemoteException {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public int getPackageFreezeState(String pkg, UserHandle userHandle) throws RemoteException {
+        public int getPackageFreezeState(String str, UserHandle userHandle) throws RemoteException {
             return 0;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public int getPackageFreezeUserSetting(String pkg, UserHandle userHandle) throws RemoteException {
+        public int getPackageFreezeUserSetting(String str, UserHandle userHandle) throws RemoteException {
             return 0;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public void setPackageFreezeState(String pkg, int state, UserHandle userHandle) throws RemoteException {
+        public void setPackageFreezeState(String str, int i, UserHandle userHandle) throws RemoteException {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public void setPackageFreezeUserSetting(String pkg, int setting, UserHandle userHandle) throws RemoteException {
+        public void setPackageFreezeUserSetting(String str, int i, UserHandle userHandle) throws RemoteException {
         }
 
         @Override // android.content.pm.IOplusPackageManager
@@ -351,50 +353,50 @@ public interface IOplusPackageManager extends IInterface {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean hasFeatureIPC(String featureName, int featureID) throws RemoteException {
+        public boolean hasFeatureIPC(String str, int i) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean enableFeature(String featureName) throws RemoteException {
+        public boolean enableFeature(String str) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean disableFeature(String featureName) throws RemoteException {
+        public boolean disableFeature(String str) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean enableFeatureMap(String featureName, int featureID) throws RemoteException {
+        public boolean enableFeatureMap(String str, int i) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean disableFeatureMap(String featureName, int featureID) throws RemoteException {
+        public boolean disableFeatureMap(String str, int i) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public void notifyFeaturesUpdate(String action, String actionValue) throws RemoteException {
+        public void notifyFeaturesUpdate(String str, String str2) throws RemoteException {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public void notifyFeaturesMapUpdate(String action, String actionValue, int featureID) throws RemoteException {
+        public void notifyFeaturesMapUpdate(String str, String str2, int i) throws RemoteException {
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public Bundle appDetailsForwardToMarket(int type, Bundle bundle) throws RemoteException {
+        public Bundle appDetailsForwardToMarket(int i, Bundle bundle) throws RemoteException {
             return null;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public boolean markResolveIntentForMarket(String token) throws RemoteException {
+        public boolean markResolveIntentForMarket(String str) throws RemoteException {
             return false;
         }
 
         @Override // android.content.pm.IOplusPackageManager
-        public int getAbiCheckResult(String packageName) throws RemoteException {
+        public int getAbiCheckResult(String str) throws RemoteException {
             return 0;
         }
 
@@ -485,15 +487,15 @@ public interface IOplusPackageManager extends IInterface {
             attachInterface(this, IOplusPackageManager.DESCRIPTOR);
         }
 
-        public static IOplusPackageManager asInterface(IBinder obj) {
-            if (obj == null) {
+        public static IOplusPackageManager asInterface(IBinder iBinder) {
+            if (iBinder == null) {
                 return null;
             }
-            IInterface iin = obj.queryLocalInterface(IOplusPackageManager.DESCRIPTOR);
-            if (iin != null && (iin instanceof IOplusPackageManager)) {
-                return (IOplusPackageManager) iin;
+            IInterface queryLocalInterface = iBinder.queryLocalInterface(IOplusPackageManager.DESCRIPTOR);
+            if (queryLocalInterface != null && (queryLocalInterface instanceof IOplusPackageManager)) {
+                return (IOplusPackageManager) queryLocalInterface;
             }
-            return new Proxy(obj);
+            return new Proxy(iBinder);
         }
 
         @Override // android.os.IInterface
@@ -501,8 +503,8 @@ public interface IOplusPackageManager extends IInterface {
             return this;
         }
 
-        public static String getDefaultTransactionName(int transactionCode) {
-            switch (transactionCode) {
+        public static String getDefaultTransactionName(int i) {
+            switch (i) {
                 case 1:
                     return "isClosedSuperFirewall";
                 case 2:
@@ -553,562 +555,547 @@ public interface IOplusPackageManager extends IInterface {
                     return "getCptListByType";
                 case 25:
                     return "inCptWhiteList";
-                case 26:
+                case TRANSACTION_inOplusStandardWhiteList /* 26 */:
                     return "inOplusStandardWhiteList";
-                case 27:
+                case TRANSACTION_sendMapCommonDcsUpload /* 27 */:
                     return "sendMapCommonDcsUpload";
-                case 28:
+                case TRANSACTION_getIconPackList /* 28 */:
                     return "getIconPackList";
-                case 29:
+                case TRANSACTION_dynamicDetectApp /* 29 */:
                     return "dynamicDetectApp";
-                case 30:
+                case TRANSACTION_isDetectApp /* 30 */:
                     return "isDetectApp";
-                case 31:
+                case TRANSACTION_getDetectAppList /* 31 */:
                     return "getDetectAppList";
                 case 32:
                     return "isCrossVersionUpdate";
-                case 33:
+                case TRANSACTION_getNotInstalledSystemApps /* 33 */:
                     return "getNotInstalledSystemApps";
-                case 34:
+                case TRANSACTION_getValidAppList /* 34 */:
                     return "getValidAppList";
-                case 35:
+                case TRANSACTION_getAppListFromPartition /* 35 */:
                     return "getAppListFromPartition";
-                case 36:
+                case TRANSACTION_deletePackageDelegated /* 36 */:
                     return "deletePackageDelegated";
-                case 37:
+                case TRANSACTION_getSystemUpdateInfo /* 37 */:
                     return "getSystemUpdateInfo";
-                case 38:
+                case TRANSACTION_setCustomizeDefaultApp /* 38 */:
                     return "setCustomizeDefaultApp";
-                case 39:
+                case TRANSACTION_removeCustomizeDefaultApp /* 39 */:
                     return "removeCustomizeDefaultApp";
-                case 40:
+                case TRANSACTION_getCustomizeDefaultApp /* 40 */:
                     return "getCustomizeDefaultApp";
-                case 41:
+                case TRANSACTION_fixupAppData /* 41 */:
                     return "fixupAppData";
-                case 42:
+                case TRANSACTION_getMigMappingPkgName /* 42 */:
                     return "getMigMappingPkgName";
-                case 43:
+                case TRANSACTION_getUninstallableAppConfig /* 43 */:
                     return "getUninstallableAppConfig";
-                case 44:
+                case TRANSACTION_inUninstallableAppConfig /* 44 */:
                     return "inUninstallableAppConfig";
-                case 45:
+                case TRANSACTION_isFreezeEnabled /* 45 */:
                     return "isFreezeEnabled";
-                case 46:
+                case TRANSACTION_setFreezeEnable /* 46 */:
                     return "setFreezeEnable";
-                case 47:
+                case TRANSACTION_getPackageFreezeState /* 47 */:
                     return "getPackageFreezeState";
-                case 48:
+                case TRANSACTION_getPackageFreezeUserSetting /* 48 */:
                     return "getPackageFreezeUserSetting";
-                case 49:
+                case TRANSACTION_setPackageFreezeState /* 49 */:
                     return "setPackageFreezeState";
-                case 50:
+                case TRANSACTION_setPackageFreezeUserSetting /* 50 */:
                     return "setPackageFreezeUserSetting";
-                case 51:
+                case TRANSACTION_getFreezedApplicationList /* 51 */:
                     return "getFreezedApplicationList";
-                case 52:
+                case TRANSACTION_getUserSettingFreezeableApplicationList /* 52 */:
                     return "getUserSettingFreezeableApplicationList";
-                case 53:
+                case TRANSACTION_hasFeatureIPC /* 53 */:
                     return "hasFeatureIPC";
-                case 54:
+                case TRANSACTION_enableFeature /* 54 */:
                     return "enableFeature";
-                case 55:
+                case TRANSACTION_disableFeature /* 55 */:
                     return "disableFeature";
-                case 56:
+                case TRANSACTION_enableFeatureMap /* 56 */:
                     return "enableFeatureMap";
-                case 57:
+                case TRANSACTION_disableFeatureMap /* 57 */:
                     return "disableFeatureMap";
-                case 58:
+                case TRANSACTION_notifyFeaturesUpdate /* 58 */:
                     return "notifyFeaturesUpdate";
-                case 59:
+                case TRANSACTION_notifyFeaturesMapUpdate /* 59 */:
                     return "notifyFeaturesMapUpdate";
-                case 60:
+                case TRANSACTION_registerFeatureObserverInner /* 60 */:
                     return "registerFeatureObserverInner";
-                case 61:
+                case TRANSACTION_unregisterFeatureObserverInner /* 61 */:
                     return "unregisterFeatureObserverInner";
-                case 62:
+                case TRANSACTION_registerFeatureMapObserverInner /* 62 */:
                     return "registerFeatureMapObserverInner";
-                case 63:
+                case TRANSACTION_unregisterFeatureMapObserverInner /* 63 */:
                     return "unregisterFeatureMapObserverInner";
                 case 64:
                     return "registerFeatureActionObserverInner";
-                case 65:
+                case TRANSACTION_unregisterFeatureActionObserverInner /* 65 */:
                     return "unregisterFeatureActionObserverInner";
-                case 66:
+                case TRANSACTION_appDetailsForwardToMarket /* 66 */:
                     return "appDetailsForwardToMarket";
-                case 67:
+                case TRANSACTION_markResolveIntentForMarket /* 67 */:
                     return "markResolveIntentForMarket";
-                case 68:
+                case TRANSACTION_getAbiCheckResult /* 68 */:
                     return "getAbiCheckResult";
-                case 69:
+                case TRANSACTION_queryIncompatibleApplist /* 69 */:
                     return "queryIncompatibleApplist";
                 default:
                     return null;
             }
         }
 
-        @Override // android.os.Binder
-        public String getTransactionName(int transactionCode) {
-            return getDefaultTransactionName(transactionCode);
+        public String getTransactionName(int i) {
+            return getDefaultTransactionName(i);
         }
 
+        /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
         @Override // android.os.Binder
-        public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException {
-            if (code >= 1 && code <= 16777215) {
-                data.enforceInterface(IOplusPackageManager.DESCRIPTOR);
+        public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
+            if (i >= 1 && i <= 16777215) {
+                parcel.enforceInterface(IOplusPackageManager.DESCRIPTOR);
             }
-            switch (code) {
-                case IBinder.INTERFACE_TRANSACTION /* 1598968902 */:
-                    reply.writeString(IOplusPackageManager.DESCRIPTOR);
+            switch (i) {
+                case 1598968902:
+                    parcel2.writeString(IOplusPackageManager.DESCRIPTOR);
                     return true;
                 default:
-                    switch (code) {
+                    switch (i) {
                         case 1:
-                            boolean _result = isClosedSuperFirewall();
-                            reply.writeNoException();
-                            reply.writeBoolean(_result);
-                            break;
+                            boolean isClosedSuperFirewall = isClosedSuperFirewall();
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(isClosedSuperFirewall);
+                            return true;
                         case 2:
-                            String _arg0 = data.readString();
-                            data.enforceNoDataAvail();
-                            Bitmap _result2 = getAppIconBitmap(_arg0);
-                            reply.writeNoException();
-                            reply.writeTypedObject(_result2, 1);
-                            break;
+                            String readString = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            Bitmap appIconBitmap = getAppIconBitmap(readString);
+                            parcel2.writeNoException();
+                            parcel2.writeTypedObject(appIconBitmap, 1);
+                            return true;
                         case 3:
-                            boolean _arg02 = data.readBoolean();
-                            data.enforceNoDataAvail();
-                            Map _result3 = getAppIconsCache(_arg02);
-                            reply.writeNoException();
-                            reply.writeMap(_result3);
-                            break;
+                            boolean readBoolean = parcel.readBoolean();
+                            parcel.enforceNoDataAvail();
+                            Map appIconsCache = getAppIconsCache(readBoolean);
+                            parcel2.writeNoException();
+                            parcel2.writeMap(appIconsCache);
+                            return true;
                         case 4:
-                            IPackageDeleteObserver _arg03 = IPackageDeleteObserver.Stub.asInterface(data.readStrongBinder());
-                            data.enforceNoDataAvail();
-                            Map _result4 = getActivityIconsCache(_arg03);
-                            reply.writeNoException();
-                            reply.writeMap(_result4);
-                            break;
+                            IPackageDeleteObserver asInterface = IPackageDeleteObserver.Stub.asInterface(parcel.readStrongBinder());
+                            parcel.enforceNoDataAvail();
+                            Map activityIconsCache = getActivityIconsCache(asInterface);
+                            parcel2.writeNoException();
+                            parcel2.writeMap(activityIconsCache);
+                            return true;
                         case 5:
-                            int _arg04 = data.readInt();
-                            boolean _arg1 = data.readBoolean();
-                            data.enforceNoDataAvail();
-                            boolean _result5 = prohibitChildInstallation(_arg04, _arg1);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result5);
-                            break;
+                            int readInt = parcel.readInt();
+                            boolean readBoolean2 = parcel.readBoolean();
+                            parcel.enforceNoDataAvail();
+                            boolean prohibitChildInstallation = prohibitChildInstallation(readInt, readBoolean2);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(prohibitChildInstallation);
+                            return true;
                         case 6:
-                            String _arg05 = data.readString();
-                            int _arg12 = data.readInt();
-                            int _arg2 = data.readInt();
-                            int _arg3 = data.readInt();
-                            String _arg4 = data.readString();
-                            data.enforceNoDataAvail();
-                            int _result6 = oplusFreezePackage(_arg05, _arg12, _arg2, _arg3, _arg4);
-                            reply.writeNoException();
-                            reply.writeInt(_result6);
-                            break;
+                            String readString2 = parcel.readString();
+                            int readInt2 = parcel.readInt();
+                            int readInt3 = parcel.readInt();
+                            int readInt4 = parcel.readInt();
+                            String readString3 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            int oplusFreezePackage = oplusFreezePackage(readString2, readInt2, readInt3, readInt4, readString3);
+                            parcel2.writeNoException();
+                            parcel2.writeInt(oplusFreezePackage);
+                            return true;
                         case 7:
-                            String _arg06 = data.readString();
-                            int _arg13 = data.readInt();
-                            int _arg22 = data.readInt();
-                            int _arg32 = data.readInt();
-                            String _arg42 = data.readString();
-                            data.enforceNoDataAvail();
-                            int _result7 = oplusUnFreezePackage(_arg06, _arg13, _arg22, _arg32, _arg42);
-                            reply.writeNoException();
-                            reply.writeInt(_result7);
-                            break;
+                            String readString4 = parcel.readString();
+                            int readInt5 = parcel.readInt();
+                            int readInt6 = parcel.readInt();
+                            int readInt7 = parcel.readInt();
+                            String readString5 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            int oplusUnFreezePackage = oplusUnFreezePackage(readString4, readInt5, readInt6, readInt7, readString5);
+                            parcel2.writeNoException();
+                            parcel2.writeInt(oplusUnFreezePackage);
+                            return true;
                         case 8:
-                            String _arg07 = data.readString();
-                            int _arg14 = data.readInt();
-                            data.enforceNoDataAvail();
-                            int _result8 = getOplusFreezePackageState(_arg07, _arg14);
-                            reply.writeNoException();
-                            reply.writeInt(_result8);
-                            break;
+                            String readString6 = parcel.readString();
+                            int readInt8 = parcel.readInt();
+                            parcel.enforceNoDataAvail();
+                            int oplusFreezePackageState = getOplusFreezePackageState(readString6, readInt8);
+                            parcel2.writeNoException();
+                            parcel2.writeInt(oplusFreezePackageState);
+                            return true;
                         case 9:
-                            String _arg08 = data.readString();
-                            int _arg15 = data.readInt();
-                            data.enforceNoDataAvail();
-                            boolean _result9 = inOplusFreezePackageList(_arg08, _arg15);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result9);
-                            break;
+                            String readString7 = parcel.readString();
+                            int readInt9 = parcel.readInt();
+                            parcel.enforceNoDataAvail();
+                            boolean inOplusFreezePackageList = inOplusFreezePackageList(readString7, readInt9);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(inOplusFreezePackageList);
+                            return true;
                         case 10:
-                            int _arg09 = data.readInt();
-                            data.enforceNoDataAvail();
-                            List<String> _result10 = getOplusFreezedPackageList(_arg09);
-                            reply.writeNoException();
-                            reply.writeStringList(_result10);
-                            break;
+                            int readInt10 = parcel.readInt();
+                            parcel.enforceNoDataAvail();
+                            List<String> oplusFreezedPackageList = getOplusFreezedPackageList(readInt10);
+                            parcel2.writeNoException();
+                            parcel2.writeStringList(oplusFreezedPackageList);
+                            return true;
                         case 11:
-                            String _arg010 = data.readString();
-                            int _arg16 = data.readInt();
-                            data.enforceNoDataAvail();
-                            int _result11 = getOplusPackageFreezeFlag(_arg010, _arg16);
-                            reply.writeNoException();
-                            reply.writeInt(_result11);
-                            break;
+                            String readString8 = parcel.readString();
+                            int readInt11 = parcel.readInt();
+                            parcel.enforceNoDataAvail();
+                            int oplusPackageFreezeFlag = getOplusPackageFreezeFlag(readString8, readInt11);
+                            parcel2.writeNoException();
+                            parcel2.writeInt(oplusPackageFreezeFlag);
+                            return true;
                         case 12:
-                            FeatureInfo[] _result12 = getOplusSystemAvailableFeatures();
-                            reply.writeNoException();
-                            reply.writeTypedArray(_result12, 1);
-                            break;
+                            FeatureInfo[] oplusSystemAvailableFeatures = getOplusSystemAvailableFeatures();
+                            parcel2.writeNoException();
+                            parcel2.writeTypedArray(oplusSystemAvailableFeatures, 1);
+                            return true;
                         case 13:
-                            String _arg011 = data.readString();
-                            data.enforceNoDataAvail();
-                            boolean _result13 = isSecurePayApp(_arg011);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result13);
-                            break;
+                            String readString9 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            boolean isSecurePayApp = isSecurePayApp(readString9);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(isSecurePayApp);
+                            return true;
                         case 14:
-                            String _arg012 = data.readString();
-                            data.enforceNoDataAvail();
-                            boolean _result14 = isSystemDataApp(_arg012);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result14);
-                            break;
+                            String readString10 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            boolean isSystemDataApp = isSystemDataApp(readString10);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(isSystemDataApp);
+                            return true;
                         case 15:
-                            int _arg013 = data.readInt();
-                            String _arg17 = data.readString();
-                            List<String> _arg23 = data.createStringArrayList();
-                            data.enforceNoDataAvail();
-                            boolean _result15 = inPmsWhiteList(_arg013, _arg17, _arg23);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result15);
-                            break;
+                            int readInt12 = parcel.readInt();
+                            String readString11 = parcel.readString();
+                            ArrayList<String> createStringArrayList = parcel.createStringArrayList();
+                            parcel.enforceNoDataAvail();
+                            boolean inPmsWhiteList = inPmsWhiteList(readInt12, readString11, createStringArrayList);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(inPmsWhiteList);
+                            return true;
                         case 16:
-                            break;
                         case 17:
-                            break;
-                        case 18:
-                            List<String> _result18 = getRemovableAppList();
-                            reply.writeNoException();
-                            reply.writeStringList(_result18);
-                            break;
                         case 19:
-                            break;
                         case 20:
-                            break;
                         case 21:
-                            break;
-                        case 22:
-                            String _arg016 = data.readString();
-                            IntentSender _arg18 = (IntentSender) data.readTypedObject(IntentSender.CREATOR);
-                            Bundle _arg24 = (Bundle) data.readTypedObject(Bundle.CREATOR);
-                            data.enforceNoDataAvail();
-                            boolean _result22 = restoreRemovableApp(_arg016, _arg18, _arg24);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result22);
-                            break;
-                        case 23:
-                            boolean _result23 = isSupportSessionWrite();
-                            reply.writeNoException();
-                            reply.writeBoolean(_result23);
-                            break;
-                        case 24:
-                            int _arg017 = data.readInt();
-                            data.enforceNoDataAvail();
-                            List<String> _result24 = getCptListByType(_arg017);
-                            reply.writeNoException();
-                            reply.writeStringList(_result24);
-                            break;
-                        case 25:
-                            int _arg018 = data.readInt();
-                            String _arg19 = data.readString();
-                            data.enforceNoDataAvail();
-                            boolean _result25 = inCptWhiteList(_arg018, _arg19);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result25);
-                            break;
-                        case 26:
-                            String _arg019 = data.readString();
-                            int _arg110 = data.readInt();
-                            String _arg25 = data.readString();
-                            data.enforceNoDataAvail();
-                            boolean _result26 = inOplusStandardWhiteList(_arg019, _arg110, _arg25);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result26);
-                            break;
-                        case 27:
-                            String _arg020 = data.readString();
-                            String _arg111 = data.readString();
-                            ClassLoader cl = getClass().getClassLoader();
-                            Map _arg26 = data.readHashMap(cl);
-                            data.enforceNoDataAvail();
-                            sendMapCommonDcsUpload(_arg020, _arg111, _arg26);
-                            reply.writeNoException();
-                            break;
-                        case 28:
-                            List<ApplicationInfo> _result27 = getIconPackList();
-                            reply.writeNoException();
-                            reply.writeTypedList(_result27);
-                            break;
-                        case 29:
-                            break;
-                        case 30:
-                            String _arg022 = data.readString();
-                            data.enforceNoDataAvail();
-                            boolean _result28 = isDetectApp(_arg022);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result28);
-                            break;
-                        case 31:
-                            List<String> _result29 = getDetectAppList();
-                            reply.writeNoException();
-                            reply.writeStringList(_result29);
-                            break;
-                        case 32:
-                            boolean _result30 = isCrossVersionUpdate();
-                            reply.writeNoException();
-                            reply.writeBoolean(_result30);
-                            break;
-                        case 33:
-                            List<String> _result31 = getNotInstalledSystemApps();
-                            reply.writeNoException();
-                            reply.writeStringList(_result31);
-                            break;
-                        case 34:
-                            List<String> _result32 = getValidAppList();
-                            reply.writeNoException();
-                            reply.writeStringList(_result32);
-                            break;
-                        case 35:
-                            String _arg023 = data.readString();
-                            data.enforceNoDataAvail();
-                            List<String> _result33 = getAppListFromPartition(_arg023);
-                            reply.writeNoException();
-                            reply.writeStringList(_result33);
-                            break;
-                        case 36:
-                            String _arg024 = data.readString();
-                            int _arg112 = data.readInt();
-                            int _arg27 = data.readInt();
-                            int _arg33 = data.readInt();
-                            int _arg43 = data.readInt();
-                            IPackageDeleteObserver _arg5 = IPackageDeleteObserver.Stub.asInterface(data.readStrongBinder());
-                            data.enforceNoDataAvail();
-                            deletePackageDelegated(_arg024, _arg112, _arg27, _arg33, _arg43, _arg5);
-                            reply.writeNoException();
-                            break;
-                        case 37:
-                            break;
-                        case 38:
-                            String _arg025 = data.readString();
-                            String _arg113 = data.readString();
-                            data.enforceNoDataAvail();
-                            boolean _result35 = setCustomizeDefaultApp(_arg025, _arg113);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result35);
-                            break;
-                        case 39:
-                            String _arg026 = data.readString();
-                            data.enforceNoDataAvail();
-                            removeCustomizeDefaultApp(_arg026);
-                            reply.writeNoException();
-                            break;
-                        case 40:
-                            String _arg027 = data.readString();
-                            data.enforceNoDataAvail();
-                            String _result36 = getCustomizeDefaultApp(_arg027);
-                            reply.writeNoException();
-                            reply.writeString(_result36);
-                            break;
-                        case 41:
-                            String _arg028 = data.readString();
-                            String _arg114 = data.readString();
-                            int _arg28 = data.readInt();
-                            data.enforceNoDataAvail();
-                            boolean _result37 = fixupAppData(_arg028, _arg114, _arg28);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result37);
-                            break;
-                        case 42:
-                            boolean _arg029 = data.readBoolean();
-                            String _arg115 = data.readString();
-                            data.enforceNoDataAvail();
-                            String _result38 = getMigMappingPkgName(_arg029, _arg115);
-                            reply.writeNoException();
-                            reply.writeString(_result38);
-                            break;
-                        case 43:
-                            int _arg030 = data.readInt();
-                            data.enforceNoDataAvail();
-                            List<String> _result39 = getUninstallableAppConfig(_arg030);
-                            reply.writeNoException();
-                            reply.writeStringList(_result39);
-                            break;
-                        case 44:
-                            int _arg031 = data.readInt();
-                            String _arg116 = data.readString();
-                            data.enforceNoDataAvail();
-                            boolean _result40 = inUninstallableAppConfig(_arg031, _arg116);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result40);
-                            break;
-                        case 45:
-                            boolean _result41 = isFreezeEnabled();
-                            reply.writeNoException();
-                            reply.writeBoolean(_result41);
-                            break;
-                        case 46:
-                            boolean _arg032 = data.readBoolean();
-                            data.enforceNoDataAvail();
-                            setFreezeEnable(_arg032);
-                            reply.writeNoException();
-                            break;
-                        case 47:
-                            String _arg033 = data.readString();
-                            UserHandle _arg117 = (UserHandle) data.readTypedObject(UserHandle.CREATOR);
-                            data.enforceNoDataAvail();
-                            int _result42 = getPackageFreezeState(_arg033, _arg117);
-                            reply.writeNoException();
-                            reply.writeInt(_result42);
-                            break;
-                        case 48:
-                            String _arg034 = data.readString();
-                            UserHandle _arg118 = (UserHandle) data.readTypedObject(UserHandle.CREATOR);
-                            data.enforceNoDataAvail();
-                            int _result43 = getPackageFreezeUserSetting(_arg034, _arg118);
-                            reply.writeNoException();
-                            reply.writeInt(_result43);
-                            break;
-                        case 49:
-                            String _arg035 = data.readString();
-                            int _arg119 = data.readInt();
-                            UserHandle _arg29 = (UserHandle) data.readTypedObject(UserHandle.CREATOR);
-                            data.enforceNoDataAvail();
-                            setPackageFreezeState(_arg035, _arg119, _arg29);
-                            reply.writeNoException();
-                            break;
-                        case 50:
-                            String _arg036 = data.readString();
-                            int _arg120 = data.readInt();
-                            UserHandle _arg210 = (UserHandle) data.readTypedObject(UserHandle.CREATOR);
-                            data.enforceNoDataAvail();
-                            setPackageFreezeUserSetting(_arg036, _arg120, _arg210);
-                            reply.writeNoException();
-                            break;
-                        case 51:
-                            UserHandle _arg037 = (UserHandle) data.readTypedObject(UserHandle.CREATOR);
-                            data.enforceNoDataAvail();
-                            List<String> _result44 = getFreezedApplicationList(_arg037);
-                            reply.writeNoException();
-                            reply.writeStringList(_result44);
-                            break;
-                        case 52:
-                            UserHandle _arg038 = (UserHandle) data.readTypedObject(UserHandle.CREATOR);
-                            data.enforceNoDataAvail();
-                            List<String> _result45 = getUserSettingFreezeableApplicationList(_arg038);
-                            reply.writeNoException();
-                            reply.writeStringList(_result45);
-                            break;
-                        case 53:
-                            String _arg039 = data.readString();
-                            int _arg121 = data.readInt();
-                            data.enforceNoDataAvail();
-                            boolean _result46 = hasFeatureIPC(_arg039, _arg121);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result46);
-                            break;
-                        case 54:
-                            String _arg040 = data.readString();
-                            data.enforceNoDataAvail();
-                            boolean _result47 = enableFeature(_arg040);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result47);
-                            break;
-                        case 55:
-                            String _arg041 = data.readString();
-                            data.enforceNoDataAvail();
-                            boolean _result48 = disableFeature(_arg041);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result48);
-                            break;
-                        case 56:
-                            String _arg042 = data.readString();
-                            int _arg122 = data.readInt();
-                            data.enforceNoDataAvail();
-                            boolean _result49 = enableFeatureMap(_arg042, _arg122);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result49);
-                            break;
-                        case 57:
-                            String _arg043 = data.readString();
-                            int _arg123 = data.readInt();
-                            data.enforceNoDataAvail();
-                            boolean _result50 = disableFeatureMap(_arg043, _arg123);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result50);
-                            break;
-                        case 58:
-                            String _arg044 = data.readString();
-                            String _arg124 = data.readString();
-                            data.enforceNoDataAvail();
-                            notifyFeaturesUpdate(_arg044, _arg124);
-                            reply.writeNoException();
-                            break;
-                        case 59:
-                            String _arg045 = data.readString();
-                            String _arg125 = data.readString();
-                            int _arg211 = data.readInt();
-                            data.enforceNoDataAvail();
-                            notifyFeaturesMapUpdate(_arg045, _arg125, _arg211);
-                            reply.writeNoException();
-                            break;
-                        case 60:
-                            break;
-                        case 61:
-                            break;
-                        case 62:
-                            break;
-                        case 63:
-                            break;
+                        case TRANSACTION_dynamicDetectApp /* 29 */:
+                        case TRANSACTION_getSystemUpdateInfo /* 37 */:
+                        case TRANSACTION_registerFeatureObserverInner /* 60 */:
+                        case TRANSACTION_unregisterFeatureObserverInner /* 61 */:
+                        case TRANSACTION_registerFeatureMapObserverInner /* 62 */:
+                        case TRANSACTION_unregisterFeatureMapObserverInner /* 63 */:
                         case 64:
-                            break;
-                        case 65:
-                            break;
-                        case 66:
-                            int _arg052 = data.readInt();
-                            Bundle _arg129 = (Bundle) data.readTypedObject(Bundle.CREATOR);
-                            data.enforceNoDataAvail();
-                            Bundle _result57 = appDetailsForwardToMarket(_arg052, _arg129);
-                            reply.writeNoException();
-                            reply.writeTypedObject(_result57, 1);
-                            break;
-                        case 67:
-                            String _arg053 = data.readString();
-                            data.enforceNoDataAvail();
-                            boolean _result58 = markResolveIntentForMarket(_arg053);
-                            reply.writeNoException();
-                            reply.writeBoolean(_result58);
-                            break;
-                        case 68:
-                            String _arg054 = data.readString();
-                            data.enforceNoDataAvail();
-                            int _result59 = getAbiCheckResult(_arg054);
-                            reply.writeNoException();
-                            reply.writeInt(_result59);
-                            break;
-                        case 69:
-                            List<String> _result60 = queryIncompatibleApplist();
-                            reply.writeNoException();
-                            reply.writeStringList(_result60);
-                            break;
+                        case TRANSACTION_unregisterFeatureActionObserverInner /* 65 */:
+                            return true;
+                        case 18:
+                            List<String> removableAppList = getRemovableAppList();
+                            parcel2.writeNoException();
+                            parcel2.writeStringList(removableAppList);
+                            return true;
+                        case 22:
+                            String readString12 = parcel.readString();
+                            IntentSender intentSender = (IntentSender) parcel.readTypedObject(IntentSender.CREATOR);
+                            Bundle bundle = (Bundle) parcel.readTypedObject(Bundle.CREATOR);
+                            parcel.enforceNoDataAvail();
+                            boolean restoreRemovableApp = restoreRemovableApp(readString12, intentSender, bundle);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(restoreRemovableApp);
+                            return true;
+                        case 23:
+                            boolean isSupportSessionWrite = isSupportSessionWrite();
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(isSupportSessionWrite);
+                            return true;
+                        case 24:
+                            int readInt13 = parcel.readInt();
+                            parcel.enforceNoDataAvail();
+                            List<String> cptListByType = getCptListByType(readInt13);
+                            parcel2.writeNoException();
+                            parcel2.writeStringList(cptListByType);
+                            return true;
+                        case 25:
+                            int readInt14 = parcel.readInt();
+                            String readString13 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            boolean inCptWhiteList = inCptWhiteList(readInt14, readString13);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(inCptWhiteList);
+                            return true;
+                        case TRANSACTION_inOplusStandardWhiteList /* 26 */:
+                            String readString14 = parcel.readString();
+                            int readInt15 = parcel.readInt();
+                            String readString15 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            boolean inOplusStandardWhiteList = inOplusStandardWhiteList(readString14, readInt15, readString15);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(inOplusStandardWhiteList);
+                            return true;
+                        case TRANSACTION_sendMapCommonDcsUpload /* 27 */:
+                            String readString16 = parcel.readString();
+                            String readString17 = parcel.readString();
+                            HashMap readHashMap = parcel.readHashMap(getClass().getClassLoader());
+                            parcel.enforceNoDataAvail();
+                            sendMapCommonDcsUpload(readString16, readString17, readHashMap);
+                            parcel2.writeNoException();
+                            return true;
+                        case TRANSACTION_getIconPackList /* 28 */:
+                            List<ApplicationInfo> iconPackList = getIconPackList();
+                            parcel2.writeNoException();
+                            parcel2.writeTypedList(iconPackList);
+                            return true;
+                        case TRANSACTION_isDetectApp /* 30 */:
+                            String readString18 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            boolean isDetectApp = isDetectApp(readString18);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(isDetectApp);
+                            return true;
+                        case TRANSACTION_getDetectAppList /* 31 */:
+                            List<String> detectAppList = getDetectAppList();
+                            parcel2.writeNoException();
+                            parcel2.writeStringList(detectAppList);
+                            return true;
+                        case 32:
+                            boolean isCrossVersionUpdate = isCrossVersionUpdate();
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(isCrossVersionUpdate);
+                            return true;
+                        case TRANSACTION_getNotInstalledSystemApps /* 33 */:
+                            List<String> notInstalledSystemApps = getNotInstalledSystemApps();
+                            parcel2.writeNoException();
+                            parcel2.writeStringList(notInstalledSystemApps);
+                            return true;
+                        case TRANSACTION_getValidAppList /* 34 */:
+                            List<String> validAppList = getValidAppList();
+                            parcel2.writeNoException();
+                            parcel2.writeStringList(validAppList);
+                            return true;
+                        case TRANSACTION_getAppListFromPartition /* 35 */:
+                            String readString19 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            List<String> appListFromPartition = getAppListFromPartition(readString19);
+                            parcel2.writeNoException();
+                            parcel2.writeStringList(appListFromPartition);
+                            return true;
+                        case TRANSACTION_deletePackageDelegated /* 36 */:
+                            String readString20 = parcel.readString();
+                            int readInt16 = parcel.readInt();
+                            int readInt17 = parcel.readInt();
+                            int readInt18 = parcel.readInt();
+                            int readInt19 = parcel.readInt();
+                            IPackageDeleteObserver asInterface2 = IPackageDeleteObserver.Stub.asInterface(parcel.readStrongBinder());
+                            parcel.enforceNoDataAvail();
+                            deletePackageDelegated(readString20, readInt16, readInt17, readInt18, readInt19, asInterface2);
+                            parcel2.writeNoException();
+                            return true;
+                        case TRANSACTION_setCustomizeDefaultApp /* 38 */:
+                            String readString21 = parcel.readString();
+                            String readString22 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            boolean customizeDefaultApp = setCustomizeDefaultApp(readString21, readString22);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(customizeDefaultApp);
+                            return true;
+                        case TRANSACTION_removeCustomizeDefaultApp /* 39 */:
+                            String readString23 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            removeCustomizeDefaultApp(readString23);
+                            parcel2.writeNoException();
+                            return true;
+                        case TRANSACTION_getCustomizeDefaultApp /* 40 */:
+                            String readString24 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            String customizeDefaultApp2 = getCustomizeDefaultApp(readString24);
+                            parcel2.writeNoException();
+                            parcel2.writeString(customizeDefaultApp2);
+                            return true;
+                        case TRANSACTION_fixupAppData /* 41 */:
+                            String readString25 = parcel.readString();
+                            String readString26 = parcel.readString();
+                            int readInt20 = parcel.readInt();
+                            parcel.enforceNoDataAvail();
+                            boolean fixupAppData = fixupAppData(readString25, readString26, readInt20);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(fixupAppData);
+                            return true;
+                        case TRANSACTION_getMigMappingPkgName /* 42 */:
+                            boolean readBoolean3 = parcel.readBoolean();
+                            String readString27 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            String migMappingPkgName = getMigMappingPkgName(readBoolean3, readString27);
+                            parcel2.writeNoException();
+                            parcel2.writeString(migMappingPkgName);
+                            return true;
+                        case TRANSACTION_getUninstallableAppConfig /* 43 */:
+                            int readInt21 = parcel.readInt();
+                            parcel.enforceNoDataAvail();
+                            List<String> uninstallableAppConfig = getUninstallableAppConfig(readInt21);
+                            parcel2.writeNoException();
+                            parcel2.writeStringList(uninstallableAppConfig);
+                            return true;
+                        case TRANSACTION_inUninstallableAppConfig /* 44 */:
+                            int readInt22 = parcel.readInt();
+                            String readString28 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            boolean inUninstallableAppConfig = inUninstallableAppConfig(readInt22, readString28);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(inUninstallableAppConfig);
+                            return true;
+                        case TRANSACTION_isFreezeEnabled /* 45 */:
+                            boolean isFreezeEnabled = isFreezeEnabled();
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(isFreezeEnabled);
+                            return true;
+                        case TRANSACTION_setFreezeEnable /* 46 */:
+                            boolean readBoolean4 = parcel.readBoolean();
+                            parcel.enforceNoDataAvail();
+                            setFreezeEnable(readBoolean4);
+                            parcel2.writeNoException();
+                            return true;
+                        case TRANSACTION_getPackageFreezeState /* 47 */:
+                            String readString29 = parcel.readString();
+                            UserHandle userHandle = (UserHandle) parcel.readTypedObject(UserHandle.CREATOR);
+                            parcel.enforceNoDataAvail();
+                            int packageFreezeState = getPackageFreezeState(readString29, userHandle);
+                            parcel2.writeNoException();
+                            parcel2.writeInt(packageFreezeState);
+                            return true;
+                        case TRANSACTION_getPackageFreezeUserSetting /* 48 */:
+                            String readString30 = parcel.readString();
+                            UserHandle userHandle2 = (UserHandle) parcel.readTypedObject(UserHandle.CREATOR);
+                            parcel.enforceNoDataAvail();
+                            int packageFreezeUserSetting = getPackageFreezeUserSetting(readString30, userHandle2);
+                            parcel2.writeNoException();
+                            parcel2.writeInt(packageFreezeUserSetting);
+                            return true;
+                        case TRANSACTION_setPackageFreezeState /* 49 */:
+                            String readString31 = parcel.readString();
+                            int readInt23 = parcel.readInt();
+                            UserHandle userHandle3 = (UserHandle) parcel.readTypedObject(UserHandle.CREATOR);
+                            parcel.enforceNoDataAvail();
+                            setPackageFreezeState(readString31, readInt23, userHandle3);
+                            parcel2.writeNoException();
+                            return true;
+                        case TRANSACTION_setPackageFreezeUserSetting /* 50 */:
+                            String readString32 = parcel.readString();
+                            int readInt24 = parcel.readInt();
+                            UserHandle userHandle4 = (UserHandle) parcel.readTypedObject(UserHandle.CREATOR);
+                            parcel.enforceNoDataAvail();
+                            setPackageFreezeUserSetting(readString32, readInt24, userHandle4);
+                            parcel2.writeNoException();
+                            return true;
+                        case TRANSACTION_getFreezedApplicationList /* 51 */:
+                            UserHandle userHandle5 = (UserHandle) parcel.readTypedObject(UserHandle.CREATOR);
+                            parcel.enforceNoDataAvail();
+                            List<String> freezedApplicationList = getFreezedApplicationList(userHandle5);
+                            parcel2.writeNoException();
+                            parcel2.writeStringList(freezedApplicationList);
+                            return true;
+                        case TRANSACTION_getUserSettingFreezeableApplicationList /* 52 */:
+                            UserHandle userHandle6 = (UserHandle) parcel.readTypedObject(UserHandle.CREATOR);
+                            parcel.enforceNoDataAvail();
+                            List<String> userSettingFreezeableApplicationList = getUserSettingFreezeableApplicationList(userHandle6);
+                            parcel2.writeNoException();
+                            parcel2.writeStringList(userSettingFreezeableApplicationList);
+                            return true;
+                        case TRANSACTION_hasFeatureIPC /* 53 */:
+                            String readString33 = parcel.readString();
+                            int readInt25 = parcel.readInt();
+                            parcel.enforceNoDataAvail();
+                            boolean hasFeatureIPC = hasFeatureIPC(readString33, readInt25);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(hasFeatureIPC);
+                            return true;
+                        case TRANSACTION_enableFeature /* 54 */:
+                            String readString34 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            boolean enableFeature = enableFeature(readString34);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(enableFeature);
+                            return true;
+                        case TRANSACTION_disableFeature /* 55 */:
+                            String readString35 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            boolean disableFeature = disableFeature(readString35);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(disableFeature);
+                            return true;
+                        case TRANSACTION_enableFeatureMap /* 56 */:
+                            String readString36 = parcel.readString();
+                            int readInt26 = parcel.readInt();
+                            parcel.enforceNoDataAvail();
+                            boolean enableFeatureMap = enableFeatureMap(readString36, readInt26);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(enableFeatureMap);
+                            return true;
+                        case TRANSACTION_disableFeatureMap /* 57 */:
+                            String readString37 = parcel.readString();
+                            int readInt27 = parcel.readInt();
+                            parcel.enforceNoDataAvail();
+                            boolean disableFeatureMap = disableFeatureMap(readString37, readInt27);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(disableFeatureMap);
+                            return true;
+                        case TRANSACTION_notifyFeaturesUpdate /* 58 */:
+                            String readString38 = parcel.readString();
+                            String readString39 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            notifyFeaturesUpdate(readString38, readString39);
+                            parcel2.writeNoException();
+                            return true;
+                        case TRANSACTION_notifyFeaturesMapUpdate /* 59 */:
+                            String readString40 = parcel.readString();
+                            String readString41 = parcel.readString();
+                            int readInt28 = parcel.readInt();
+                            parcel.enforceNoDataAvail();
+                            notifyFeaturesMapUpdate(readString40, readString41, readInt28);
+                            parcel2.writeNoException();
+                            return true;
+                        case TRANSACTION_appDetailsForwardToMarket /* 66 */:
+                            int readInt29 = parcel.readInt();
+                            Bundle bundle2 = (Bundle) parcel.readTypedObject(Bundle.CREATOR);
+                            parcel.enforceNoDataAvail();
+                            Bundle appDetailsForwardToMarket = appDetailsForwardToMarket(readInt29, bundle2);
+                            parcel2.writeNoException();
+                            parcel2.writeTypedObject(appDetailsForwardToMarket, 1);
+                            return true;
+                        case TRANSACTION_markResolveIntentForMarket /* 67 */:
+                            String readString42 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            boolean markResolveIntentForMarket = markResolveIntentForMarket(readString42);
+                            parcel2.writeNoException();
+                            parcel2.writeBoolean(markResolveIntentForMarket);
+                            return true;
+                        case TRANSACTION_getAbiCheckResult /* 68 */:
+                            String readString43 = parcel.readString();
+                            parcel.enforceNoDataAvail();
+                            int abiCheckResult = getAbiCheckResult(readString43);
+                            parcel2.writeNoException();
+                            parcel2.writeInt(abiCheckResult);
+                            return true;
+                        case TRANSACTION_queryIncompatibleApplist /* 69 */:
+                            List<String> queryIncompatibleApplist = queryIncompatibleApplist();
+                            parcel2.writeNoException();
+                            parcel2.writeStringList(queryIncompatibleApplist);
+                            return true;
                         default:
-                            return super.onTransact(code, data, reply, flags);
+                            return super.onTransact(i, parcel, parcel2, i2);
                     }
-                    return true;
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
         /* loaded from: classes.dex */
         public static class Proxy implements IOplusPackageManager {
             private IBinder mRemote;
 
-            Proxy(IBinder remote) {
-                this.mRemote = remote;
+            Proxy(IBinder iBinder) {
+                this.mRemote = iBinder;
             }
 
             @Override // android.os.IInterface
@@ -1122,979 +1109,928 @@ public interface IOplusPackageManager extends IInterface {
 
             @Override // android.content.pm.IOplusPackageManager
             public boolean isClosedSuperFirewall() throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    this.mRemote.transact(1, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    this.mRemote.transact(1, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public Bitmap getAppIconBitmap(String packageName) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public Bitmap getAppIconBitmap(String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(packageName);
-                    this.mRemote.transact(2, _data, _reply, 0);
-                    _reply.readException();
-                    Bitmap _result = (Bitmap) _reply.readTypedObject(Bitmap.CREATOR);
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    this.mRemote.transact(2, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return (Bitmap) obtain2.readTypedObject(Bitmap.CREATOR);
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public Map getAppIconsCache(boolean compress) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public Map getAppIconsCache(boolean z) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeBoolean(compress);
-                    this.mRemote.transact(3, _data, _reply, 0);
-                    _reply.readException();
-                    ClassLoader cl = getClass().getClassLoader();
-                    Map _result = _reply.readHashMap(cl);
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeBoolean(z);
+                    this.mRemote.transact(3, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readHashMap(getClass().getClassLoader());
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public Map getActivityIconsCache(IPackageDeleteObserver observer) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public Map getActivityIconsCache(IPackageDeleteObserver iPackageDeleteObserver) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeStrongInterface(observer);
-                    this.mRemote.transact(4, _data, _reply, 0);
-                    _reply.readException();
-                    ClassLoader cl = getClass().getClassLoader();
-                    Map _result = _reply.readHashMap(cl);
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeStrongInterface(iPackageDeleteObserver);
+                    this.mRemote.transact(4, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readHashMap(getClass().getClassLoader());
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean prohibitChildInstallation(int userId, boolean isInstall) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean prohibitChildInstallation(int i, boolean z) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeInt(userId);
-                    _data.writeBoolean(isInstall);
-                    this.mRemote.transact(5, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeInt(i);
+                    obtain.writeBoolean(z);
+                    this.mRemote.transact(5, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public int oplusFreezePackage(String pkgName, int userId, int freezeFlag, int flag, String callingPkg) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public int oplusFreezePackage(String str, int i, int i2, int i3, String str2) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(pkgName);
-                    _data.writeInt(userId);
-                    _data.writeInt(freezeFlag);
-                    _data.writeInt(flag);
-                    _data.writeString(callingPkg);
-                    this.mRemote.transact(6, _data, _reply, 0);
-                    _reply.readException();
-                    int _result = _reply.readInt();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeInt(i);
+                    obtain.writeInt(i2);
+                    obtain.writeInt(i3);
+                    obtain.writeString(str2);
+                    this.mRemote.transact(6, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readInt();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public int oplusUnFreezePackage(String pkgName, int userId, int freezeFlag, int flag, String callingPkg) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public int oplusUnFreezePackage(String str, int i, int i2, int i3, String str2) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(pkgName);
-                    _data.writeInt(userId);
-                    _data.writeInt(freezeFlag);
-                    _data.writeInt(flag);
-                    _data.writeString(callingPkg);
-                    this.mRemote.transact(7, _data, _reply, 0);
-                    _reply.readException();
-                    int _result = _reply.readInt();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeInt(i);
+                    obtain.writeInt(i2);
+                    obtain.writeInt(i3);
+                    obtain.writeString(str2);
+                    this.mRemote.transact(7, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readInt();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public int getOplusFreezePackageState(String pkgName, int userId) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public int getOplusFreezePackageState(String str, int i) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(pkgName);
-                    _data.writeInt(userId);
-                    this.mRemote.transact(8, _data, _reply, 0);
-                    _reply.readException();
-                    int _result = _reply.readInt();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeInt(i);
+                    this.mRemote.transact(8, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readInt();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean inOplusFreezePackageList(String pkgName, int userId) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean inOplusFreezePackageList(String str, int i) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(pkgName);
-                    _data.writeInt(userId);
-                    this.mRemote.transact(9, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeInt(i);
+                    this.mRemote.transact(9, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public List<String> getOplusFreezedPackageList(int userId) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public List<String> getOplusFreezedPackageList(int i) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeInt(userId);
-                    this.mRemote.transact(10, _data, _reply, 0);
-                    _reply.readException();
-                    List<String> _result = _reply.createStringArrayList();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeInt(i);
+                    this.mRemote.transact(10, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.createStringArrayList();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public int getOplusPackageFreezeFlag(String pkgName, int userId) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public int getOplusPackageFreezeFlag(String str, int i) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(pkgName);
-                    _data.writeInt(userId);
-                    this.mRemote.transact(11, _data, _reply, 0);
-                    _reply.readException();
-                    int _result = _reply.readInt();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeInt(i);
+                    this.mRemote.transact(11, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readInt();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
             public FeatureInfo[] getOplusSystemAvailableFeatures() throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    this.mRemote.transact(12, _data, _reply, 0);
-                    _reply.readException();
-                    FeatureInfo[] _result = (FeatureInfo[]) _reply.createTypedArray(FeatureInfo.CREATOR);
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    this.mRemote.transact(12, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return (FeatureInfo[]) obtain2.createTypedArray(FeatureInfo.CREATOR);
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean isSecurePayApp(String name) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean isSecurePayApp(String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(name);
-                    this.mRemote.transact(13, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    this.mRemote.transact(13, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean isSystemDataApp(String packageName) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean isSystemDataApp(String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(packageName);
-                    this.mRemote.transact(14, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    this.mRemote.transact(14, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean inPmsWhiteList(int type, String verifyStr, List<String> defaultList) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean inPmsWhiteList(int i, String str, List<String> list) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeInt(type);
-                    _data.writeString(verifyStr);
-                    _data.writeStringList(defaultList);
-                    this.mRemote.transact(15, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeInt(i);
+                    obtain.writeString(str);
+                    obtain.writeStringList(list);
+                    this.mRemote.transact(15, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
             public List<String> getRemovableAppList() throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    this.mRemote.transact(18, _data, _reply, 0);
-                    _reply.readException();
-                    List<String> _result = _reply.createStringArrayList();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    this.mRemote.transact(18, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.createStringArrayList();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean restoreRemovableApp(String packageName, IntentSender sender, Bundle bundle) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean restoreRemovableApp(String str, IntentSender intentSender, Bundle bundle) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(packageName);
-                    _data.writeTypedObject(sender, 0);
-                    _data.writeTypedObject(bundle, 0);
-                    this.mRemote.transact(22, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeTypedObject(intentSender, 0);
+                    obtain.writeTypedObject(bundle, 0);
+                    this.mRemote.transact(22, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
             public boolean isSupportSessionWrite() throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    this.mRemote.transact(23, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    this.mRemote.transact(23, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public List<String> getCptListByType(int tag) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public List<String> getCptListByType(int i) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeInt(tag);
-                    this.mRemote.transact(24, _data, _reply, 0);
-                    _reply.readException();
-                    List<String> _result = _reply.createStringArrayList();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeInt(i);
+                    this.mRemote.transact(24, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.createStringArrayList();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean inCptWhiteList(int type, String verifyStr) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean inCptWhiteList(int i, String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeInt(type);
-                    _data.writeString(verifyStr);
-                    this.mRemote.transact(25, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeInt(i);
+                    obtain.writeString(str);
+                    this.mRemote.transact(25, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean inOplusStandardWhiteList(String filterName, int type, String verifyStr) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean inOplusStandardWhiteList(String str, int i, String str2) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(filterName);
-                    _data.writeInt(type);
-                    _data.writeString(verifyStr);
-                    this.mRemote.transact(26, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeInt(i);
+                    obtain.writeString(str2);
+                    this.mRemote.transact(Stub.TRANSACTION_inOplusStandardWhiteList, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public void sendMapCommonDcsUpload(String logTag, String eventId, Map map) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public void sendMapCommonDcsUpload(String str, String str2, Map map) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(logTag);
-                    _data.writeString(eventId);
-                    _data.writeMap(map);
-                    this.mRemote.transact(27, _data, _reply, 0);
-                    _reply.readException();
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeString(str2);
+                    obtain.writeMap(map);
+                    this.mRemote.transact(Stub.TRANSACTION_sendMapCommonDcsUpload, obtain, obtain2, 0);
+                    obtain2.readException();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
             public List<ApplicationInfo> getIconPackList() throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    this.mRemote.transact(28, _data, _reply, 0);
-                    _reply.readException();
-                    List<ApplicationInfo> _result = _reply.createTypedArrayList(ApplicationInfo.CREATOR);
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    this.mRemote.transact(Stub.TRANSACTION_getIconPackList, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.createTypedArrayList(ApplicationInfo.CREATOR);
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean isDetectApp(String packageName) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean isDetectApp(String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(packageName);
-                    this.mRemote.transact(30, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    this.mRemote.transact(Stub.TRANSACTION_isDetectApp, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
             public List<String> getDetectAppList() throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    this.mRemote.transact(31, _data, _reply, 0);
-                    _reply.readException();
-                    List<String> _result = _reply.createStringArrayList();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    this.mRemote.transact(Stub.TRANSACTION_getDetectAppList, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.createStringArrayList();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
             public boolean isCrossVersionUpdate() throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    this.mRemote.transact(32, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    this.mRemote.transact(32, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
             public List<String> getNotInstalledSystemApps() throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    this.mRemote.transact(33, _data, _reply, 0);
-                    _reply.readException();
-                    List<String> _result = _reply.createStringArrayList();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    this.mRemote.transact(Stub.TRANSACTION_getNotInstalledSystemApps, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.createStringArrayList();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
             public List<String> getValidAppList() throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    this.mRemote.transact(34, _data, _reply, 0);
-                    _reply.readException();
-                    List<String> _result = _reply.createStringArrayList();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    this.mRemote.transact(Stub.TRANSACTION_getValidAppList, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.createStringArrayList();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public List<String> getAppListFromPartition(String partition) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public List<String> getAppListFromPartition(String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(partition);
-                    this.mRemote.transact(35, _data, _reply, 0);
-                    _reply.readException();
-                    List<String> _result = _reply.createStringArrayList();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    this.mRemote.transact(Stub.TRANSACTION_getAppListFromPartition, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.createStringArrayList();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public void deletePackageDelegated(String packageName, int callUid, int callPid, int flags, int userId, IPackageDeleteObserver observer) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public void deletePackageDelegated(String str, int i, int i2, int i3, int i4, IPackageDeleteObserver iPackageDeleteObserver) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(packageName);
-                    _data.writeInt(callUid);
-                    _data.writeInt(callPid);
-                    _data.writeInt(flags);
-                    _data.writeInt(userId);
-                    _data.writeStrongInterface(observer);
-                    this.mRemote.transact(36, _data, _reply, 0);
-                    _reply.readException();
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeInt(i);
+                    obtain.writeInt(i2);
+                    obtain.writeInt(i3);
+                    obtain.writeInt(i4);
+                    obtain.writeStrongInterface(iPackageDeleteObserver);
+                    this.mRemote.transact(Stub.TRANSACTION_deletePackageDelegated, obtain, obtain2, 0);
+                    obtain2.readException();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean setCustomizeDefaultApp(String roleName, String packageName) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean setCustomizeDefaultApp(String str, String str2) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(roleName);
-                    _data.writeString(packageName);
-                    this.mRemote.transact(38, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeString(str2);
+                    this.mRemote.transact(Stub.TRANSACTION_setCustomizeDefaultApp, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public void removeCustomizeDefaultApp(String roleName) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public void removeCustomizeDefaultApp(String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(roleName);
-                    this.mRemote.transact(39, _data, _reply, 0);
-                    _reply.readException();
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    this.mRemote.transact(Stub.TRANSACTION_removeCustomizeDefaultApp, obtain, obtain2, 0);
+                    obtain2.readException();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public String getCustomizeDefaultApp(String roleName) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public String getCustomizeDefaultApp(String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(roleName);
-                    this.mRemote.transact(40, _data, _reply, 0);
-                    _reply.readException();
-                    String _result = _reply.readString();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    this.mRemote.transact(Stub.TRANSACTION_getCustomizeDefaultApp, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readString();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean fixupAppData(String pkgName, String relativePath, int flags) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean fixupAppData(String str, String str2, int i) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(pkgName);
-                    _data.writeString(relativePath);
-                    _data.writeInt(flags);
-                    this.mRemote.transact(41, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeString(str2);
+                    obtain.writeInt(i);
+                    this.mRemote.transact(Stub.TRANSACTION_fixupAppData, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public String getMigMappingPkgName(boolean findOldNameByNew, String refPkgName) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public String getMigMappingPkgName(boolean z, String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeBoolean(findOldNameByNew);
-                    _data.writeString(refPkgName);
-                    this.mRemote.transact(42, _data, _reply, 0);
-                    _reply.readException();
-                    String _result = _reply.readString();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeBoolean(z);
+                    obtain.writeString(str);
+                    this.mRemote.transact(Stub.TRANSACTION_getMigMappingPkgName, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readString();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public List<String> getUninstallableAppConfig(int type) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public List<String> getUninstallableAppConfig(int i) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeInt(type);
-                    this.mRemote.transact(43, _data, _reply, 0);
-                    _reply.readException();
-                    List<String> _result = _reply.createStringArrayList();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeInt(i);
+                    this.mRemote.transact(Stub.TRANSACTION_getUninstallableAppConfig, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.createStringArrayList();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean inUninstallableAppConfig(int type, String pkgName) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean inUninstallableAppConfig(int i, String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeInt(type);
-                    _data.writeString(pkgName);
-                    this.mRemote.transact(44, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeInt(i);
+                    obtain.writeString(str);
+                    this.mRemote.transact(Stub.TRANSACTION_inUninstallableAppConfig, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
             public boolean isFreezeEnabled() throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    this.mRemote.transact(45, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    this.mRemote.transact(Stub.TRANSACTION_isFreezeEnabled, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public void setFreezeEnable(boolean enabled) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public void setFreezeEnable(boolean z) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeBoolean(enabled);
-                    this.mRemote.transact(46, _data, _reply, 0);
-                    _reply.readException();
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeBoolean(z);
+                    this.mRemote.transact(Stub.TRANSACTION_setFreezeEnable, obtain, obtain2, 0);
+                    obtain2.readException();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public int getPackageFreezeState(String pkg, UserHandle userHandle) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public int getPackageFreezeState(String str, UserHandle userHandle) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(pkg);
-                    _data.writeTypedObject(userHandle, 0);
-                    this.mRemote.transact(47, _data, _reply, 0);
-                    _reply.readException();
-                    int _result = _reply.readInt();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeTypedObject(userHandle, 0);
+                    this.mRemote.transact(Stub.TRANSACTION_getPackageFreezeState, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readInt();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public int getPackageFreezeUserSetting(String pkg, UserHandle userHandle) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public int getPackageFreezeUserSetting(String str, UserHandle userHandle) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(pkg);
-                    _data.writeTypedObject(userHandle, 0);
-                    this.mRemote.transact(48, _data, _reply, 0);
-                    _reply.readException();
-                    int _result = _reply.readInt();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeTypedObject(userHandle, 0);
+                    this.mRemote.transact(Stub.TRANSACTION_getPackageFreezeUserSetting, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readInt();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public void setPackageFreezeState(String pkg, int state, UserHandle userHandle) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public void setPackageFreezeState(String str, int i, UserHandle userHandle) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(pkg);
-                    _data.writeInt(state);
-                    _data.writeTypedObject(userHandle, 0);
-                    this.mRemote.transact(49, _data, _reply, 0);
-                    _reply.readException();
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeInt(i);
+                    obtain.writeTypedObject(userHandle, 0);
+                    this.mRemote.transact(Stub.TRANSACTION_setPackageFreezeState, obtain, obtain2, 0);
+                    obtain2.readException();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public void setPackageFreezeUserSetting(String pkg, int setting, UserHandle userHandle) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public void setPackageFreezeUserSetting(String str, int i, UserHandle userHandle) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(pkg);
-                    _data.writeInt(setting);
-                    _data.writeTypedObject(userHandle, 0);
-                    this.mRemote.transact(50, _data, _reply, 0);
-                    _reply.readException();
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeInt(i);
+                    obtain.writeTypedObject(userHandle, 0);
+                    this.mRemote.transact(Stub.TRANSACTION_setPackageFreezeUserSetting, obtain, obtain2, 0);
+                    obtain2.readException();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
             public List<String> getFreezedApplicationList(UserHandle userHandle) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeTypedObject(userHandle, 0);
-                    this.mRemote.transact(51, _data, _reply, 0);
-                    _reply.readException();
-                    List<String> _result = _reply.createStringArrayList();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeTypedObject(userHandle, 0);
+                    this.mRemote.transact(Stub.TRANSACTION_getFreezedApplicationList, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.createStringArrayList();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
             public List<String> getUserSettingFreezeableApplicationList(UserHandle userHandle) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeTypedObject(userHandle, 0);
-                    this.mRemote.transact(52, _data, _reply, 0);
-                    _reply.readException();
-                    List<String> _result = _reply.createStringArrayList();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeTypedObject(userHandle, 0);
+                    this.mRemote.transact(Stub.TRANSACTION_getUserSettingFreezeableApplicationList, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.createStringArrayList();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean hasFeatureIPC(String featureName, int featureID) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean hasFeatureIPC(String str, int i) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(featureName);
-                    _data.writeInt(featureID);
-                    this.mRemote.transact(53, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeInt(i);
+                    this.mRemote.transact(Stub.TRANSACTION_hasFeatureIPC, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean enableFeature(String featureName) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean enableFeature(String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(featureName);
-                    this.mRemote.transact(54, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    this.mRemote.transact(Stub.TRANSACTION_enableFeature, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean disableFeature(String featureName) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean disableFeature(String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(featureName);
-                    this.mRemote.transact(55, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    this.mRemote.transact(Stub.TRANSACTION_disableFeature, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean enableFeatureMap(String featureName, int featureID) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean enableFeatureMap(String str, int i) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(featureName);
-                    _data.writeInt(featureID);
-                    this.mRemote.transact(56, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeInt(i);
+                    this.mRemote.transact(Stub.TRANSACTION_enableFeatureMap, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean disableFeatureMap(String featureName, int featureID) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean disableFeatureMap(String str, int i) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(featureName);
-                    _data.writeInt(featureID);
-                    this.mRemote.transact(57, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeInt(i);
+                    this.mRemote.transact(Stub.TRANSACTION_disableFeatureMap, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public void notifyFeaturesUpdate(String action, String actionValue) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public void notifyFeaturesUpdate(String str, String str2) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(action);
-                    _data.writeString(actionValue);
-                    this.mRemote.transact(58, _data, _reply, 0);
-                    _reply.readException();
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeString(str2);
+                    this.mRemote.transact(Stub.TRANSACTION_notifyFeaturesUpdate, obtain, obtain2, 0);
+                    obtain2.readException();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public void notifyFeaturesMapUpdate(String action, String actionValue, int featureID) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public void notifyFeaturesMapUpdate(String str, String str2, int i) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(action);
-                    _data.writeString(actionValue);
-                    _data.writeInt(featureID);
-                    this.mRemote.transact(59, _data, _reply, 0);
-                    _reply.readException();
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    obtain.writeString(str2);
+                    obtain.writeInt(i);
+                    this.mRemote.transact(Stub.TRANSACTION_notifyFeaturesMapUpdate, obtain, obtain2, 0);
+                    obtain2.readException();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public Bundle appDetailsForwardToMarket(int type, Bundle bundle) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public Bundle appDetailsForwardToMarket(int i, Bundle bundle) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeInt(type);
-                    _data.writeTypedObject(bundle, 0);
-                    this.mRemote.transact(66, _data, _reply, 0);
-                    _reply.readException();
-                    Bundle _result = (Bundle) _reply.readTypedObject(Bundle.CREATOR);
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeInt(i);
+                    obtain.writeTypedObject(bundle, 0);
+                    this.mRemote.transact(Stub.TRANSACTION_appDetailsForwardToMarket, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return (Bundle) obtain2.readTypedObject(Bundle.CREATOR);
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public boolean markResolveIntentForMarket(String token) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public boolean markResolveIntentForMarket(String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(token);
-                    this.mRemote.transact(67, _data, _reply, 0);
-                    _reply.readException();
-                    boolean _result = _reply.readBoolean();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    this.mRemote.transact(Stub.TRANSACTION_markResolveIntentForMarket, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readBoolean();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
-            public int getAbiCheckResult(String packageName) throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+            public int getAbiCheckResult(String str) throws RemoteException {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    _data.writeString(packageName);
-                    this.mRemote.transact(68, _data, _reply, 0);
-                    _reply.readException();
-                    int _result = _reply.readInt();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    obtain.writeString(str);
+                    this.mRemote.transact(Stub.TRANSACTION_getAbiCheckResult, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readInt();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
 
             @Override // android.content.pm.IOplusPackageManager
             public List<String> queryIncompatibleApplist() throws RemoteException {
-                Parcel _data = Parcel.obtain();
-                Parcel _reply = Parcel.obtain();
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
                 try {
-                    _data.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
-                    this.mRemote.transact(69, _data, _reply, 0);
-                    _reply.readException();
-                    List<String> _result = _reply.createStringArrayList();
-                    return _result;
+                    obtain.writeInterfaceToken(IOplusPackageManager.DESCRIPTOR);
+                    this.mRemote.transact(Stub.TRANSACTION_queryIncompatibleApplist, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.createStringArrayList();
                 } finally {
-                    _reply.recycle();
-                    _data.recycle();
+                    obtain2.recycle();
+                    obtain.recycle();
                 }
             }
         }
 
-        @Override // android.os.Binder
         public int getMaxTransactionId() {
-            return 68;
+            return TRANSACTION_getAbiCheckResult;
         }
     }
 }

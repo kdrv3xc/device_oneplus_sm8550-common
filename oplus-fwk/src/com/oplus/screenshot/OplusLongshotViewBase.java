@@ -2,8 +2,8 @@ package com.oplus.screenshot;
 
 import android.content.Context;
 
+/* loaded from: classes.dex */
 public interface OplusLongshotViewBase {
-
     boolean canLongScroll();
 
     int computeLongScrollExtent();

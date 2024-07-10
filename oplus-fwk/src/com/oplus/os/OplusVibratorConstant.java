@@ -1,5 +1,6 @@
 package com.oplus.os;
 
+/* loaded from: classes.dex */
 public class OplusVibratorConstant {
     public static final long LONG_MIDDLE_ONESHOT_TIME = 150;
     public static final long LONG_STRONG_ONESHOT_TIME = 400;
