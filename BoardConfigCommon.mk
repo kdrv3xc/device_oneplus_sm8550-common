@@ -3,12 +3,11 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
+ALLOW_MISSING_DEPENDENCIES := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
-BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
-ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_DUP_SYSPROP := true
 
 COMMON_PATH := device/oneplus/sm8550-common
 
@@ -66,7 +65,7 @@ TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv9-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := cortex-a510
+TARGET_CPU_VARIANT_RUNTIME := kryo300
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-2a
@@ -130,6 +129,7 @@ TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/device_framework_matrix.xml \
+    $(COMMON_PATH)/fcm.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/framework_manifest.xml
@@ -160,14 +160,14 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
 
-TARGET_KERNEL_SOURCE := kernel/oneplus/sm8550
+TARGET_KERNEL_SOURCE := kernel/oneplus/salami
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/kalama_GKI.config \
     vendor/oplus/kalama_GKI.config \
     vendor/debugfs.config
 
-# Kernel modules
+#Kernel modules
 BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.system_dlkm))
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
@@ -177,7 +177,7 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMO
 BOOT_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery $(COMMON_PATH)/modules.include.vendor_ramdisk))
 SYSTEM_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.include.system_dlkm))
 
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/oneplus/sm8550-modules
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/oneplus/salami-modules
 TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/mmrm-driver \
 	qcom/opensource/mm-drivers/hw_fence \
@@ -203,6 +203,19 @@ TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/wlan/qcacld-3.0/.kiwi_v2 \
 	qcom/opensource/bt-kernel \
 	nxp/opensource/driver
+
+# Kernel - prebuilt
+# TARGET_FORCE_PREBUILT_KERNEL := false
+# ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
+# TARGET_PREBUILT_KERNEL := device/oneplus/sm8550-common/prebuilts/kernel
+# BOARD_PREBUILT_DTBIMAGE := device/oneplus/sm8550-common/prebuilts/dtb.img
+# TARGET_PREBUILT_DTB := device/oneplus/sm8550-common/prebuild/dtb.img
+# BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
+# BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+# BOARD_PREBUILT_DTBOIMAGE := device/oneplus/sm8550-common/prebuilts/dtbo.img
+# BOARD_KERNEL_SEPARATED_DTBO := true
+# endif
+
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
