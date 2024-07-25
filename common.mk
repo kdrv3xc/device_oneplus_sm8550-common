@@ -12,14 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Add common definitions for Qualcomm
-#$(call inherit-product, hardware/qcom-caf/common/common.mk)
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
-    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    POSTINSTALL_PATH_system=bin/otapreopt_script \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
@@ -31,7 +31,8 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 PRODUCT_PACKAGES += \
     checkpoint_gc \
-    otapreopt_script
+    otapreopt_script \
+    fstab.postinstall
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -72,12 +73,12 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.kalama
 
-#AUDIO_HAL_DIR := hardware/qcom-caf/sm8550/audio/primary-hal
+AUDIO_HAL_DIR := hardware/qcom-caf/sm8550/audio/primary-hal
 
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8550/audio/primary-hal/configs/common/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     hardware/qcom-caf/sm8550/audio/primary-hal/configs/kalama/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
-#    $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/audio_effects.xml \
+    $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/audio_effects.xml \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/audio/bluetooth_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_hearing_aid_audio_policy_configuration.xml \
@@ -148,9 +149,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
 #PRODUCT_COPY_FILES += \
- #   $(LOCAL_PATH)/configs/permissions/oplus_camera_default_grant_permissions_list.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/oplus_camera_default_grant_permissions_list.xml \
- #   $(LOCAL_PATH)/configs/permissions/privapp-permissions-oplus.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-oplus.xml \
- #   $(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-oplus-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-oplus-whitelist.xml
+#    $(LOCAL_PATH)/configs/permissions/oplus_camera_default_grant_permissions_list.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/oplus_camera_default_grant_permissions_list.xml \
+#    $(LOCAL_PATH)/configs/permissions/privapp-permissions-oplus.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-oplus.xml \
+#    $(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-oplus-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-oplus-whitelist.xml
 
 # OnePlus framework
 PRODUCT_PACKAGES += \
@@ -171,7 +172,8 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # DebugFS
-PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+#	PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+CONFIG_DEBUG_FS := true
 
 # Display
 PRODUCT_PACKAGES += \
@@ -263,7 +265,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
-
+    
 # Hotword enrollment
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
@@ -275,57 +277,27 @@ PRODUCT_PACKAGES += \
     IPACM_Filter_cfg.xml
 
 # Init
-# Rootdir
 PRODUCT_PACKAGES += \
-    ftm_power_config.sh \
-    init.at.class_main.sh \
-    init.at.post_boot.sh \
+    fstab.default \
+    fstab.default.vendor_ramdisk \
     init.class_main.sh \
-    init.crda.sh \
-    init.kernel.post_boot-kalama.sh \
     init.kernel.post_boot.sh \
-    init.mdm.sh \
-    init.qcom.class_core.sh \
-    init.qcom.coex.sh \
+    init.kernel.post_boot-kalama.sh \
+    init.oplus.hw.rc \
+    init.oplus.hw.rc.recovery \
+    init.oplus.rc \
     init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sdio.sh \
-    init.qcom.sensors.sh \
-    init.qcom.sh \
-    init.qcom.usb.sh \
-    init.qti.display_boot.sh \
-    init.qti.kernel.debug-kalama.sh \
-    init.qti.kernel.debug.sh \
-    init.qti.kernel.early_debug-kalama.sh \
-    init.qti.kernel.early_debug.sh \
-    init.qti.kernel.sh \
-    init.qti.media.sh \
-    init.qti.qcv.sh \
-    init.qti.write.sh \
-    onetracker_period.sh \
-    qca6234-service.sh \
-    system_dlkm_modprobe.sh \
-    vendor_modprobe.sh \
-
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.at.qcom.rc \
-    init.at.target.rc \
-    init.oem_ftm.rc \
-    init.qcom.factory.rc \
     init.qcom.rc \
+    init.qcom.recovery.rc \
+    init.qcom.sh \
     init.qcom.usb.rc \
+    init.qcom.usb.sh \
     init.qti.kernel.rc \
-    init.qti.ufs.rc \
     init.target.rc \
-    init.wlan.qcom.rc \
-    init.wlan.target.rc \
-    vendor.oem_ftm.rc \
-    vendor.oem_ftm_svc_disable.rc \
-    init.recovery.qcom.rc \
-    ueventd.qcom.rc \
+    ueventd.oplus.rc \
+    ueventd.qcom.rc
 
+    
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
@@ -516,9 +488,9 @@ PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/oplus \
-    kernel/oneplus/salami \
-    kernel/oneplus/salami-modules \
-    kernel/oneplus/salami-devicetrees \
+    kernel/oneplus/sm8550 \
+    kernel/oneplus/sm8550-modules \
+    kernel/oneplus/sm8550-devicetrees \
     vendor/oplus 
 
 # Storage
