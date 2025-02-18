@@ -3,12 +3,16 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+<<<<<<< HEAD
 #ALLOW_MISSING_DEPENDENCIES := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 BUILD_BROKEN_DUP_SYSPROP := true
 -include build/make/target/board/BoardConfigMainlineCommon.mk
+=======
+
+>>>>>>> github/15.0
 COMMON_PATH := device/oneplus/sm8550-common
 
 # A/B
@@ -65,14 +69,7 @@ TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv9-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := kryo300
-
-TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
-TARGET_2ND_CPU_ABI := armeabi-v7a
-TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := generic
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
+TARGET_CPU_VARIANT_RUNTIME := cortex-a510
 
 # Audio
 AUDIO_FEATURE_ENABLED_DLKM := true
@@ -90,13 +87,11 @@ AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := true
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
+TARGET_PROVIDES_AUDIO_HAL := true
 TARGET_USES_QCOM_MM_AUDIO := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kalama
-
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
 
 # Boot
 BOARD_BOOT_HEADER_VERSION := 4
@@ -104,8 +99,11 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 
 # Camera
+<<<<<<< HEAD
 MALLOC_SVELTE := true
 MALLOC_SVELTE_FOR_LIBC32 := true
+=======
+>>>>>>> github/15.0
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 TARGET_CAMERA_PACKAGE_NAME := com.oplus.packageName
 
@@ -128,8 +126,12 @@ TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+<<<<<<< HEAD
     $(COMMON_PATH)/device_framework_matrix.xml \
     $(COMMON_PATH)/fcm.xml \
+=======
+    hardware/oplus/vintf/device_framework_matrix.xml \
+>>>>>>> github/15.0
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
@@ -137,7 +139,10 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 PRODUCT_MANIFEST_FILES := $(COMMON_PATH)/manifest_product.xml
 DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifest.xml \
-    $(COMMON_PATH)/network_manifest.xml
+    $(COMMON_PATH)/network_manifest.xml \
+    hardware/qcom-caf/sm8550/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
+    hardware/qcom-caf/sm8550/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
+
 ODM_MANIFEST_FILES := \
     $(COMMON_PATH)/manifest_odm.xml \
     $(COMMON_PATH)/network_manifest_odm.xml
@@ -272,17 +277,16 @@ TARGET_USERIMAGES_USE_F2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security
+<<<<<<< HEAD
 BOOT_SECURITY_PATCH := 2024-07-05
+=======
+BOOT_SECURITY_PATCH := 2024-09-05
+>>>>>>> github/15.0
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
-
-# Touch
-SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL
-SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL := INCLUDE_DIR
-SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL_INCLUDE_DIR := $(COMMON_PATH)/touch/include
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -337,6 +341,7 @@ CONFIG_IEEE80211AX := true
 WIFI_DRIVER_STATE_CTRL_PARAM := "/dev/wlan"
 WIFI_DRIVER_STATE_OFF := "OFF"
 WIFI_DRIVER_STATE_ON := "ON"
+WIFI_HIDL_FEATURE_AWARE := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
