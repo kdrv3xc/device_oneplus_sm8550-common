@@ -1,5 +1,0 @@
-  android.hardware.bluetooth.audio.IBluetoothAudioProviderFactory/default (@4)
-  android.hardware.sensors.ISensors/default (@2)
-  android.hardware.wifi.IWifi/default (@2)
-  android.hardware.wifi.hostapd.IHostapd/default (@2)
-  android.hardware.wifi.supplicant.ISupplicant/default (@3)
