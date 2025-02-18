@@ -3,22 +3,13 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-<<<<<<< HEAD
-#ALLOW_MISSING_DEPENDENCIES := true
-BUILD_BROKEN_DUP_RULES := true
-BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
-BUILD_BROKEN_DUP_SYSPROP := true
--include build/make/target/board/BoardConfigMainlineCommon.mk
-=======
 
->>>>>>> github/15.0
 COMMON_PATH := device/oneplus/sm8550-common
 
 # A/B
 AB_OTA_UPDATER := true
 
-AB_OTA_PARTITIONS := \
+AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     init_boot \
@@ -35,32 +26,6 @@ AB_OTA_PARTITIONS := \
     vendor_boot \
     vendor_dlkm
 
-AB_OTA_PARTITIONS := \
-    abl \
-    aop \
-    aop_config \
-    bluetooth \
-    cpucp \
-    devcfg \
-    dsp \
-    engineering_cdt \
-    featenabler \
-    hyp \
-    imagefv \
-    keymaster \
-    modem \
-    oplus_sec \
-    oplusstanvbk \
-    qupfw \
-    shrm \
-    splash \
-    tz \
-    uefi \
-    uefisecapp \
-    xbl \
-    xbl_config \
-    xbl_ramdump
-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
@@ -68,12 +33,11 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv9-a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT := cortex-a715
 TARGET_CPU_VARIANT_RUNTIME := cortex-a510
 
 # Audio
 AUDIO_FEATURE_ENABLED_DLKM := true
-AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
 AUDIO_FEATURE_ENABLED_GKI := true
@@ -99,11 +63,6 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 
 # Camera
-<<<<<<< HEAD
-MALLOC_SVELTE := true
-MALLOC_SVELTE_FOR_LIBC32 := true
-=======
->>>>>>> github/15.0
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 TARGET_CAMERA_PACKAGE_NAME := com.oplus.packageName
 
@@ -126,17 +85,11 @@ TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-<<<<<<< HEAD
-    $(COMMON_PATH)/device_framework_matrix.xml \
-    $(COMMON_PATH)/fcm.xml \
-=======
     hardware/oplus/vintf/device_framework_matrix.xml \
->>>>>>> github/15.0
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/framework_manifest.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
-PRODUCT_MANIFEST_FILES := $(COMMON_PATH)/manifest_product.xml
 DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifest.xml \
     $(COMMON_PATH)/network_manifest.xml \
@@ -158,8 +111,7 @@ BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
-    androidboot.usbcontroller=a600000.dwc3 \
-    androidboot.selinux=permissive
+    androidboot.usbcontroller=a600000.dwc3
 
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_KERNEL_BASE := 0x00000000
@@ -173,7 +125,7 @@ TARGET_KERNEL_CONFIG := \
     vendor/oplus/kalama_GKI.config \
     vendor/debugfs.config
 
-#Kernel modules
+# Kernel modules
 BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.system_dlkm))
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
@@ -210,19 +162,6 @@ TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/bt-kernel \
 	nxp/opensource/driver
 
-# Kernel - prebuilt
-# TARGET_FORCE_PREBUILT_KERNEL := false
-# ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
-# TARGET_PREBUILT_KERNEL := device/oneplus/sm8550-common/prebuilts/kernel
-# BOARD_PREBUILT_DTBIMAGE := device/oneplus/sm8550-common/prebuilts/dtb.img
-# TARGET_PREBUILT_DTB := device/oneplus/sm8550-common/prebuild/dtb.img
-# BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-# BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-# BOARD_PREBUILT_DTBOIMAGE := device/oneplus/sm8550-common/prebuilts/dtbo.img
-# BOARD_KERNEL_SEPARATED_DTBO := true
-# endif
-
-
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
 
@@ -241,8 +180,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_INIT_BOOT_IMAGE_PARTITION_SIZE := 8388608
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 233871900672
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 201326592
-BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -262,7 +200,6 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
-
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
@@ -277,11 +214,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security
-<<<<<<< HEAD
-BOOT_SECURITY_PATCH := 2024-07-05
-=======
 BOOT_SECURITY_PATCH := 2024-09-05
->>>>>>> github/15.0
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SEPolicy
@@ -290,13 +223,13 @@ include hardware/oplus/sepolicy/qti/SEPolicy.mk
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
-BOARD_AVB_ROLLBACK_INDEX := 14
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 
 BOARD_AVB_BOOT_KEY_PATH := vendor/primes/primes/configs/keys/avbkey.pk8
 BOARD_AVB_BOOT_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_BOOT_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
-BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 5
+BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 4
 
 BOARD_AVB_DTBO_KEY_PATH := vendor/primes/primes/configs/keys/avbkey.pk8
 BOARD_AVB_DTBO_ALGORITHM := SHA256_RSA4096
@@ -306,19 +239,19 @@ BOARD_AVB_DTBO_ROLLBACK_INDEX_LOCATION := 3
 BOARD_AVB_RECOVERY_KEY_PATH := vendor/primes/primes/configs/keys/avbkey.pk8
 BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
-BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 2
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
-BOARD_AVB_VBMETA_SYSTEM := system system_ext system_dlkm product
+BOARD_AVB_VBMETA_SYSTEM := system system_dlkm system_ext product
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := vendor/primes/primes/configs/keys/avbkey.pk8
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
-BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 
 BOARD_AVB_VBMETA_VENDOR := vendor vendor_dlkm
 BOARD_AVB_VBMETA_VENDOR_KEY_PATH := vendor/primes/primes/configs/keys/avbkey.pk8
 BOARD_AVB_VBMETA_VENDOR_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
-BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 4
+BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 5
 
 BOARD_AVB_VENDOR_BOOT_KEY_PATH := vendor/primes/primes/configs/keys/avbkey.pk8
 BOARD_AVB_VENDOR_BOOT_ALGORITHM := SHA256_RSA4096
@@ -329,6 +262,7 @@ BOARD_AVB_VENDOR_BOOT_ROLLBACK_INDEX_LOCATION := 6
 BOARD_AVB_ODM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 BOARD_AVB_SYSTEM_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 BOARD_AVB_VENDOR_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_VENDOR_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
